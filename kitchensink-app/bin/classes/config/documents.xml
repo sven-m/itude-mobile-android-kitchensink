@@ -1,0 +1,89 @@
+<Configuration xmlns="http://itude.com/schemas/MB/2.0">
+	<Model>
+        <Documents>
+            <!--
+             Generic documents 
+             -->
+            <Document name="MBEmptyDoc" dataManager="MBMemoryDataHandler" autoCreate="TRUE">
+            </Document>
+            <Document name="InitialOutcomes" dataManager="MBFileDataHandler" autoCreate="TRUE">
+                <Element name="Outcome" minOccurs="1">
+                    <Attribute name="action" type="string"/>
+                    <Attribute name="dialog" type="string"/>
+				</Element>
+			</Document>		
+            <Document name="MBGenericRequest" dataManager="MBMemoryDataHandler" autoCreate="TRUE">
+                <Element name="Request" minOccurs="1">
+                    <Attribute name="name" type="string" />
+                    <Element name="Parameter">
+                        <Attribute name="key" type="string"/>
+                        <Attribute name="value" type="string"/>
+                        <Element name="Subparameter">
+                            <Attribute name="key" type="string"/>
+                            <Attribute name="value" type="string"/>
+                        </Element>
+                    </Element>
+                </Element>
+            </Document>
+            
+            
+            <Document name="ApplicationState" dataManager="MBFileDataHandler" autoCreate="TRUE">
+                <Element name="Device" minOccurs="1">
+                    <Attribute name="deviceID" type="string" defaultValue=""/>
+                    <Attribute name="deviceType" type="string" defaultValue=""/>
+                    <Attribute name="deviceIsRegistered" type="string" defaultValue="false" />
+                </Element>
+            </Document>
+
+            <!-- App specific documents -->
+
+            <Document name="CATALOG" dataManager="MBFileDataHandler">
+                <Element name="PLANT">
+                    <Element name="COMMON">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                    <Element name="BOTANICAL">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                    <Element name="ZONE">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                    <Element name="LIGHT">
+                        <Attribute name="text()" type="Plant-Light"/>
+                    </Element>
+                    <Element name="PRICE">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                    <Element name="AVAILABILITY">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                </Element>
+            </Document>
+            
+            <!-- created by application when first requested -->
+            <Document name="FieldTypes" dataManager="MBFileDataHandler" autoCreate="TRUE">
+                <Element name="Form" minOccurs="1">
+                    <Attribute name="title" type="string" defaultValue="Lorem Ipsum" />
+                    <Attribute name="date" type="string" />
+                    <Attribute name="time" type="string" />
+                    <Attribute name="user" type="string" />
+                    <Attribute name="email" type="string" />
+                    <Attribute name="password" type="string" />
+                    <Attribute name="raw" type="string" />
+                    <Attribute name="int" type="string" />
+                    <Attribute name="float" type="string" />
+                    <Attribute name="checkbox" type="string" />
+                    <Attribute name="dateTime" type="string" />
+                    <Attribute name="dateOfBirth" type="string" />
+                    <Attribute name="zipcode" type="string" />
+                    <Attribute name="comment" type="string" />
+                    
+                    <Attribute name="gender" type="list_gender" /> <!-- Note the domain reference: see domains.xmlx -->
+                </Element>
+            </Document>
+            
+            
+            
+        </Documents>
+    </Model>
+</Configuration>

@@ -1,0 +1,38 @@
+<Configuration>
+    <View>
+        <Page name="PAGE-lists" document="MBEmptyDoc" title="List layout">
+            <Panel type="LIST">
+                <Panel type="SECTION" title="Row types">
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Regular"/>
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Title and "/>
+                        <Field type="SUBLABEL" label="Subtitle"/>
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="TEXT" label="&lt;html&gt;Webview with &lt;b&gt;html&lt;/b&gt; markup and a whole bunch of text&lt;/html&gt;"/>
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="TEXT" label="Text label with multiline text. Text label with multiline text. Text label with multiline text. Text label with multiline text."/>
+                    </Panel>
+                </Panel>
+                <Panel type="SECTION" title="Buttons">
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Navigation style row"/>
+                        <Field type="BUTTON" style="NAVIGATION" outcome="OUTCOME-empty-screen"/>
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Button style row"/>
+                        <Field type="BUTTON" label="Press me" style="NETWORK" outcome="OUTCOME-empty-screen"/>
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="SUBLABEL" label="Two buttons"/>
+                        <Field type="BUTTON" label="Button1" style="NETWORK" outcome="OUTCOME-empty-screen"/>
+                        <Field type="BUTTON" label="Button2" style="NETWORK" outcome="OUTCOME-empty-screen"/>
+                    </Panel>
+                </Panel>
+            </Panel>
+        </Page>
+    </View>
+</Configuration>

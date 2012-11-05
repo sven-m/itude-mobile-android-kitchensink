@@ -1,0 +1,25 @@
+<Configuration xmlns="http://itude.com/schemas/MB/2.0">
+	<View>
+        <Alerts>
+            <Alert name="ALERT-simple-example" document="MBEmptyDoc" title="Example alert">
+                <Field type="TEXT" label="Do you want to see the plants catalog?"/>
+                <Field type="BUTTON" label="Yes" outcome="OUTCOME-catalog" style="POSITIVE" />
+                <Field type="BUTTON" label="No" style="NEGATIVE" />
+                <Field type="BUTTON" label="Maybe" outcome="OUTCOME-alert-make-decision" style="OTHER" />
+            </Alert>
+            
+            <Alert name="ALERT-make-decision" document="MBEmptyDoc" title="Made up your mind yet?">
+                <Field type="TEXT" label="Have you made up your mind about seeing the catalog?"/>
+                <Field type="BUTTON" label="Show" outcome="OUTCOME-catalog" style="POSITIVE" />
+                <Field type="BUTTON" label="Not yet" outcome="OUTCOME-alert-simple-example" style="NEGATIVE" />
+            </Alert>
+            
+            <Alert name="ALERT-plant-example" document="CATALOG" title="Plant example">
+                <Field type="TEXT" path="/PLANT[0]/COMMON[0]/@text()"/>
+                <Field type="BUTTON" label="Show more" outcome="OUTCOME-plant-detail" path="/PLANT[0]" style="POSITIVE" />
+                <Field type="BUTTON" label="Cancel" style="NEGATIVE" />
+            </Alert>
+        </Alerts>
+    </View>
+</Configuration>
+

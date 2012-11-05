@@ -1,0 +1,79 @@
+<Configuration xmlns="http://itude.com/schemas/MB/2.0">
+	<View>	
+        <Page name="PAGE-page_empty" document="MBEmptyDoc" title="emptyPage">
+        </Page>
+        
+        <!-- ***************** Exception handling ***************** -->
+        <Page name="PAGE-exception" type="error" document="MBException" title="Fout opgetreden">
+            <Panel type="LIST">
+                <Panel type="SECTION" title="Fout details">
+                    <Panel type="ROW">
+                        <Field type="TEXT" path="/Exception[0]/@description"/>
+                    </Panel>
+                </Panel>
+                <Panel type="SECTION" title="Technical details">
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Name"/>
+                        <Field type="SUBLABEL" path="/Exception[0]/@name"/>
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Description"/>
+                        <Field type="SUBLABEL" path="/Exception[0]/@description"/>
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Origin"/>
+                        <Field type="SUBLABEL" path="/Exception[0]/@origin"/>
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Outcome"/>
+                        <Field type="SUBLABEL" path="/Exception[0]/@outcome"/>
+                    </Panel>
+                </Panel>
+                <Panel type="SECTION" title="Stack">
+                    <ForEach value="/Exception[0]/Stackline" suppressRowComponent="TRUE">
+                        <Panel type="ROW">
+                            <Field type="SUBLABEL" path="./@line"/>
+                        </Panel>
+                    </ForEach>
+                </Panel>
+            </Panel>
+        </Page>
+    
+        <!-- Info page (example) -->
+        <Page name="PAGE-info" document="MBEmptyDoc" title="Info">
+            <Panel type="LIST">
+            <Panel type="ROW">
+                        <Field type="TEXT" label="Info text"/>
+                    </Panel>
+            </Panel>
+        </Page>
+        
+        <Page name="PAGE-device-info" document="ApplicationState" title="Device Info">
+            <Panel type="LIST">
+            <Panel type="ROW">
+                        <Field type="TEXT" path="Device[0]/@deviceType"/>
+                    </Panel>
+            </Panel>
+        </Page>
+        
+        <Page name="PAGE-empty-screen" document="MBEmptyDoc" title="Hello World">
+            <Panel type="LIST">
+                <Panel type="ROW">
+                    <Field type="LABEL" label="Hello MOBBL" />
+                </Panel>
+            </Panel>
+        </Page>
+
+        <Include name="config/pages/PAGE-customized-view-logic.xml"/>
+        <Include name="config/pages/PAGE-customized-layout.xml"/>
+        <Include name="config/pages/PAGE-customized-components.xml"/>
+        <Include name="config/pages/PAGE-page-with-xib.xml"/>
+        <Include name="config/pages/PAGE-field-types.xml"/>
+        <Include name="config/pages/PAGE-lists.xml"/>
+        <Include name="config/pages/PAGE-plant-detail.xml"/>
+        <Include name="config/pages/PAGE-catalog.xml"/>
+        <Include name="config/pages/PAGE-home.xml"/>
+        <Include name="config/pages/PAGE-manipulating-rows-in-a-list.xml"/>
+
+    </View>
+</Configuration>

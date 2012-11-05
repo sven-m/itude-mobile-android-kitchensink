@@ -1,0 +1,17 @@
+<Configuration>
+    <View>
+        <Page name="PAGE-manipulating-rows-in-a-list" document="CATALOG" title="Catalog">
+            <Panel type="LIST">
+                <Panel type="SECTION" title="Plants">
+                    <!-- the ForEach element creates a new for each element of type PLANT -->
+                    <ForEach value="/PLANT" suppressRowComponent="TRUE">
+                        <Panel type="ROW" style="customRow">
+                            <Field type="LABEL" path="COMMON[0]/@text()"/>
+                            <Field type="BUTTON" style="NAVIGATION" path="." outcome="OUTCOME-plant-detail"/>
+                        </Panel>
+                    </ForEach>
+                </Panel>
+            </Panel>
+        </Page>
+    </View>
+</Configuration>

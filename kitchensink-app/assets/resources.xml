@@ -1,0 +1,11 @@
+<Resources>
+    <Resource id="config" url="file://config/config.xml"/>
+    <Resource id="endpoints" url="file://config/endpoints.xml"/>
+    
+    <Resource id="ICON-tab_home" url="file://Tab_Home.png"/>
+    <Resource id="ICON-tab_info" url="file://Tab_Info.png"/>
+    
+    <Resource id="whitelabel-splashscreen" url="file://splashscreen.jpeg" />
+    
+    <Bundle languageCode="nl" url="file://texts/texts-nl.xml"/>
+</Resources> 

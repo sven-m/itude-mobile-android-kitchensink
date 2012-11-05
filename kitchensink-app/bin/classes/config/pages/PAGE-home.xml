@@ -1,0 +1,89 @@
+<Configuration>
+    <View>
+<Page name="PAGE-home" document="MBEmptyDoc" title="MOBBL Examples">
+            <Panel type="LIST">
+                <Panel type="SECTION" title="Controller examples">
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Page navigation"/>
+                        <Field type="BUTTON" style="NAVIGATION" outcome="OUTCOME-empty-screen" />
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Navigation via an action"/>
+                        <Field type="SUBLABEL" label="Objc class name is CustomAction"/>
+                        <Field type="BUTTON" style="NAVIGATION" outcome="OUTCOME-retrieve-device-info" />
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Page transition on main thread"/>
+                        <Field type="SUBLABEL" label="No spinner or greyed out view"/>
+                        <Field type="BUTTON" style="NAVIGATION" outcome="OUTCOME-catalog-foreground" />
+                    </Panel>
+                </Panel>
+                <Panel type="SECTION" title="View layer examples">
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="List and detail screen"/>
+                        <Field type="SUBLABEL" label="Newsheader to newsdetail style"/>
+                        <Field type="BUTTON" style="NAVIGATION" outcome="OUTCOME-catalog" />
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Form fields"/>
+                        <Field type="BUTTON" style="NAVIGATION" outcome="OUTCOME-field-types" />
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Modal screen"/>
+                        <Field type="BUTTON" style="NAVIGATION" outcome="OUTCOME-modal" />
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="List layout demo's"/>
+                        <Field type="BUTTON" style="NAVIGATION" outcome="OUTCOME-lists" />
+                    </Panel>
+                </Panel>
+                <Panel type="SECTION" title="Customization">
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Customized view logic"/>
+                        <Field type="SUBLABEL" label="Generated view, custom logic"/>
+                        <Field type="BUTTON" style="NAVIGATION" outcome="OUTCOME-customized-view-logic" />
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Manipulating the page layout"/>
+                        <Field type="SUBLABEL" label="Programmatically change the layout"/>
+                        <Field type="BUTTON" style="NAVIGATION" outcome="OUTCOME-customized-layout" />
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Styling UI elements"/>
+                        <Field type="SUBLABEL" label="Stylehandlers influence view building"/>
+                        <Field type="BUTTON" style="NAVIGATION" outcome="OUTCOME-customized-components" />
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Manipulating rows in a list"/>
+                        <Field type="SUBLABEL" label="Layout of cells is changed"/>
+                        <Field type="BUTTON" style="NAVIGATION" outcome="OUTCOME-manipulating-rows-in-a-list" />
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Using interface builder"/>
+                        <Field type="SUBLABEL" label="Make the layout in a NIB file and link the page definition to it"/>
+                        <Field type="BUTTON" style="NAVIGATION" outcome="OUTCOME-page-with-xib" />
+                    </Panel>
+                </Panel>
+                <Panel type="SECTION" title="Alerts">
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Simple alert example"/>
+                        <Field type="BUTTON" style="NAVIGATION" outcome="OUTCOME-alert-simple-example"/>
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Show a plant alert example"/>
+                        <Field type="BUTTON" style="NAVIGATION" outcome="OUTCOME-alert-plant-example"/>
+                    </Panel>
+                </Panel>
+                <Panel type="SECTION" title="Error handling">
+                    <Panel type="ROW">
+                        <Field type="LABEL" label="Throw Exception"/>
+                        <Field type="BUTTON" style="NAVIGATION" outcome="OUTCOME-throw-exception" />
+                    </Panel>
+                    <Panel type="ROW">
+                        <Field type="TEXT" label="&lt;html&gt;Remove the line InstallUncaughtExceptionHandler(); in [CustomAppDelegate startController] to let the App crash instead of showing the error. In production App crashes will show up in iTunes connect. Customization of the error message is still a work in progress.&lt;/html&gt;"/>
+                    </Panel>
+                </Panel>
+            </Panel>
+        </Page>
+    </View>
+</Configuration>

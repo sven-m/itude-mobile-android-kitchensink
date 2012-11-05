@@ -1,0 +1,11 @@
+<Configuration xmlns="http://itude.com/schemas/MB/2.0">
+	<Controller>
+        <Actions>
+            <!-- The entries below define the Actions to be a valid Action, but do not instantiate the class
+                 That has to be done in the CustomApplicationFactory -->
+			<Action name="FireInitialOutcomes" className="FireInitialOutcomes"/>
+            <Action name="CustomAction" className="CustomAction"/>
+            <Action name="ExceptionExampleAction" className="ExceptionExampleAction"/>
+		</Actions>
+	</Controller>
+</Configuration>

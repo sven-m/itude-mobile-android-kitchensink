@@ -1,0 +1,38 @@
+<Configuration>
+    <View>
+       <Page name="PAGE-customized-view-logic" document="FieldTypes" title="Custom view logic">
+            <Panel type="LIST">
+                <!-- Panels can have preConditions which are evaluated with (limited) javascript logic 
+                    First the expression is parsed and path references evaluated by MOBBL. 
+                    Then the expression is evaluated with javascript logic. AND and OR are not supported by the parser.
+                    Legal operators are !, ==, !=, &lt;, &gt;
+                    For example ${Form[0]/@error}=='Formatting Error' will only show the Panel if the error attribute of the 
+                    first Form element contains the text 'Formatting Error'}
+                -->
+                <Panel type="ROW">
+                    <Field type="TEXT" label="&lt;html&gt;This controller does two things.&lt;ol&gt; &lt;li&gt;react to a button (Outcome is not defined globally, therefore an error is thrown).&lt;/li&gt;&lt;li&gt;react to changes in the gender field and conditionally display a message&lt;/li&gt; &lt;/ol&gt; The page definition contains a conditional row with the message &lt;/html&gt;" />
+                </Panel>
+                <Panel type="ROW">
+                    <Field type="LABEL" label="Local outcome handling" />
+                    <Field type="BUTTON" label="Do stuff!" style="NETWORK" outcome="LOCAL-OUTCOME1"/>
+                </Panel>
+                <Panel type="ROW">
+                    <Field type="DROPDOWNLIST" path="Form[0]/@gender" />
+                    <Field type="LABEL" label="Gender" />
+                </Panel>
+                <Panel type="ROW" preCondition="('${Form[0]/@comment}'!='null')">
+                    <Field type="LABEL" path="Form[0]/@comment" />
+                    <Field type="SUBLABEL" label="Display conditional message" />
+                </Panel>
+
+                <!-- Custom rows can be added by specifiying a style and implementing a subclass of MBRowViewBuilder for
+                     the custom style. Don't forget to register the MBRowViewBuilder implementation with the
+                     MBRowViewBuilderFactory in CustomAppDelegate:startController.
+                     The MBRowViewBuilder registered with this type is 'CustomRowViewBuilder'. -->
+                <Panel type="ROW" style="customRow">
+                </Panel>
+
+            </Panel>
+        </Page>
+    </View>
+</Configuration>
