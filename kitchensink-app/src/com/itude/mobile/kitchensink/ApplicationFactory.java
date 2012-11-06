@@ -1,5 +1,6 @@
 package com.itude.mobile.kitchensink;
 
+import com.itude.mobile.kitchensink.actions.CustomAction;
 import com.itude.mobile.mobbl2.client.core.actions.MBFireInitialOutcomes;
 import com.itude.mobile.mobbl2.client.core.controller.MBApplicationFactory;
 
@@ -16,6 +17,7 @@ public class ApplicationFactory extends MBApplicationFactory
       protected void registerMappings()
       {
         registerAction("FireInitialOutcomes", MBFireInitialOutcomes.class);
+        registerAction("CustomAction", CustomAction.class);
       }
 
     };

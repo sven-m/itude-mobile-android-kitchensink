@@ -5,11 +5,18 @@
                 <Panel type="SECTION" title="Plants">
                     <!-- the ForEach element creates a new for each element of type PLANT -->
                     <ForEach value="/PLANT" suppressRowComponent="TRUE">
-                        <Panel type="ROW">
+                        <Panel type="ROW" path="." outcome="OUTCOME-plant-detail">
                             <Field type="LABEL" path="COMMON[0]/@text()"/>
-                            <Field type="BUTTON" style="NAVIGATION" path="." outcome="OUTCOME-plant-detail"/>
+                            <!--<Field type="BUTTON" style="NAVIGATION" path="." outcome="OUTCOME-plant-detail"/>-->
                         </Panel>
                     </ForEach>
+                </Panel>
+                
+                <!-- Demonstrates the outcome on a Panel of type="ROW" -->
+                <Panel type="SECTION" title="Outcome example with path">
+                    <Panel type="ROW" path="/PLANT[1]" outcome="OUTCOME-plant-detail">
+                        <Field type="LABEL" path="PLANT[1]/COMMON[0]/@text()"/>
+                    </Panel>
                 </Panel>
             </Panel>
         </Page>
