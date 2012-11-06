@@ -1,6 +1,6 @@
 <Configuration>
     <View>
-       <Page name="PAGE-customized-layout" document="FieldTypes" title="Custom view logic">
+       <Page name="PAGE-customized-layout" document="FieldTypes" title="Custom layout">
             <Panel name="myPanel" type="LIST">
                 <Panel type="ROW">
                     <Field type="TEXT" label="&lt;html&gt;This controller uses a named panel to retrieve the definition from the Page and automatically create a View.&lt;/html&gt;" />

@@ -18,9 +18,8 @@
                     </Panel>
                 </Panel>
                 <Panel type="SECTION" title="Buttons">
-                    <Panel type="ROW">
-                        <Field type="LABEL" label="Navigation style row"/>
-                        <Field type="BUTTON" style="NAVIGATION" outcome="OUTCOME-empty-screen"/>
+                    <Panel type="ROW"  outcome="OUTCOME-empty-screen">
+                        <Field type="LABEL" label="Clickable row"/>
                     </Panel>
                     <Panel type="ROW">
                         <Field type="LABEL" label="Button style row"/>
