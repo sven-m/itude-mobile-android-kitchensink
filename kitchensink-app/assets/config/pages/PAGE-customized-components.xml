@@ -5,8 +5,7 @@
                 <Panel type="ROW" >
                     <Field type="TEXT" label="&lt;html&gt;StyleHandler classes can influence all generated UI elements. Alternatively custom PageBuilders, PanelBuilders or FieldBuilders can be used. StyleHandlers are used on this page. Builders are more advanced and are not in this example.&lt;/html&gt;" />
                 </Panel>
-                <Panel type="ROW" >
-                    <Field type="BUTTON" label="Do stuff!" style="NAVIGATION" outcome="OUTCOME-empty-screen"/>
+                <Panel type="ROW"  outcome="OUTCOME-empty-screen">
                     <Field type="LABEL" label="Do stuff!" style="style2" />
                 </Panel>
                 <Panel type="ROW">
