@@ -10,6 +10,7 @@
 
     
     <Resource id="whitelabel-splashscreen" url="file://splashscreen.jpeg" />
+    <Resource id="pinkie" url="file://pinkie.png" />
     
     <Bundle languageCode="nl" url="file://texts/texts-nl.xml"/>
 </Resources> 
