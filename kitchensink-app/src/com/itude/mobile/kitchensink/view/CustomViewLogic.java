@@ -14,6 +14,7 @@ public class CustomViewLogic extends MBBasicViewController implements MBValueCha
 
   private static final String GENDER_PATH  = "/Form[0]/@gender";
   private static final String COMMENT_PATH = "/Form[0]/@comment";
+  private static final String CHECKBOX_PATH = "/Form[0]/@checkbox";
 
   @Override
   protected ViewGroup buildInitialView()
@@ -21,6 +22,7 @@ public class CustomViewLogic extends MBBasicViewController implements MBValueCha
     ViewGroup view = super.buildInitialView();
 
     getPage().registerValueChangeListener(this, GENDER_PATH);
+    getPage().registerValueChangeListener(this, CHECKBOX_PATH);
     getPage().registerOutcomeListener(this);
 
     return view;

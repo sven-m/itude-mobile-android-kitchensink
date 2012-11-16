@@ -72,7 +72,7 @@
                     <Attribute name="raw" type="string" />
                     <Attribute name="int" type="string" />
                     <Attribute name="float" type="string" />
-                    <Attribute name="checkbox" type="string" />
+                    <Attribute name="checkbox" type="boolean" defaultValue="false" />
                     <Attribute name="dateTime" type="string" />
                     <Attribute name="dateOfBirth" type="string" />
                     <Attribute name="zipcode" type="string" />

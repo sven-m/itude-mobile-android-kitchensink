@@ -8,7 +8,6 @@ import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 
 import com.itude.mobile.mobbl2.client.core.controller.MBApplicationController;
-import com.itude.mobile.mobbl2.client.core.controller.MBViewManager.MBViewState;
 import com.itude.mobile.mobbl2.client.core.services.MBResourceService;
 import com.itude.mobile.mobbl2.client.core.view.MBPanel;
 import com.itude.mobile.mobbl2.client.core.view.builders.MBPanelViewBuilder.BuildState;
@@ -19,7 +18,7 @@ public class CustomRowFieldBuilder extends MBViewBuilder implements Builder
 {
 
   @Override
-  public ViewGroup buildPanel(MBPanel panel, MBViewState viewState, BuildState buildState)
+  public ViewGroup buildPanel(MBPanel panel, BuildState buildState)
   {
     final Context context = MBApplicationController.getInstance().getBaseContext();
     LinearLayout layout = new LinearLayout(context);
@@ -33,7 +32,7 @@ public class CustomRowFieldBuilder extends MBViewBuilder implements Builder
     image.setImageDrawable(pinkie);
     layout.addView(image);
 
-    buildChildren(panel.getChildren(), layout, viewState);
+    buildChildren(panel.getChildren(), layout);
 
     return layout;
   }

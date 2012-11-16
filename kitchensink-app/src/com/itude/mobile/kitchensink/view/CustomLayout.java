@@ -11,7 +11,7 @@ public class CustomLayout extends MBBasicViewController
 protected ViewGroup buildInitialView()
 {
  MBPanel panel = getPage().getFirstChildOfKindWithName(MBPanel.class, "myPanel");
- ViewGroup view = panel.buildViewWithMaxBounds(getPage().getCurrentViewState());
+ ViewGroup view = panel.buildView();
  view.setPadding(100, 100, 0, 0);
  return view;
 }
