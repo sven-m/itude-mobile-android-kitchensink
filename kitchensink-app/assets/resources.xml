@@ -1,16 +1,47 @@
 <Resources>
-    <Resource id="config" url="file://config/config.xml"/>
-    <Resource id="endpoints" url="file://config/endpoints.xml"/>
-    
-    <Resource id="ICON-tab_home" url="file://Tab_Home.png"/>
-    <Resource id="ICON-tab_info" url="file://Tab_Info.png"/>
 
-      	<Resource id="arrow"        					url="file://arrow.png"/>
-	<Resource id="leaf"        						url="file://leaf.png"/>
+    <Resource
+        id="config"
+        url="file://config/config.xml" />
 
-    
-    <Resource id="whitelabel-splashscreen" url="file://splashscreen.jpeg" />
-    <Resource id="pinkie" url="file://pinkie.png" />
-    
-    <Bundle languageCode="nl" url="file://texts/texts-nl.xml"/>
-</Resources> 
+    <Resource
+        id="endpoints"
+        url="file://config/endpoints.xml" />
+
+    <Resource
+        id="ICON-tab_home"
+        url="file://Tab_Home.png" />
+
+    <Resource
+        id="ICON-tab_info"
+        url="file://Tab_Info.png" />
+
+    <Resource
+        id="arrow"
+        url="file://arrow.png" />
+
+    <Resource
+        id="leaf"
+        url="file://leaf.png" />
+
+    <Resource
+        id="whitelabel-splashscreen"
+        url="file://splashscreen.jpeg" />
+
+    <Resource
+        id="pinkie"
+        url="file://pinkie.png" />
+
+    <Resource
+        id="derpy"
+        url="file://derpy.png" />
+
+    <Resource
+        id="djpon3"
+        url="file://pon3.png" />
+
+    <Bundle
+        languageCode="nl"
+        url="file://texts/texts-nl.xml" />
+
+</Resources>

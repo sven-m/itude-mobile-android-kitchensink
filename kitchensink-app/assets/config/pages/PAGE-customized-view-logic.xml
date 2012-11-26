@@ -31,9 +31,20 @@
                      the custom style. Don't forget to register the MBRowViewBuilder implementation with the
                      MBRowViewBuilderFactory in CustomAppDelegate:startController.
                      The MBRowViewBuilder registered with this type is 'CustomRowViewBuilder'. -->
-                <Panel type="ROW" style="customRow">
+                     
+                     
+                <Panel type="ROW" style="customRow" pony="derpy">
+                    <Field type="LABEL" label="Derpy Hooves!" />
                 </Panel>
-
+                <Panel type="ROW" style="customRow" pony="pinkie">
+                    <Field type="LABEL" label="Pinkie Pie!" />
+                </Panel>
+                <Panel type="ROW" style="customRow" pony="djpon3">
+                    <Field type="LABEL" label="DJ Pon-3!" />
+                </Panel>
+                
+                
+                
                 <Panel type="ROW">
                     <Field type="CHECKBOX" path="Form[0]/@checkbox" />
                     <Field type="LABEL" label="ON!" preCondition="${Form[0]/@checkbox}" />
