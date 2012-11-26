@@ -11,11 +11,11 @@ import com.itude.mobile.kitchensink.KitchenSinkConstants;
 import com.itude.mobile.mobbl2.client.core.controller.MBApplicationController;
 import com.itude.mobile.mobbl2.client.core.services.MBResourceService;
 import com.itude.mobile.mobbl2.client.core.view.MBPanel;
+import com.itude.mobile.mobbl2.client.core.view.builders.MBPanelViewBuilder;
 import com.itude.mobile.mobbl2.client.core.view.builders.MBPanelViewBuilder.BuildState;
-import com.itude.mobile.mobbl2.client.core.view.builders.MBPanelViewBuilder.Builder;
 import com.itude.mobile.mobbl2.client.core.view.builders.MBViewBuilder;
 
-public class CustomRowFieldBuilder extends MBViewBuilder implements Builder
+public class CustomPanelBuilder extends MBViewBuilder implements MBPanelViewBuilder.Builder
 {
 
   @Override

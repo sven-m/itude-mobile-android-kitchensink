@@ -20,7 +20,7 @@
                     <Field type="DROPDOWNLIST" path="Form[0]/@gender" />
                     <Field type="LABEL" label="Gender" />
                 </Panel>
-                <Panel type="ROW" preCondition="('${Form[0]/@comment}'!='null')">
+                <Panel type="ROW" preCondition="'${Form[0]/@comment}'!='null'">
                     <Field type="LABEL" path="Form[0]/@comment" />
                     <Field type="SUBLABEL" label="Display conditional message" />
                 </Panel>
@@ -33,13 +33,17 @@
                      The MBRowViewBuilder registered with this type is 'CustomRowViewBuilder'. -->
                      
                      
-                <Panel type="ROW" style="customRow" pony="derpy">
+                <Panel type="AWESOMEROW" pony="derpy">
                     <Field type="LABEL" label="Derpy Hooves!" />
                 </Panel>
-                <Panel type="ROW" style="customRow" pony="pinkie">
+                
+                
+                <Panel type="ROW" style="AWESOME" pony="pinkie">
                     <Field type="LABEL" label="Pinkie Pie!" />
                 </Panel>
-                <Panel type="ROW" style="customRow" pony="djpon3">
+                
+                
+                <Panel type="AWESOMEROW" pony="djpon3">
                     <Field type="LABEL" label="DJ Pon-3!" />
                 </Panel>
                 

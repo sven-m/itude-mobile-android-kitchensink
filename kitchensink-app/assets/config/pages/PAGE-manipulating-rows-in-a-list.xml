@@ -5,7 +5,7 @@
                 <Panel type="SECTION" title="Plants">
                     <!-- the ForEach element creates a new for each element of type PLANT -->
                     <ForEach value="/PLANT" suppressRowComponent="TRUE">
-                        <Panel type="ROW" style="customRow"  path="." outcome="OUTCOME-plant-detail" pony="pinkie">
+                        <Panel type="AWESOMEROW"  path="." outcome="OUTCOME-plant-detail" pony="pinkie">
                             <Field type="LABEL" path="COMMON[0]/@text()"/>
                         </Panel>
                     </ForEach>
