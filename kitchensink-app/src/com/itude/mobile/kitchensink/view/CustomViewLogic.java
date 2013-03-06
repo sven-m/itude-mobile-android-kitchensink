@@ -1,5 +1,6 @@
 package com.itude.mobile.kitchensink.view;
 
+import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
@@ -17,9 +18,9 @@ public class CustomViewLogic extends MBBasicViewController implements MBValueCha
   private static final String CHECKBOX_PATH = "/Form[0]/@checkbox";
 
   @Override
-  protected ViewGroup buildInitialView()
+  protected ViewGroup buildInitialView(LayoutInflater inflater)
   {
-    ViewGroup view = super.buildInitialView();
+    ViewGroup view = super.buildInitialView(inflater);
 
     getPage().registerValueChangeListener(this, GENDER_PATH);
     getPage().registerValueChangeListener(this, CHECKBOX_PATH);

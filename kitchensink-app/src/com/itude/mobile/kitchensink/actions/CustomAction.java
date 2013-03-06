@@ -1,10 +1,10 @@
 package com.itude.mobile.kitchensink.actions;
 
+import com.itude.mobile.android.util.DeviceUtil;
 import com.itude.mobile.mobbl2.client.core.controller.MBAction;
 import com.itude.mobile.mobbl2.client.core.controller.MBOutcome;
 import com.itude.mobile.mobbl2.client.core.model.MBDocument;
 import com.itude.mobile.mobbl2.client.core.services.MBDataManagerService;
-import com.itude.mobile.mobbl2.client.core.util.MBDevice;
 
 public class CustomAction implements MBAction
 {
@@ -14,8 +14,8 @@ public class CustomAction implements MBAction
   {
 
     MBDocument doc = MBDataManagerService.getInstance().loadDocument("ApplicationState");
-    doc.setValue(MBDevice.getInstance().getDeviceType(),"Device[0]/@deviceType");
-    
+    doc.setValue(DeviceUtil.getInstance().getDeviceType(), "Device[0]/@deviceType");
+
     MBOutcome oc = new MBOutcome();
     oc.setOutcomeName("OUTCOME-display-device-info");
     oc.setNoBackgroundProcessing(true);
