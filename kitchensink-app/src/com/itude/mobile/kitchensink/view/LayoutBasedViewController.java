@@ -23,9 +23,8 @@ public class LayoutBasedViewController extends MBBasicViewController
   private MBField  _buttonField;
 
   @Override
-  protected ViewGroup buildInitialView()
+  protected ViewGroup buildInitialView(LayoutInflater inflater)
   {
-    LayoutInflater inflater = getLayoutInflater(null);
     ViewGroup view = (ViewGroup) inflater.inflate(R.layout.layout_based_view, null);
 
     _labelField = (MBField) getPage().getFirstDescendantOfKindWithName(MBField.class, "inputfield");
