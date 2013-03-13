@@ -4,12 +4,12 @@
             <Panel type="LIST">
                 <Panel type="SECTION" title="Plants">
                     <!-- the ForEach element creates a new for each element of type PLANT -->
-                    <ForEach value="/PLANT" suppressRowComponent="TRUE">
+                    <Panel type="LISTVIEW" value="/PLANT" suppressRowComponent="TRUE">
                         <Panel type="ROW" path="." outcome="OUTCOME-plant-detail">
                             <Field type="LABEL" path="COMMON[0]/@text()"/>
                             <!--<Field type="BUTTON" style="NAVIGATION" path="." outcome="OUTCOME-plant-detail"/>-->
                         </Panel>
-                    </ForEach>
+                    </Panel>
                 </Panel>
                 
                 <!-- Demonstrates the outcome on a Panel of type="ROW" -->
