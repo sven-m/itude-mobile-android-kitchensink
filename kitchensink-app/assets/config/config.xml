@@ -24,11 +24,9 @@
         <Dialogs>
             <Include name="config/dialogs.xml"/>
         </Dialogs>
-		<Include name="config/pages.xml"/>
-		<!-- 
+		<Include name="config/pages.xml"/>		 
         <Alerts>
             <Include name="config/alerts.xml"/>
-        </Alerts>
-         -->
+        </Alerts>         
     </View>
 </Configuration>
