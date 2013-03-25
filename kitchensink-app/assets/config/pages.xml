@@ -64,12 +64,12 @@
             </Panel>
         </Page>
         
-        <Page name="PAGE-sliding-menu" document="InitialOutcomes" title="Menu">
+        <Page name="PAGE-sliding-menu" document="MBDialogs" title="Menu">
             <Panel type="LIST">
-                	<ForEach value="/Outcome" suppressRowComponent="TRUE">
-                	    <Variable name="outcome" expression="./@action" />
+                	<ForEach value="/Dialog" suppressRowComponent="TRUE">
+                	    <Variable name="outcome" expression="./@name" />
                 <Panel type="AWESOMEROW" pony="derpy" outcome="${outcome}">
-                    <Field type="LABEL" path="@dialog" />
+                    <Field type="LABEL" path="@title" />
                 </Panel>
 				</ForEach>
             </Panel>            
