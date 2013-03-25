@@ -27,6 +27,11 @@
 		<Include name="config/pages.xml"/>		 
         <Alerts>
             <Include name="config/alerts.xml"/>
-        </Alerts>         
+        </Alerts>
+        <!-- Toolbar is only visible on tablets and phones >= V14 -->
+        <Toolbar>
+            <Tool name="tool_button_basic_search" outcome="OUTCOME-DisplaySearchAction" type="BUTTON" title="Zoeken" visibility="IFROOM"/>
+            <Tool name="tool_button_inline_search" type="SEARCH" title="Zoeken" visibility="IFROOM"/>
+        </Toolbar>         
     </View>
 </Configuration>

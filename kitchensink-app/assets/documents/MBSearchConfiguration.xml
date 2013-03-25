@@ -1,0 +1,8 @@
+<MBSearchConfiguration>
+    <SearchConfiguration 
+        normalSearchOutcome="OUTCOME-page-search-results"
+        progressiveSearchOutcome="OUTCOME-progressive-search-result" 
+        searchAction="OUTCOME-SearchAction"        
+        searchPage="PAGE-search-results"
+        searchPath=""/>
+</MBSearchConfiguration>

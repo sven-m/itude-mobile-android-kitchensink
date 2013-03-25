@@ -1,0 +1,10 @@
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="@string/app_name"
+    android:queryAfterZeroResults="true"
+    android:hint="@string/search_hint"
+    android:includeInGlobalSearch="false"
+    android:voiceSearchMode="showVoiceSearchButton|launchRecognizer"
+    android:searchSuggestIntentAction="android.intent.action.VIEW"
+    android:searchSuggestAuthority="com.itude.mobile.kitchensink.util.ProgressiveSearchProvider">
+    
+</searchable>
