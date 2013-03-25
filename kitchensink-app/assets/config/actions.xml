@@ -6,6 +6,8 @@
 			<Action name="FireInitialOutcomes" className="FireInitialOutcomes"/>
             <Action name="CustomAction" className="CustomAction"/>
             <Action name="ExceptionExampleAction" className="ExceptionExampleAction"/>
+            <Action name="SearchAction" className="SearchAction"/>
+            <Action name="DisplaySearchAction" className="DisplaySearchAction"/>
 		</Actions>
 	</Controller>
 </Configuration>

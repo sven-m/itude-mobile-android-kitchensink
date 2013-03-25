@@ -74,6 +74,7 @@
         <Include name="config/pages/PAGE-catalog.xml"/>
         <Include name="config/pages/PAGE-home.xml"/>
         <Include name="config/pages/PAGE-manipulating-rows-in-a-list.xml"/>
+        <Include name="config/pages/PAGE-search-results.xml"/>
 
     </View>
 </Configuration>

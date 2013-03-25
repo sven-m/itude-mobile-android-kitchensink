@@ -12,6 +12,7 @@
                     <Attribute name="dialog" type="string"/>
 				</Element>
 			</Document>		
+            
             <Document name="MBGenericRequest" dataManager="MBMemoryDataHandler" autoCreate="TRUE">
                 <Element name="Request" minOccurs="1">
                     <Attribute name="name" type="string" />
@@ -26,6 +27,24 @@
                 </Element>
             </Document>
             
+            <Document name="MBSearchConfiguration" dataManager="MBMemoryDataHandler">
+ 		        <Element name="SearchConfiguration" minOccurs="1" maxOccurs="1">	 
+			        <Attribute name="normalSearchOutcome" type="string" />
+			        <Attribute name="progressiveSearchOutcome" type="string" />
+			        <Attribute name="searchAction" type="string" />
+			        <Attribute name="searchPage" type="string" />
+			        <Attribute name="searchPath" type="string" />
+		    	</Element>
+			</Document>
+			
+            <Document name="MBSearchRequestDoc" dataManager="MBMemoryDataHandler" autoCreate="TRUE">
+    			<Element name="SearchRequest" minOccurs="1">
+			        <Attribute name="query" type="string" />
+			        <Attribute name="isProgressive" type="string" />
+			        <Attribute name="normalSearchOutcome" type="string" />
+			        <Attribute name="progressiveSearchOutcome" type="string" />
+			    </Element>
+			</Document>
             
             <Document name="ApplicationState" dataManager="MBFileDataHandler" autoCreate="TRUE">
                 <Element name="Device" minOccurs="1">

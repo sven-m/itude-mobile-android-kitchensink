@@ -6,6 +6,7 @@
             <!-- The init Outcome with origin=Controller is special. It defines whether to create a tabbar and starts the FireInitialOutcomes Action.
             The FireInitialOutcomes actions reads the InitialOutcomes.xmlx document. This layering allows the startup sequence and first pages to be dynamically changed by the application. Most apps do not use this functionality. -->
             <Outcome origin="Controller" name="init" action="FireInitialOutcomes" noBackgroundProcessing="TRUE"/>
+            <Outcome origin="Controller" name="search" action="SearchAction" noBackgroundProcessing="TRUE" />
             
             <!-- ********************* Generic outcomes ********************* -->
             <Outcome origin="*" name="OUTCOME-end_modal" action="none" displayMode="ENDMODAL"/>
@@ -60,6 +61,10 @@
             <Outcome origin="*" name="OUTCOME-customized-components" action="PAGE-customized-components" noBackgroundProcessing="TRUE"/>
             <Outcome origin="*" name="OUTCOME-manipulating-rows-in-a-list" action="PAGE-manipulating-rows-in-a-list" noBackgroundProcessing="TRUE"/>
             <Outcome origin="*" name="OUTCOME-page-with-xib" action="PAGE-page-with-xib" noBackgroundProcessing="TRUE"/>
+            
+            <!-- Search -->
+            <Outcome origin="*" name="OUTCOME-page-search-results" action="PAGE-search-results" transferDocument="TRUE" noBackgroundProcessing="TRUE"/>
+            <Outcome origin="*" name="OUTCOME-DisplaySearchAction" action="DisplaySearchAction" noBackgroundProcessing="TRUE"/>
 
             
             <Outcome origin="*" name="OUTCOME-throw-exception" action="ExceptionExampleAction" noBackgroundProcessing="TRUE" />

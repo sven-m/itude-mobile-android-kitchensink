@@ -75,6 +75,14 @@
                         <Field type="LABEL" label="Show a plant alert example"/>
                     </Panel>
                 </Panel>
+                <Panel type="SECTION" title="Search" >
+                    <Panel type="ROW">
+                        <Field type="TEXT" label="Hit the search button if there is one. Sometimes there is a hidden search button; try to long press the Menu button!"/>
+                    </Panel>
+                    <Panel type="ROW"  outcome="OUTCOME-DisplaySearchAction">
+                        <Field type="LABEL" label="Show Android search via an outcome"/>
+                    </Panel>
+                </Panel>
                 <Panel type="SECTION" title="Error handling">
                     <Panel type="ROW" outcome="OUTCOME-throw-exception">
                         <Field type="LABEL" label="Throw Exception"/>

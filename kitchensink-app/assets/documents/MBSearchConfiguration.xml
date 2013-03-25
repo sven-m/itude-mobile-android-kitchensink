@@ -1,0 +1,6 @@
+<MBSearchConfiguration>
+    <SearchConfiguration 
+        normalSearchOutcome="OUTCOME-page-search-results" 
+        searchAction="OUTCOME-SearchAction" 
+        searchPage="PAGE-search-results"/>
+</MBSearchConfiguration>
