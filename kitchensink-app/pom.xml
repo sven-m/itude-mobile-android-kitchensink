@@ -322,4 +322,13 @@
 		</profile>
 	</profiles>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.itude.mobile.android.util</groupId>
+				<artifactId>android-util-lib</artifactId>
+				<version>0.0.1.1</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>

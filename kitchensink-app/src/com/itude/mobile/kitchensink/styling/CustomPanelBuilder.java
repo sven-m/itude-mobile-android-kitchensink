@@ -33,6 +33,12 @@ public class CustomPanelBuilder extends MBViewBuilder implements MBPanelViewBuil
     image.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
     image.setImageDrawable(pinkie);
     layout.addView(image);
+    if (panel.getOutcomeName() != null)
+    {
+      layout.setClickable(true);
+      layout.setFocusable(true);
+      layout.setOnClickListener(panel);
+    }
 
     buildChildren(panel.getChildren(), layout);
 

@@ -20,7 +20,9 @@
             <!-- ********************* Regular navigation ********************* -->
             
             <!-- The InitialOutcomes.xmlx document points to this Outcome for the first page -->
-            <Outcome origin="*" name="OUTCOME-tab-catalog" action="PAGE-home"/>
+            <Outcome origin="*" name="OUTCOME-tab-home" action="PAGE-home" dialog="DIALOG-tab-home"/>
+			<Outcome origin="*" name="OUTCOME-tab-info" action="PAGE-catalog" dialog="DIALOG-tab-info"/>
+			<Outcome origin="*" name="OUTCOME-menu" action="PAGE-sliding-menu"/>
 
             <!-- navigation to the PAGE-catalog page -->
             <Outcome origin="*" name="OUTCOME-catalog" action="PAGE-catalog" />

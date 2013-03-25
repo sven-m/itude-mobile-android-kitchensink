@@ -1,10 +1,14 @@
 <Configuration xmlns="http://itude.com/schemas/MB/2.0">
     <View>	
         <Dialogs>
-			<Dialog name="DIALOG-tab-catalog" mode="STACK" icon="ICON-tab_home" title="Home" />
+  		<Dialog name="DIALOG-tab-home" mode="STACK" icon="ICON-tab_home" title="Home" showAs="MENU" />
+  
+  		          <Dialog name="DIALOG-menu" mode="STACK" />
             
+	
+  		
             <!--Uncomment the below to create two tabs -->
-            <!--Dialog name="DIALOG-tab-info" mode="STACK" icon="ICON-tab_info" title="Info" /-->
+            <Dialog name="DIALOG-tab-info" mode="STACK" icon="ICON-tab_info" title="Info" showAs="MENU"/>
 		</Dialogs>
 	</View>
 </Configuration>

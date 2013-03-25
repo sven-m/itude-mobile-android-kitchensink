@@ -63,6 +63,17 @@
                 </Panel>
             </Panel>
         </Page>
+        
+        <Page name="PAGE-sliding-menu" document="InitialOutcomes" title="Menu">
+            <Panel type="LIST">
+                	<ForEach value="/Outcome" suppressRowComponent="TRUE">
+                	    <Variable name="outcome" expression="./@action" />
+                <Panel type="AWESOMEROW" pony="derpy" outcome="${outcome}">
+                    <Field type="LABEL" path="@dialog" />
+                </Panel>
+				</ForEach>
+            </Panel>            
+        </Page>
 
         <Include name="config/pages/PAGE-customized-view-logic.xml"/>
         <Include name="config/pages/PAGE-customized-layout.xml"/>

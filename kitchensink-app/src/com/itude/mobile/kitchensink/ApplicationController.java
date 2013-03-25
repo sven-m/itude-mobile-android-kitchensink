@@ -2,6 +2,7 @@ package com.itude.mobile.kitchensink;
 
 import com.itude.mobile.kitchensink.styling.CustomPanelBuilder;
 import com.itude.mobile.kitchensink.styling.StyleHandler;
+import com.itude.mobile.kitchensink.view.ListViewBuilder;
 import com.itude.mobile.mobbl2.client.core.controller.MBApplicationController;
 import com.itude.mobile.mobbl2.client.core.controller.MBApplicationFactory;
 import com.itude.mobile.mobbl2.client.core.services.MBMetadataService;
@@ -23,6 +24,8 @@ public class ApplicationController extends MBApplicationController
 
     MBViewBuilderFactory.getInstance().getPanelViewBuilder()
         .registerBuilder(Constants.C_ROW, KitchenSinkConstants.C_STYLE_AWESOME, new CustomPanelBuilder());
+
+    MBViewBuilderFactory.getInstance().getPanelViewBuilder().registerBuilder("LISTVIEW", new ListViewBuilder());
 
     startApplication(ApplicationFactory.getInstance());
   }

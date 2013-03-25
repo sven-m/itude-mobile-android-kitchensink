@@ -1,24 +1,59 @@
 <Configuration>
+
     <View>
-        <Page name="PAGE-catalog" document="CATALOG" title="Catalog">
-            <Panel type="LIST">
-                <Panel type="SECTION" title="Plants">
-                    <!-- the ForEach element creates a new for each element of type PLANT -->
-                    <Panel type="LISTVIEW" value="/PLANT" suppressRowComponent="TRUE">
-                        <Panel type="ROW" path="." outcome="OUTCOME-plant-detail">
-                            <Field type="LABEL" path="COMMON[0]/@text()"/>
-                            <!--<Field type="BUTTON" style="NAVIGATION" path="." outcome="OUTCOME-plant-detail"/>-->
-                        </Panel>
+
+        <Page
+            name="PAGE-catalog"
+            document="CATALOG"
+            scrollable="false"
+            title="Catalog" >
+
+            <Panel type="LIST" >
+
+                <Panel
+                    title="Plants"
+                    type="SECTION" >
+
+                    <Panel type="LISTVIEW" >
+
+                        <ForEach
+                            suppressRowComponent="TRUE"
+                            value="/PLANT" >
+
+                            <Panel
+                                outcome="OUTCOME-plant-detail"
+                                path="."
+                                type="ROW" >
+
+                                <Field
+                                    path="COMMON[0]/@text()"
+                                    type="LABEL" />
+                                <!-- <Field type="BUTTON" style="NAVIGATION" path="." outcome="OUTCOME-plant-detail"/> -->
+                            </Panel>
+                        </ForEach>
                     </Panel>
+
+                    <!-- the ForEach element creates a new for each element of type PLANT -->
                 </Panel>
-                
+
                 <!-- Demonstrates the outcome on a Panel of type="ROW" -->
-                <Panel type="SECTION" title="Outcome example with path">
-                    <Panel type="ROW" path="/PLANT[1]" outcome="OUTCOME-plant-detail">
-                        <Field type="LABEL" path="PLANT[1]/COMMON[0]/@text()"/>
+
+                <Panel
+                    title="Outcome example with path"
+                    type="SECTION" >
+
+                    <Panel
+                        outcome="OUTCOME-plant-detail"
+                        path="/PLANT[1]"
+                        type="ROW" >
+
+                        <Field
+                            path="PLANT[1]/COMMON[0]/@text()"
+                            type="LABEL" />
                     </Panel>
                 </Panel>
             </Panel>
         </Page>
     </View>
+
 </Configuration>
