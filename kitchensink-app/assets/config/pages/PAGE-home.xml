@@ -77,7 +77,7 @@
                 </Panel>
                 <Panel type="SECTION" title="Search" >
                     <Panel type="ROW">
-                        <Field type="TEXT" label="Hit the search button if there is one. Sometimes there is a hidden search button; try to long press the Menu button!"/>
+                        <Field type="TEXT" label="Hit the search button if there is one. Sometimes there is a hidden search button; try to long press the Menu button! NOTE: the search implementation is for demonstration purposes only. The implementation looks for the query in the available elements for a plant."/>
                     </Panel>
                     <Panel type="ROW"  outcome="OUTCOME-DisplaySearchAction">
                         <Field type="LABEL" label="Show Android search via an outcome"/>

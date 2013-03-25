@@ -3,6 +3,8 @@
     android:queryAfterZeroResults="true"
     android:hint="@string/search_hint"
     android:includeInGlobalSearch="false"
-    android:voiceSearchMode="showVoiceSearchButton|launchRecognizer">
+    android:voiceSearchMode="showVoiceSearchButton|launchRecognizer"
+    android:searchSuggestIntentAction="android.intent.action.VIEW"
+    android:searchSuggestAuthority="com.itude.mobile.kitchensink.util.ProgressiveSearchProvider">
     
 </searchable>

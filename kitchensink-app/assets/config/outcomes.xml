@@ -64,6 +64,7 @@
             
             <!-- Search -->
             <Outcome origin="*" name="OUTCOME-page-search-results" action="PAGE-search-results" transferDocument="TRUE" noBackgroundProcessing="TRUE"/>
+            <Outcome origin="*" name="OUTCOME-progressive-search-result" action="PAGE-plant-detail" transferDocument="TRUE" noBackgroundProcessing="TRUE"/>
             <Outcome origin="*" name="OUTCOME-DisplaySearchAction" action="DisplaySearchAction" noBackgroundProcessing="TRUE"/>
 
             
