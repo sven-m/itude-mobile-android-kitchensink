@@ -7,6 +7,7 @@ import com.itude.mobile.kitchensink.actions.search.SearchAction;
 import com.itude.mobile.kitchensink.view.CustomLayout;
 import com.itude.mobile.kitchensink.view.CustomViewLogic;
 import com.itude.mobile.kitchensink.view.LayoutBasedViewController;
+import com.itude.mobile.kitchensink.view.OrderedListViewController;
 import com.itude.mobile.mobbl2.client.core.actions.MBFireInitialOutcomes;
 import com.itude.mobile.mobbl2.client.core.controller.MBApplicationFactory;
 
@@ -45,6 +46,7 @@ public class ApplicationFactory extends MBApplicationFactory
         registerController("PAGE-customized-view-logic", CustomViewLogic.class);
         registerController("PAGE-customized-layout", CustomLayout.class);
         registerController("PAGE-page-with-xib", LayoutBasedViewController.class);
+        registerController("PAGE-catalog", OrderedListViewController.class);
       }
     };
 

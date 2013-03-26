@@ -26,8 +26,14 @@
                                 type="ROW" >
 
                                 <Field
+                                    dataType="firstLetter"
+                                    path="COMMON[0]/@text()"
+                                    type="SECTION-MARKER" />
+
+                                <Field
                                     path="COMMON[0]/@text()"
                                     type="LABEL" />
+
                                 <!-- <Field type="BUTTON" style="NAVIGATION" path="." outcome="OUTCOME-plant-detail"/> -->
                             </Panel>
                         </ForEach>
