@@ -39,6 +39,7 @@ public class ProgressiveSearchProvider extends ContentProvider
         SearchManager.SUGGEST_COLUMN_TEXT_2, SearchManager.SUGGEST_COLUMN_INTENT_DATA, SearchManager.SUGGEST_COLUMN_SHORTCUT_ID,
         SearchManager.SUGGEST_COLUMN_QUERY});
 
+    int idx = 0;
     for (MBElement plantElement : plantElements)
     {
       for (String childOfPlantElement : CHILDREN_OF_PLANT_ELEMENT)
@@ -50,7 +51,7 @@ public class ProgressiveSearchProvider extends ContentProvider
           String suggestColumnText2 = plantElement.getValueForPath("/COMMON[0]/@text()");
           int indexOfPlant = plantElements.indexOf(plantElement);
           String columnId = String.valueOf(indexOfPlant);
-          String suggestColumnIntentData = "/PLANT[" + indexOfPlant + "]";
+          String suggestColumnIntentData = "/PLANT[" + idx++ + "]";
           result.addRow(new String[]{columnId, suggestColumnText1, suggestColumnText2, suggestColumnIntentData,
               SearchManager.SUGGEST_NEVER_MAKE_SHORTCUT, query});
 

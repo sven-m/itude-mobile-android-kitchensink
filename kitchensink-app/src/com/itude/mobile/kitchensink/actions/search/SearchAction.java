@@ -30,7 +30,7 @@ public class SearchAction extends MBSearchAction
         String value = plantElement.getValueForPath("/" + childOfPlantElement + "[0]/@text()");
         if (value.contains(query))
         {
-          searchResults.addElement(plantElement);
+          searchResults.addElement(plantElement.clone());
 
           // process next plant element
           break; // inner for-loop
