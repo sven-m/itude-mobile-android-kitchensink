@@ -7,6 +7,8 @@
             <Dialog name="DIALOG-tab-info" mode="STACK" icon="ICON-tab_info" title="Info" showAs="DOCUMENT"/>
             
             <Dialog name="DIALOG-menu" mode="STACK" showAs="MENU" />
+            
+			<Dialog name="DIALOG-modal" mode="STACK" />
 		</Dialogs>
 	</View>
 </Configuration>
