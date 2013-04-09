@@ -13,5 +13,14 @@
     <Outcome
         action="OUTCOME-tab-info"
         dialog="DIALOG-tab-info" />
+<!-- 
+        <Outcome
+        action="OUTCOME-tab-info"
+        dialog="STACK-left" />
 
+	<Outcome
+        action="OUTCOME-empty-screen"
+        dialog="STACK-right" />
+        -->
+    
 </InitialOutcomes>

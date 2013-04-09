@@ -4,6 +4,12 @@
   			<Dialog name="DIALOG-tab-home" mode="STACK" icon="ICON-tab_home" title="Home" showAs="DOCUMENT" />
   		
             <Dialog name="DIALOG-tab-info" mode="STACK" icon="ICON-tab_info" title="Info" showAs="DOCUMENT" />
+            <!-- 
+            <Dialog name="DIALOG-tab-split" mode="STACK" icon="ICON-tab_info" title="Split!" showAs="DOCUMENT" >
+			    <PageStack name="STACK-left" />
+			    <PageStack name="STACK-right" />
+			</Dialog> -->
+            
             
             <Dialog name="DIALOG-menu" mode="STACK" showAs="MENU" />            	
             
