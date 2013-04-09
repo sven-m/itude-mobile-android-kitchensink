@@ -3,12 +3,11 @@
         <Dialogs>
   			<Dialog name="DIALOG-tab-home" mode="STACK" icon="ICON-tab_home" title="Home" showAs="DOCUMENT" />
   		
-            <!--Uncomment the below to create two tabs -->
             <Dialog name="DIALOG-tab-info" mode="STACK" icon="ICON-tab_info" title="Info" showAs="DOCUMENT" />
             
-            <Dialog name="DIALOG-menu" mode="STACK" showAs="MENU" />
+            <Dialog name="DIALOG-menu" mode="STACK" showAs="MENU" />            	
             
-			<Dialog name="DIALOG-modal" mode="STACK" />
+			<Dialog name="DIALOG-modal" mode="STACK" showAs="MODAL" />
 		</Dialogs>
 	</View>
 </Configuration>

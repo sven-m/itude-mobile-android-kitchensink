@@ -56,7 +56,7 @@
             </Panel>
         </Page>
         
-        <Page name="PAGE-empty-screen" document="MBEmptyDoc" title="Hello World">
+        <Page name="PAGE-empty-screen" document="MBEmptyDoc" title="Hello World"  scrollable="false">
             <Panel type="LIST">
                 <Panel type="ROW">
                     <Field type="LABEL" label="Hello MOBBL" />
