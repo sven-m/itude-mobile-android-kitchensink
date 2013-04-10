@@ -35,6 +35,7 @@
             <Outcome origin="*" name="OUTCOME-catalog-foreground" action="PAGE-catalog" noBackgroundProcessing="TRUE"/>
             
             <!-- transferDocument=TRUE causes the document in the master page to be transferred -->
+            <Outcome origin="STACK-left" name="OUTCOME-plant-detail" action="PAGE-plant-detail" transferDocument="TRUE" dialog="STACK-right" displayMode="REPLACE"/>
             <Outcome origin="*" name="OUTCOME-plant-detail" action="PAGE-plant-detail" transferDocument="TRUE" dialog="DIALOG-modal"/>
 
             <Outcome origin="*" name="OUTCOME-lists" action="PAGE-lists" />
