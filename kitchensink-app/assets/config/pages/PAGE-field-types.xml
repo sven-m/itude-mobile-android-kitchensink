@@ -68,7 +68,7 @@
                 <Panel type="ROW">
                     <Field type="BIRTHDATE" path="Form[0]/@dateOfBirth" dataType="dateTime" formatMask="dd-MM-yyyy"/>
                     <Field type="LABEL" label="Date of Birth" />
-                </Panel>-->
+                </Panel>-->                
             </Panel>
         </Page>    
     </View>

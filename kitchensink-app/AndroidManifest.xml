@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="0.0.0.1-SNAPSHOT" package="com.itude.mobile.kitchensink">
-    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="14"/>
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="17"/>
     <uses-permission android:name="android.permission.GET_TASKS"/>
-    <application android:debuggable="true" android:name="com.itude.mobile.kitchensink.ApplicationController">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:debuggable="true" android:name="com.itude.mobile.kitchensink.ApplicationController" android:largeHeap="true">
 
 		<activity android:name="com.itude.mobile.mobbl2.client.core.MBSplashScreen" android:noHistory="true" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
            <intent-filter>

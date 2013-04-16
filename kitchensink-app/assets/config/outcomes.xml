@@ -70,6 +70,8 @@
             <Outcome origin="*" name="OUTCOME-progressive-search-result" action="PAGE-plant-detail" transferDocument="TRUE" noBackgroundProcessing="TRUE"/>
             <Outcome origin="*" name="OUTCOME-DisplaySearchAction" action="DisplaySearchAction" noBackgroundProcessing="TRUE"/>
 
+            <!-- Images -->
+            <Outcome origin="*" name="OUTCOME-images" action="PAGE-images" noBackgroundProcessing="TRUE" />
             
             <Outcome origin="*" name="OUTCOME-throw-exception" action="ExceptionExampleAction" noBackgroundProcessing="TRUE" />
 

@@ -36,8 +36,12 @@ public class ListViewBuilder extends MBViewBuilder implements MBPanelViewBuilder
     ArrayList<MBComponent> children = panel.getChildren();
     adapter.addAll(children);;
     listView.setAdapter(adapter);
-    listView.setFastScrollEnabled(true);
-    listView.setFastScrollAlwaysVisible(true);
+
+    if (adapter.getSections().length > 1)
+    {
+      listView.setFastScrollEnabled(true);
+      listView.setFastScrollAlwaysVisible(true);
+    }
     return listView;
   }
 
@@ -99,6 +103,7 @@ public class ListViewBuilder extends MBViewBuilder implements MBPanelViewBuilder
           MBField field = fields.get(0);
           sections.add(field.getValuesForDisplay());
         }
+        else sections.add("");
       }
 
       int[] mappedSections = new int[getCount()];
@@ -141,14 +146,16 @@ public class ListViewBuilder extends MBViewBuilder implements MBPanelViewBuilder
     @Override
     public int getPositionForSection(int section)
     {
-
+      if (section < 0) return 0;
+      if (section >= _sections.length) return getCount() - 1;
       return _sections[section].getStartPosition();
     }
 
     @Override
     public int getSectionForPosition(int position)
     {
-
+      if (position < 0) return 0;
+      if (position >= getCount()) return _sections.length - 1;
       return _mappedSections[position];
     }
 

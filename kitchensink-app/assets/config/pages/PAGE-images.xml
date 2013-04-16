@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <View>
+        <Page
+            name="PAGE-images"
+            document="IMAGES"
+            scrollable="true"
+            title="Images" >
+                    <Panel type="LIST" >
+
+                        <ForEach
+                            suppressRowComponent="TRUE"
+                            value="/IMAGE" >
+
+                            <Panel
+                                type="ROW" >
+
+                                                                <Field
+                                    path="@url"
+                                    type="IMAGE" />                                
+                                
+                                <!-- <Field type="BUTTON" style="NAVIGATION" path="." outcome="OUTCOME-plant-detail"/> -->
+                            </Panel>
+                        </ForEach>
+                    </Panel>
+        </Page>
+    </View>
+
+</Configuration>

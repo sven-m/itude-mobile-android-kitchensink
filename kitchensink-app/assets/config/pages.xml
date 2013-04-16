@@ -81,6 +81,7 @@
         <Include name="config/pages/PAGE-page-with-xib.xml"/>
         <Include name="config/pages/PAGE-field-types.xml"/>
         <Include name="config/pages/PAGE-lists.xml"/>
+        <Include name="config/pages/PAGE-images.xml"/>
         <Include name="config/pages/PAGE-plant-detail.xml"/>
         <Include name="config/pages/PAGE-catalog.xml"/>
         <Include name="config/pages/PAGE-home.xml"/>

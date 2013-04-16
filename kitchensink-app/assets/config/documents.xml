@@ -101,6 +101,12 @@
                 </Element>
             </Document>
             
+            <Document name="IMAGES" dataManager="MBFileDataHandler">
+                <Element name="IMAGE">
+                    <Attribute name="url" type="string" />
+                </Element>                
+            </Document>
+            
             
             
         </Documents>

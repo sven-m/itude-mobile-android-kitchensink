@@ -44,7 +44,10 @@
                     <Panel type="ROW"  outcome="OUTCOME-lists">
                         <Field type="LABEL" label="List layout demo's"/>
                     </Panel>
-                </Panel>
+                    <Panel type="ROW"  outcome="OUTCOME-images">
+                        <Field type="LABEL" label="Image loading"/>
+                    </Panel>
+                    </Panel>
                 <Panel type="SECTION" title="Customization">
                     <Panel type="ROW"   outcome="OUTCOME-customized-view-logic">
                         <Field type="LABEL" label="Customized view logic"/>
