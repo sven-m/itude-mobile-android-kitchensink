@@ -11,21 +11,18 @@
                     <Attribute name="action" type="string"/>
                     <Attribute name="dialog" type="string"/>
 				</Element>
-			</Document>		
-            
-            <Document name="MBGenericRequest" dataManager="MBMemoryDataHandler" autoCreate="TRUE">
-                <Element name="Request" minOccurs="1">
+			</Document>	
+			
+            <Document name="MBGenericRestRequest" dataManager="MBMemoryDataHandler" autoCreate="TRUE">
+                <Element name="Operation" minOccurs="1">
                     <Attribute name="name" type="string" />
+                    <Attribute name="httpMethod" type="string" />
                     <Element name="Parameter">
                         <Attribute name="key" type="string"/>
                         <Attribute name="value" type="string"/>
-                        <Element name="Subparameter">
-                            <Attribute name="key" type="string"/>
-                            <Attribute name="value" type="string"/>
-                        </Element>
                     </Element>
                 </Element>
-            </Document>
+            </Document>	
             
             <Document name="MBSearchConfiguration" dataManager="MBMemoryDataHandler">
  		        <Element name="SearchConfiguration" minOccurs="1" maxOccurs="1">	 
@@ -53,7 +50,7 @@
                     <Attribute name="deviceIsRegistered" type="string" defaultValue="false" />
                 </Element>
             </Document>
-
+            
             <!-- App specific documents -->
 
             <Document name="CATALOG" dataManager="MBFileDataHandler">
@@ -107,7 +104,42 @@
                 </Element>                
             </Document>
             
+            <!-- checklist.com proof of concept -->
+            <Document name="tasks" dataManager="OAuthRestServiceDataHandler">
+                <Element name="tasks">
+                    <Element name="id">
+                       <Attribute name="text()" type="string" />
+                    </Element>
+                    <Element name="name">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                    <Element name="position">
+                        <Attribute name="text()" type="string" />
+                    </Element>
+                </Element>
+            </Document>
             
+            <Document name="task" dataManager="OAuthRestServiceDataHandler">
+                <Element name="id">
+                   <Attribute name="text()" type="string" />
+                </Element>
+                <Element name="name">
+                    <Attribute name="text()" type="string" />
+                </Element>
+                <Element name="tasks">
+                    <Element name="tasks">
+                        <Element name="id">
+                           <Attribute name="text()" type="string" />
+                        </Element>
+                        <Element name="name">
+                            <Attribute name="text()" type="string" />
+                        </Element>
+                        <Element name="position">
+                            <Attribute name="text()" type="string" />
+                        </Element>
+                    </Element>
+                </Element>
+            </Document>
             
         </Documents>
     </Model>

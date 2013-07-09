@@ -86,6 +86,11 @@
                         <Field type="LABEL" label="Show Android search via an outcome"/>
                     </Panel>
                 </Panel>
+                <Panel type="SECTION" title="Rest services" >
+                    <Panel type="ROW"  outcome="OUTCOME-rest-services">
+                        <Field type="LABEL" label="Do rest service calls"/>
+                    </Panel>
+                </Panel>
                 <Panel type="SECTION" title="Error handling">
                     <Panel type="ROW" outcome="OUTCOME-throw-exception">
                         <Field type="LABEL" label="Throw Exception"/>
