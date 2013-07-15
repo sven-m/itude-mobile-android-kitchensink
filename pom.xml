@@ -141,7 +141,7 @@
     
     <properties>
         <xml.obfuscator.version>0.0.2.0</xml.obfuscator.version>
-    	<core.lib.version>3.0.1.1-SNAPSHOT</core.lib.version>
+    	<core.lib.version>3.0.1.1</core.lib.version>
         <util.lib.version>0.0.2.0-SNAPSHOT</util.lib.version>
 	<android.version>4.1</android.version>
     </properties>
