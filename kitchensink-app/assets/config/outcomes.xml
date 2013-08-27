@@ -50,7 +50,7 @@
                  If you omit the transferDocument attribute the default behaviour is to create a new Document as specified in the Page definition 
             -->
             <Outcome origin="*" name="OUTCOME-display-device-info" transferDocument="TRUE" action="PAGE-device-info"/>
-            <Outcome origin="*" name="OUTCOME-retrieve-device-info" action="CustomAction"/>
+            <Outcome origin="*" name="OUTCOME-retrieve-device-info" action="CustomAction" indicator="ACTIVITY" status="Fetching device..." />
             <Outcome origin="*" name="OUTCOME-field-types" action="PAGE-field-types" noBackgroundProcessing="TRUE"/>
             
             <!-- Showing alerts -->

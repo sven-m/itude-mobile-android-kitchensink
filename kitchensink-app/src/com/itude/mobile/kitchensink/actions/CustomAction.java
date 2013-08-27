@@ -16,6 +16,14 @@ public class CustomAction implements MBAction
     MBDocument doc = MBDataManagerService.getInstance().loadDocument("ApplicationState");
     doc.setValue(DeviceUtil.getInstance().getDeviceType(), "Device[0]/@deviceType");
 
+    try
+    {
+      Thread.currentThread().sleep(5000);
+    }
+    catch (InterruptedException e)
+    {
+    }
+
     MBOutcome oc = new MBOutcome();
     oc.setOutcomeName("OUTCOME-display-device-info");
     oc.setNoBackgroundProcessing(true);
