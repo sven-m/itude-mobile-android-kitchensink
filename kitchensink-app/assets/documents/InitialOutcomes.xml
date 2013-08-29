@@ -3,16 +3,21 @@
     <Outcome
         action="OUTCOME-tab-home"
         dialog="DIALOG-tab-home" />
-
+    
+     <Outcome action="OUTCOME-session-switcher" dialog="DIALOG-tab-session" /> 
+<!-- 
+        <Outcome
+        action="OUTCOME-tab-info"
+        dialog="DIALOG-tab-info" />
+    
+    
     <Outcome
         action="OUTCOME-menu"
         dialog="DIALOG-menu" />
 
+   -->
     <!-- Uncomment the below to create two tabs -->
 
-    <Outcome
-        action="OUTCOME-tab-info"
-        dialog="DIALOG-tab-info" />
 <!-- 
         <Outcome
         action="OUTCOME-tab-info"

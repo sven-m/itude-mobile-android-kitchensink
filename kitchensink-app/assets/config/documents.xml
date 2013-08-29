@@ -141,6 +141,14 @@
                 </Element>
             </Document>
             
+            <!-- Session management, in order to test the dialog switcheroo -->
+            
+            
+            <Document name="Session" dataManager="MBMemoryDataHandler" autoCreate="true">
+                <Element name="Type" minOccurs="1">
+                    <Attribute name="text()" type="SessionType" defaultValue="hippie" />                    
+                </Element>                
+            </Document>
         </Documents>
     </Model>
 </Configuration>

@@ -24,6 +24,7 @@
             <Outcome origin="*" name="OUTCOME-tab-home" action="PAGE-home" />
 			<Outcome origin="*" name="OUTCOME-tab-info" action="PAGE-catalog" />
 			<Outcome origin="*" name="OUTCOME-menu" action="PAGE-sliding-menu"/>
+			<Outcome origin="*" name="OUTCOME-session-switcher" action="PAGE-session-switcher" />
 			
             <!-- navigation to the PAGE-catalog page -->
             <Outcome origin="*" name="OUTCOME-catalog" action="PAGE-catalog" />

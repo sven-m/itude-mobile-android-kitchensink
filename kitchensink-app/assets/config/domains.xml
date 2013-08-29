@@ -13,6 +13,10 @@
                 <DomainValidator title="Bring it on!" value="Sunny" />
                 <DomainValidator title="Light me up baby!" value="Sun" />
             </Domain>
+            <Domain name="SessionType" type="string">    
+                <DomainValidator title="Hippie" value="hippie" />
+                <DomainValidator title="Plant-hater" value="noHippie" />
+            </Domain>
         </Domains>
 	</Model>
 </Configuration>
