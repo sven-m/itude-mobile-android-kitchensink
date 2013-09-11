@@ -3,12 +3,14 @@ package com.itude.mobile.kitchensink;
 import com.itude.mobile.kitchensink.services.OAuthRestServiceDataHandler;
 import com.itude.mobile.kitchensink.styling.CustomPanelBuilder;
 import com.itude.mobile.kitchensink.styling.StyleHandler;
+import com.itude.mobile.kitchensink.util.CustomShutdownHandler;
 import com.itude.mobile.kitchensink.util.FirstLetterFormatter;
 import com.itude.mobile.kitchensink.util.indicator.CustomIndicator;
 import com.itude.mobile.kitchensink.view.ListViewBuilder;
 import com.itude.mobile.kitchensink.view.SectionMarkerFieldViewBuilder;
 import com.itude.mobile.mobbl2.client.core.controller.MBApplicationController;
 import com.itude.mobile.mobbl2.client.core.controller.MBApplicationFactory;
+import com.itude.mobile.mobbl2.client.core.controller.MBViewManager;
 import com.itude.mobile.mobbl2.client.core.controller.util.indicator.MBIndicatorController;
 import com.itude.mobile.mobbl2.client.core.services.MBDataManagerService;
 import com.itude.mobile.mobbl2.client.core.services.MBMetadataService;
@@ -42,6 +44,8 @@ public class ApplicationController extends MBApplicationController
         .registerBuilder(SectionMarkerFieldViewBuilder.TYPE, new SectionMarkerFieldViewBuilder());
 
     MBDataTypeFormatterFactory.getInstance().registerFormatter("firstLetter", new FirstLetterFormatter());
+
+    MBViewManager.getInstance().setShutdownHandler(new CustomShutdownHandler());
 
     MBIndicatorController.getInstance().setActivityIndicator(new CustomIndicator());
 

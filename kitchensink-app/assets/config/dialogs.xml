@@ -4,18 +4,20 @@
   			<Dialog name="DIALOG-tab-home" mode="STACK" icon="ICON-tab_home" title="Home" showAs="DOCUMENT" />
   		    
   			<Dialog name="DIALOG-tab-session" mode="STACK" icon="ICON-tab_home" title="Session Switcheroo" showAs="DOCUMENT" />
-  			<!-- 
+  			 
             <Dialog name="DIALOG-tab-info" mode="STACK" icon="ICON-tab_info" title="Info" showAs="DOCUMENT" preCondition="'${Session:/Type[0]/@text()}'=='hippie'"/>
          
+            <!-- 
             <Dialog name="DIALOG-tab-split" mode="STACK" icon="ICON-tab_info" title="Split!" showAs="DOCUMENT" >
 			    <PageStack name="STACK-left" />
 			    <PageStack name="STACK-right" />
-			</Dialog> 
+			</Dialog> -->
             
             
             <Dialog name="DIALOG-menu" mode="STACK" showAs="MENU" />            	
-            
-			<Dialog name="DIALOG-modal" mode="STACK" showAs="MODAL" />  -->
+            <!-- 
+			<Dialog name="DIALOG-modal" mode="STACK" showAs="MODAL" />
+			 -->
 		</Dialogs>
 	</View>
 </Configuration>
