@@ -150,9 +150,6 @@
 						<artifactId>android-maven-plugin</artifactId>
 						<inherited>true</inherited>
 						<configuration>
-							<sign>
-								<debug>false</debug>
-							</sign>
 							<zipalign>
 								<verbose>true</verbose>
 								<inputApk>${project.build.directory}/${project.artifactId}-${project.version}.apk</inputApk>
