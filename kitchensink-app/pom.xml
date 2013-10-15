@@ -152,8 +152,6 @@
 						<configuration>
 							<zipalign>
 								<verbose>true</verbose>
-								<inputApk>${project.build.directory}/${project.artifactId}-${project.version}.apk</inputApk>
-								<outputApk>${project.build.directory}/${project.artifactId}-${project.version}-zip-aligned.apk</outputApk>
 							</zipalign>
 							<manifest>
 								<debuggable>false</debuggable>
@@ -185,11 +183,6 @@
 						<configuration>
 							<artifacts>
 								<artifact>
-									<file>${project.build.directory}/${project.artifactId}-${project.version}-zip-aligned.apk</file>
-									<type>apk</type>
-									<classifier>zip-aligned</classifier>
-								</artifact>
-								<artifact>
 									<file>${project.build.directory}/proguard/mapping.txt</file>
 									<type>map</type>
 									<classifier>release</classifier>
@@ -198,7 +191,7 @@
 						</configuration>
 						<executions>
 							<execution>
-								<id>attach-zip-aligned</id>
+								<id>attach-mapping</id>
 								<phase>package</phase>
 								<goals>
 									<goal>attach-artifact</goal>
