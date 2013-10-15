@@ -2,11 +2,6 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>com.itude.poms</groupId>
-		<artifactId>itude-jenkins</artifactId>
-		<version>1.7</version>
-	</parent>
 	<groupId>com.itude.mobile.android.kitchensink</groupId>
 	<artifactId>kitchensink</artifactId>
 	<version>0.0.0.1-SNAPSHOT</version>
@@ -24,6 +19,14 @@
 				<role>Contributor</role>
 			</roles>
 		</developer>
+		<developer>
+			<name>Wiebe Elsinga</name>
+			<id>w.elsinga</id>
+			<roles>
+				<role>Developer</role>
+				<role>Contributor</role>
+			</roles>
+		</developer>
 	</developers>
 	
 	<dependencyManagement>
@@ -34,10 +37,10 @@
 				<version>${android.version}</version>
 			</dependency>
             <dependency>
-                <groupId>com.google.android.compatibility</groupId>
-                <artifactId>android-support</artifactId>
-                <version>v4</version>
-            </dependency>
+				<groupId>com.android.support</groupId>
+				<artifactId>support-v4</artifactId>
+				<version>${android.support.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>commons-codec</groupId>
 				<artifactId>commons-codec</artifactId>
@@ -63,6 +66,12 @@
 				<artifactId>js</artifactId>
 				<version>1.7R2</version>
 			</dependency>
+			<dependency>
+				<groupId>com.itude.mobile.android.util</groupId>
+				<artifactId>android-util-lib</artifactId>
+				<version>${util.lib.version}</version>
+				<type>apklib</type>
+			</dependency>
             <dependency>
                 <groupId>com.itude.mobile.android.mobbl</groupId>
                 <artifactId>mobbl-core-lib</artifactId>
@@ -73,15 +82,20 @@
 		
 	</dependencyManagement>
     
-   <modules>
-   	<module>kitchensink-app</module>
-   </modules>
+	<modules>
+		<module>kitchensink-app</module>
+	</modules>
+	
+	<issueManagement>
+		<url>https://github.com/ItudeMobile/itude-mobile-android-kitchensink/issues</url>
+		<system>GitHub Issues</system>
+	</issueManagement>
 
-	<scm>
-		<connection>scm:git:git@127.0.0.1:itude-mobile-android-kitchensink.git</connection>
-		<developerConnection>scm:git:git@127.0.0.1:itude-mobile-android-kitchensink.git</developerConnection>
-		<url>scm:git:git@127.0.0.1:itude-mobile-android-kitchensink.git</url>
-	</scm>
+   	<scm>
+		<url>https://github.com/ItudeMobile/itude-mobile-android-kitchensink</url>
+		<connection>scm:git:git://github.com/ItudeMobile/itude-mobile-android-kitchensink.git</connection>
+		<developerConnection>scm:git:git@github.com:ItudeMobile/itude-mobile-android-kitchensink.git</developerConnection>
+	</scm>	
 
 	<build>
         <pluginManagement>
@@ -140,11 +154,20 @@
     </build>
     
     <properties>
-        <xml.obfuscator.version>0.0.2.0</xml.obfuscator.version>
-    	<core.lib.version>3.0.1.4</core.lib.version>
-        <util.lib.version>0.0.2.0-SNAPSHOT</util.lib.version>
-	<android.version>4.1</android.version>
+    	<core.lib.version>3.1.1.1</core.lib.version>
+		<util.lib.version>0.0.2.2</util.lib.version>
+		<android.version>4.1</android.version>
+		<android.support.version>13.0.0</android.support.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    
+    <repositories>
+		<repository>
+			<id>itudemobile-github-repository</id>
+			<name>ItudeMobile Github repository</name>
+			<url>http://itudemobile.github.io/maven-repository/releases</url>
+		</repository>
+	</repositories>
     
 </project>
 

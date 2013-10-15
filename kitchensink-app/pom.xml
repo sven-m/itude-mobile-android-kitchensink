@@ -20,6 +20,15 @@
 				<role>Contributor</role>
 			</roles>
 		</developer>
+		<developer>
+			<name>Wiebe Elsinga</name>
+			<id>w.elsinga</id>
+			<roles>
+				<role>Developer</role>
+				<role>Contributor</role>
+			</roles>
+		</developer>
+		
 	</developers>
 
 	<dependencies>
@@ -29,9 +38,9 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.google.android.compatibility</groupId>
-			<artifactId>android-support</artifactId>
-		</dependency>
+			<groupId>com.android.support</groupId>
+  			<artifactId>support-v4</artifactId>
+  		</dependency>
 		<dependency>
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
@@ -45,23 +54,22 @@
 			<artifactId>js</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>com.itude.mobile.android.util</groupId>
+			<artifactId>android-util-lib</artifactId>
+			<type>apklib</type>
+		</dependency>
+		<dependency>
 			<groupId>com.itude.mobile.android.mobbl</groupId>
 			<artifactId>mobbl-core-lib</artifactId>
 			<type>apklib</type>
 		</dependency>
-		<dependency>
-			<groupId>com.itude.mobile.android.tools</groupId>
-			<artifactId>xml-obfuscator</artifactId>
-			<version>${xml.obfuscator.version}</version>
-			<type>jar</type>
-		</dependency>
 	</dependencies>
 
 	<scm>
-		<connection>scm:git:git@127.0.0.1:itude-mobile-android-kitchensink.git/kitchensink-app</connection>
-		<developerConnection>scm:git:git@127.0.0.1:itude-mobile-android-kitchensink.git/kitchensink-app</developerConnection>
-		<url>scm:git:git@127.0.0.1:itude-mobile-android-kitchensink.git/kitchensink-app</url>
-	</scm>
+		<url>https://github.com/ItudeMobile/itude-mobile-android-kitchensink/kitchensink-app</url>
+		<connection>scm:git:git://github.com/ItudeMobile/itude-mobile-android-kitchensink.git/kitchensink-app</connection>
+		<developerConnection>scm:git:git@github.com:ItudeMobile/itude-mobile-android-kitchensink.git/kitchensink-app</developerConnection>
+	</scm>	
 
 
 	<build>
@@ -177,25 +185,6 @@
 				is done with the maven release plugin -->
 			<build>
 				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>exec-maven-plugin</artifactId>
-						<version>1.1.1</version>
-						<executions>
-							<execution>
-								<phase>compile</phase>
-								<goals>
-									<goal>java</goal>
-								</goals>
-								<configuration>
-									<mainClass>com.itude.mobile.mobbl2.obf.XmlObfuscator</mainClass>
-									<arguments>
-										<argument>${project.build.directory}/filtered-assets</argument>
-									</arguments>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
 					<plugin>
 						<artifactId>maven-enforcer-plugin</artifactId>
 						<version>1.0</version>
@@ -321,14 +310,5 @@
 			</build>
 		</profile>
 	</profiles>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>com.itude.mobile.android.util</groupId>
-				<artifactId>android-util-lib</artifactId>
-				<version>0.0.2.0</version>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+	
 </project>
