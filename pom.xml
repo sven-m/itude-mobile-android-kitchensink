@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.itude.mobile.android.kitchensink</groupId>
 	<artifactId>kitchensink</artifactId>
-	<version>0.0.1.0</version>
+	<version>0.0.1.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Android Kitchensink</name>
 	<description>Android Kitchensink</description>
