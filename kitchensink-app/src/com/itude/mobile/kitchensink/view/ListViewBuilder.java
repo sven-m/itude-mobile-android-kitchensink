@@ -33,7 +33,7 @@ public class ListViewBuilder extends MBViewBuilder implements MBPanelViewBuilder
     ListView listView = new ListView(context);
     listView.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
     Adapter adapter = new Adapter(panel, context, 0);
-    ArrayList<MBComponent> children = panel.getChildren();
+    List<MBComponent> children = panel.getChildren();
     adapter.addAll(children);;
     listView.setAdapter(adapter);
 
