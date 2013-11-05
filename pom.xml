@@ -100,10 +100,10 @@
                 <plugin>
                     <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                     <artifactId>android-maven-plugin</artifactId>
-                    <version>3.0.0</version>
+                    <version>3.7.0</version>
                     <configuration>
 						<sdk>
-							<platform>15</platform>
+							<platform>19</platform>
 						</sdk>
 						<dex>
 							<jvmArguments>
@@ -141,9 +141,9 @@
     
     <properties>
         <xml.obfuscator.version>0.0.2.0</xml.obfuscator.version>
-    	<core.lib.version>3.0.1.4-SNAPSHOT</core.lib.version>
-        <util.lib.version>0.0.2.0-SNAPSHOT</util.lib.version>
-	<android.version>4.1</android.version>
+    	<core.lib.version>3.0.1.6</core.lib.version>
+        <util.lib.version>0.1.0.0</util.lib.version>
+		<android.version>4.4</android.version>
     </properties>
     
 </project>
