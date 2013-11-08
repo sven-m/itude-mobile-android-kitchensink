@@ -33,11 +33,6 @@
 				<artifactId>android</artifactId>
 				<version>${android.version}</version>
 			</dependency>
-            <dependency>
-                <groupId>com.google.android.compatibility</groupId>
-                <artifactId>android-support</artifactId>
-                <version>v4</version>
-            </dependency>
 			<dependency>
 				<groupId>commons-codec</groupId>
 				<artifactId>commons-codec</artifactId>
@@ -141,8 +136,8 @@
     
     <properties>
         <xml.obfuscator.version>0.0.2.0</xml.obfuscator.version>
-    	<core.lib.version>3.0.1.6</core.lib.version>
-        <util.lib.version>0.1.0.0</util.lib.version>
+    	<core.lib.version>3.0.1.7-SNAPSHOT</core.lib.version>
+        <util.lib.version>0.1.0.1-SNAPSHOT</util.lib.version>
 		<android.version>4.4</android.version>
     </properties>
     

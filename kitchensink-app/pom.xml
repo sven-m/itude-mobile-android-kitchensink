@@ -29,10 +29,6 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.google.android.compatibility</groupId>
-			<artifactId>android-support</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
 		</dependency>
@@ -41,6 +37,7 @@
 			<artifactId>httpclient</artifactId>
 		</dependency>
 		<dependency>
+
 			<groupId>rhino</groupId>
 			<artifactId>js</artifactId>
 		</dependency>
@@ -96,6 +93,7 @@
 					<exclude>**/*.xml</exclude>
 				</excludes>
 			</resource>
+
 		</resources>
 		<plugins>
 			<plugin>
@@ -136,7 +134,7 @@
 		</plugins>
 		<pluginManagement>
 			<plugins>
-				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself. -->
 				<plugin>
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>
@@ -173,8 +171,7 @@
 	<profiles>
 		<profile>
 			<id>release</id>
-			<!-- via this activation the profile is automatically used when the release 
-				is done with the maven release plugin -->
+			<!-- via this activation the profile is automatically used when the release is done with the maven release plugin -->
 			<build>
 				<plugins>
 					<plugin>
@@ -251,8 +248,7 @@
 							</execution>
 						</executions>
 					</plugin>
-					<!-- the signed apk then needs to be zipaligned and we activate proguard 
-						and we run the manifest update -->
+					<!-- the signed apk then needs to be zipaligned and we activate proguard and we run the manifest update -->
 					<plugin>
 						<groupId>com.jayway.maven.plugins.android.generation2</groupId>
 						<artifactId>android-maven-plugin</artifactId>
