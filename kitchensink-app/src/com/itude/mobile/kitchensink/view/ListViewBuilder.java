@@ -18,9 +18,7 @@ package com.itude.mobile.kitchensink.view;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.annotation.TargetApi;
 import android.content.Context;
-import android.os.Build;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView.LayoutParams;
@@ -36,7 +34,6 @@ import com.itude.mobile.mobbl2.client.core.view.builders.MBPanelViewBuilder;
 import com.itude.mobile.mobbl2.client.core.view.builders.MBPanelViewBuilder.BuildState;
 import com.itude.mobile.mobbl2.client.core.view.builders.MBViewBuilder;
 
-@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class ListViewBuilder extends MBViewBuilder implements MBPanelViewBuilder.Builder
 {
 
@@ -49,13 +46,14 @@ public class ListViewBuilder extends MBViewBuilder implements MBPanelViewBuilder
     listView.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
     Adapter adapter = new Adapter(panel, context, 0);
     List<MBComponent> children = panel.getChildren();
-    adapter.addAll(children);;
+    for (MBComponent child : children)
+      adapter.add(child);
     listView.setAdapter(adapter);
 
     if (adapter.getSections().length > 1)
     {
       listView.setFastScrollEnabled(true);
-      listView.setFastScrollAlwaysVisible(true);
+      //listView.setFastScrollAlwaysVisible(true);
     }
     return listView;
   }
