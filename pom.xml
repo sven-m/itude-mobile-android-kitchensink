@@ -149,8 +149,8 @@
     </build>
     
     <properties>
-    	<core.lib.version>3.1.1.2</core.lib.version>
-		<util.lib.version>0.0.2.3</util.lib.version>
+    	<core.lib.version>3.1.1.3-SNAPSHOT</core.lib.version>
+		<util.lib.version>0.0.2.4-SNAPSHOT</util.lib.version>
 		<android.version>4.4</android.version>
 		<android.support.version>19.0.0</android.support.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
