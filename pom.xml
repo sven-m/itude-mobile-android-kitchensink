@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.itude.mobile.android.kitchensink</groupId>
 	<artifactId>kitchensink</artifactId>
-	<version>0.0.1.1-SNAPSHOT</version>
+	<version>0.1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Android Kitchensink</name>
 	<description>Android Kitchensink</description>
 	<url>http://www.itude.com</url>
-	<inceptionYear>2012</inceptionYear>
+	<inceptionYear>2013</inceptionYear>
 	<developers>
 		<developer>
 			<name>Pjotter Tommassen</name>
@@ -149,10 +149,9 @@
     </build>
     
     <properties>
-    	<core.lib.version>3.1.1.3-SNAPSHOT</core.lib.version>
-		<util.lib.version>0.0.2.4-SNAPSHOT</util.lib.version>
-		<android.version>4.4</android.version>
-		<android.support.version>19.0.0</android.support.version>
+    	<core.lib.version>3.2.0.0</core.lib.version>
+    	<util.lib.version>0.2.0.0</util.lib.version>
+    	<android.version>4.4</android.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     
