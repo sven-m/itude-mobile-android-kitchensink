@@ -1,31 +1,9 @@
 <InitialOutcomes>
 
-    <Outcome
-        action="OUTCOME-tab-home"
-        dialog="DIALOG-tab-home" />
-    
-     <Outcome action="OUTCOME-session-switcher" dialog="DIALOG-tab-session" /> 
+    <Outcome action="OUTCOME-tab-home" dialog="DIALOG-tab-home" />
+    <Outcome action="OUTCOME-session-switcher" dialog="DIALOG-tab-session" /> 
 
-        <Outcome
-        action="OUTCOME-tab-info"
-        dialog="DIALOG-tab-info" />
-    
-    <!--
-    <Outcome
-        action="OUTCOME-menu"
-        dialog="DIALOG-menu" />
--->
-
-    <!-- Uncomment the below to create two tabs -->
-
-	<!-- 
-        <Outcome
-        action="OUTCOME-tab-info"
-        dialog="STACK-left" />
-
-	<Outcome
-        action="OUTCOME-empty-screen"
-        dialog="STACK-right" />
-    -->    
-    
+    <Outcome action="OUTCOME-tab-info" dialog="DIALOG-tab-info" />
+    <Outcome action="OUTCOME-menu" dialog="DIALOG-menu" />
+        
 </InitialOutcomes>

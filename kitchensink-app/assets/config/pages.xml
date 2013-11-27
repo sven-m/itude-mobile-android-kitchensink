@@ -66,11 +66,11 @@
         
         <Page name="PAGE-sliding-menu" document="MBDialogs" title="Menu">
             <Panel type="LIST">
-                	<ForEach value="/Dialog" suppressRowComponent="TRUE">
-                	    <Variable name="outcome" expression="./@name" />
-                <Panel type="AWESOMEROW" pony="derpy" outcome="${outcome}">
-                    <Field type="LABEL" path="@title" />
-                </Panel>
+               	<ForEach value="/Dialog" suppressRowComponent="TRUE">
+               	    <Variable name="outcome" expression="./@name" />
+               		<Panel type="AWESOMEROW" pony="derpy" outcome="${outcome}">
+                   		<Field type="LABEL" path="@title" />
+               		</Panel>
 				</ForEach>
             </Panel>            
         </Page>
