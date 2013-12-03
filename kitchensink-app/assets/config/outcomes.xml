@@ -65,6 +65,7 @@
             <Outcome origin="*" name="OUTCOME-customized-components" action="PAGE-customized-components" noBackgroundProcessing="TRUE"/>
             <Outcome origin="*" name="OUTCOME-manipulating-rows-in-a-list" action="PAGE-manipulating-rows-in-a-list" noBackgroundProcessing="TRUE"/>
             <Outcome origin="*" name="OUTCOME-page-with-xib" action="PAGE-page-with-xib" noBackgroundProcessing="TRUE"/>
+            <Outcome origin="PAGE-customized-view-logic" name="LOCAL-OUTCOME1" action="DelayAction" />
             
             <!-- Search -->
             <Outcome origin="*" name="OUTCOME-page-search-results" action="PAGE-search-results" transferDocument="TRUE" noBackgroundProcessing="TRUE"/>

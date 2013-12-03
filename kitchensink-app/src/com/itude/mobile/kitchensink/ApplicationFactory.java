@@ -16,6 +16,7 @@
 package com.itude.mobile.kitchensink;
 
 import com.itude.mobile.kitchensink.actions.CustomAction;
+import com.itude.mobile.kitchensink.actions.DelayAction;
 import com.itude.mobile.kitchensink.actions.ExceptionAction;
 import com.itude.mobile.kitchensink.actions.RestServiceAction;
 import com.itude.mobile.kitchensink.actions.search.DisplaySearchAction;
@@ -46,6 +47,7 @@ public class ApplicationFactory extends MBApplicationFactory
         registerAction("SearchAction", SearchAction.class);
         registerAction("DisplaySearchAction", DisplaySearchAction.class);
         registerAction("RestServiceAction", RestServiceAction.class);
+        registerAction("DelayAction", DelayAction.class);
       }
 
     };
