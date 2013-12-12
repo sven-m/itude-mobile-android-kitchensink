@@ -9,6 +9,7 @@
             <Action name="SearchAction" className="SearchAction"/>
             <Action name="DisplaySearchAction" className="DisplaySearchAction"/>
             <Action name="RestServiceAction" className="RestServiceAction"/>
+			<Action name="DelayAction" className="DelayAction"/>
 		</Actions>
 	</Controller>
 </Configuration>

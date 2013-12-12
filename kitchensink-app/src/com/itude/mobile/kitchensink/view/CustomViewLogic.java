@@ -39,7 +39,7 @@ public class CustomViewLogic extends MBBasicViewController implements MBValueCha
 
     getPage().registerValueChangeListener(this, GENDER_PATH);
     getPage().registerValueChangeListener(this, CHECKBOX_PATH);
-    getPage().registerOutcomeListener(this);
+    registerOutcomeListener(this);
 
     return view;
   }
@@ -74,6 +74,8 @@ public class CustomViewLogic extends MBBasicViewController implements MBValueCha
   @Override
   public void afterOutcomeHandled(MBOutcome outcome)
   {
+    Toast.makeText(MBViewManager.getInstance(), "Processed outcome " + outcome.getOutcomeName(), Toast.LENGTH_LONG).show();
+
   }
 
 }
