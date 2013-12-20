@@ -154,6 +154,7 @@
 							</manifest>
 							<proguard>
 								<skip>false</skip>
+								<includeJdkLibs>false</includeJdkLibs>
 							</proguard>
 						</configuration>
 						<executions>
