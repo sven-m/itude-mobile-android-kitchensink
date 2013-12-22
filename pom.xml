@@ -149,7 +149,7 @@
     </build>
     
     <properties>
-    	<core.lib.version>3.2.0.7</core.lib.version>
+    	<core.lib.version>3.2.0.8</core.lib.version>
     	<util.lib.version>0.2.0.0</util.lib.version>
     	<android.version>4.4</android.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -159,7 +159,7 @@
 		<repository>
 			<id>itudemobile-github-repository</id>
 			<name>ItudeMobile Github repository</name>
-			<url>http://itudemobile.github.io/maven-repository/releases</url>
+			<url>http://mobbl.org/maven-repository/releases</url>
 		</repository>
 	</repositories>
     
