@@ -17,10 +17,10 @@ package com.itude.mobile.kitchensink.actions.search;
 
 import java.util.List;
 
-import com.itude.mobile.mobbl2.client.core.actions.MBSearchAction;
-import com.itude.mobile.mobbl2.client.core.model.MBDocument;
-import com.itude.mobile.mobbl2.client.core.model.MBElement;
-import com.itude.mobile.mobbl2.client.core.services.MBDataManagerService;
+import com.itude.mobile.mobbl.core.actions.MBSearchAction;
+import com.itude.mobile.mobbl.core.model.MBDocument;
+import com.itude.mobile.mobbl.core.model.MBElement;
+import com.itude.mobile.mobbl.core.services.MBDataManagerService;
 
 public class SearchAction extends MBSearchAction
 {

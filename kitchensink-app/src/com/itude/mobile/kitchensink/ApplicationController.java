@@ -18,20 +18,20 @@ package com.itude.mobile.kitchensink;
 import com.itude.mobile.kitchensink.services.OAuthRestServiceDataHandler;
 import com.itude.mobile.kitchensink.styling.CustomPanelBuilder;
 import com.itude.mobile.kitchensink.styling.StyleHandler;
-import com.itude.mobile.kitchensink.util.CustomShutdownHandler;
-import com.itude.mobile.kitchensink.util.FirstLetterFormatter;
+import com.itude.mobile.kitchensink.util.formatter.FirstLetterFormatter;
+import com.itude.mobile.kitchensink.util.handler.CustomShutdownHandler;
 import com.itude.mobile.kitchensink.util.indicator.CustomIndicator;
 import com.itude.mobile.kitchensink.view.ListViewBuilder;
 import com.itude.mobile.kitchensink.view.SectionMarkerFieldViewBuilder;
-import com.itude.mobile.mobbl2.client.core.controller.MBApplicationController;
-import com.itude.mobile.mobbl2.client.core.controller.MBApplicationFactory;
-import com.itude.mobile.mobbl2.client.core.controller.MBViewManager;
-import com.itude.mobile.mobbl2.client.core.controller.util.indicator.MBIndicatorController;
-import com.itude.mobile.mobbl2.client.core.services.MBDataManagerService;
-import com.itude.mobile.mobbl2.client.core.services.MBMetadataService;
-import com.itude.mobile.mobbl2.client.core.util.Constants;
-import com.itude.mobile.mobbl2.client.core.view.builders.MBViewBuilderFactory;
-import com.itude.mobile.mobbl2.client.core.view.builders.datatypes.MBDataTypeFormatterFactory;
+import com.itude.mobile.mobbl.core.controller.MBApplicationController;
+import com.itude.mobile.mobbl.core.controller.MBApplicationFactory;
+import com.itude.mobile.mobbl.core.controller.MBViewManager;
+import com.itude.mobile.mobbl.core.controller.util.indicator.MBIndicatorController;
+import com.itude.mobile.mobbl.core.services.MBDataManagerService;
+import com.itude.mobile.mobbl.core.services.MBMetadataService;
+import com.itude.mobile.mobbl.core.util.Constants;
+import com.itude.mobile.mobbl.core.view.builders.MBViewBuilderFactory;
+import com.itude.mobile.mobbl.core.view.builders.datatypes.MBDataTypeFormatterFactory;
 
 public class ApplicationController extends MBApplicationController
 {

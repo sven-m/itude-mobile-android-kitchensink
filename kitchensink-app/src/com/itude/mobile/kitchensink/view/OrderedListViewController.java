@@ -21,9 +21,9 @@ import java.util.List;
 
 import android.os.Bundle;
 
-import com.itude.mobile.mobbl2.client.core.controller.util.MBBasicViewController;
-import com.itude.mobile.mobbl2.client.core.model.MBDocument;
-import com.itude.mobile.mobbl2.client.core.model.MBElement;
+import com.itude.mobile.mobbl.core.controller.util.MBBasicViewController;
+import com.itude.mobile.mobbl.core.model.MBDocument;
+import com.itude.mobile.mobbl.core.model.MBElement;
 
 public class OrderedListViewController extends MBBasicViewController
 {

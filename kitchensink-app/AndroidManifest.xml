@@ -7,28 +7,28 @@
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application android:debuggable="true" android:largeHeap="true" android:name="com.itude.mobile.kitchensink.ApplicationController" android:theme="@style/AppTheme">
-        <activity android:name="com.itude.mobile.mobbl2.client.core.MBSplashScreen" android:noHistory="true" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity android:name="com.itude.mobile.mobbl.core.MBSplashScreen" android:noHistory="true" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="orientation|screenSize|screenLayout" android:launchMode="singleTop" android:name="com.itude.mobile.mobbl2.client.core.controller.MBViewManager">
+        <activity android:configChanges="orientation|screenSize|screenLayout" android:launchMode="singleTop" android:name="com.itude.mobile.mobbl.core.controller.MBViewManager">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH"/>
             </intent-filter>
 
             <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
         </activity>
-        <activity android:configChanges="orientation|screenSize|screenLayout" android:launchMode="singleTop" android:name="com.itude.mobile.mobbl2.client.core.controller.MBPhoneViewManager">
+        <activity android:configChanges="orientation|screenSize|screenLayout" android:launchMode="singleTop" android:name="com.itude.mobile.mobbl.core.controller.MBPhoneViewManager">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH"/>
             </intent-filter>
 
             <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
         </activity>
-        <activity android:configChanges="orientation|screenSize|screenLayout" android:launchMode="singleTop" android:name="com.itude.mobile.mobbl2.client.core.controller.MBTabletViewManager">
+        <activity android:configChanges="orientation|screenSize|screenLayout" android:launchMode="singleTop" android:name="com.itude.mobile.mobbl.core.controller.MBTabletViewManager">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH"/>
             </intent-filter>
@@ -37,7 +37,7 @@
         </activity>
 
         <!-- the default searchable Activity for the whole app -->
-        <meta-data android:name="android.app.default_searchable" android:value="com.itude.mobile.mobbl2.client.core.controller.MBViewManager"/>
+        <meta-data android:name="android.app.default_searchable" android:value="com.itude.mobile.mobbl.core.controller.MBViewManager"/>
 
         <!-- the content provider for progressive search -->
         <provider android:authorities="com.itude.mobile.kitchensink.util.ProgressiveSearchProvider" android:name="com.itude.mobile.kitchensink.util.ProgressiveSearchProvider"/>

@@ -24,9 +24,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.itude.mobile.kitchensink.R;
-import com.itude.mobile.mobbl2.client.core.controller.util.MBBasicViewController;
-import com.itude.mobile.mobbl2.client.core.services.MBDataManagerService;
-import com.itude.mobile.mobbl2.client.core.view.MBField;
+import com.itude.mobile.mobbl.core.controller.util.MBBasicViewController;
+import com.itude.mobile.mobbl.core.services.MBDataManagerService;
+import com.itude.mobile.mobbl.core.view.MBField;
 
 public class LayoutBasedViewController extends MBBasicViewController
 {

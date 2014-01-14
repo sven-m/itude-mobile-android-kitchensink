@@ -18,8 +18,8 @@ package com.itude.mobile.kitchensink.styling;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.itude.mobile.mobbl2.client.core.view.MBField;
-import com.itude.mobile.mobbl2.client.core.view.builders.MBStyleHandler;
+import com.itude.mobile.mobbl.core.view.MBField;
+import com.itude.mobile.mobbl.core.view.builders.MBStyleHandler;
 
 public class StyleHandler extends MBStyleHandler
 {

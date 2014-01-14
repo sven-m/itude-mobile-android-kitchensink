@@ -18,10 +18,10 @@ package com.itude.mobile.kitchensink.view;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.itude.mobile.mobbl2.client.core.controller.MBViewManager;
-import com.itude.mobile.mobbl2.client.core.controller.util.MBBasicViewController;
-import com.itude.mobile.mobbl2.client.core.services.MBDataManagerService;
-import com.itude.mobile.mobbl2.client.core.view.MBValueChangeListenerProtocol;
+import com.itude.mobile.mobbl.core.controller.MBViewManager;
+import com.itude.mobile.mobbl.core.controller.util.MBBasicViewController;
+import com.itude.mobile.mobbl.core.services.MBDataManagerService;
+import com.itude.mobile.mobbl.core.view.MBValueChangeListenerProtocol;
 
 public class SessionSwitchViewController extends MBBasicViewController implements MBValueChangeListenerProtocol
 {

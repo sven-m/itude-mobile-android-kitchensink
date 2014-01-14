@@ -19,11 +19,11 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.itude.mobile.mobbl2.client.core.controller.MBOutcome;
-import com.itude.mobile.mobbl2.client.core.controller.MBViewManager;
-import com.itude.mobile.mobbl2.client.core.controller.util.MBBasicViewController;
-import com.itude.mobile.mobbl2.client.core.view.MBOutcomeListenerProtocol;
-import com.itude.mobile.mobbl2.client.core.view.MBValueChangeListenerProtocol;
+import com.itude.mobile.mobbl.core.controller.MBOutcome;
+import com.itude.mobile.mobbl.core.controller.MBViewManager;
+import com.itude.mobile.mobbl.core.controller.util.MBBasicViewController;
+import com.itude.mobile.mobbl.core.view.MBOutcomeListenerProtocol;
+import com.itude.mobile.mobbl.core.view.MBValueChangeListenerProtocol;
 
 public class CustomViewLogic extends MBBasicViewController implements MBValueChangeListenerProtocol, MBOutcomeListenerProtocol
 {

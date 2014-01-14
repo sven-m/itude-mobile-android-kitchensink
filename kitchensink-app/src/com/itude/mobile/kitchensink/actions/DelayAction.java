@@ -1,9 +1,9 @@
 package com.itude.mobile.kitchensink.actions;
 
-import com.itude.mobile.mobbl2.client.core.MBException;
-import com.itude.mobile.mobbl2.client.core.controller.MBAction;
-import com.itude.mobile.mobbl2.client.core.controller.MBOutcome;
-import com.itude.mobile.mobbl2.client.core.model.MBDocument;
+import com.itude.mobile.mobbl.core.MBException;
+import com.itude.mobile.mobbl.core.controller.MBAction;
+import com.itude.mobile.mobbl.core.controller.MBOutcome;
+import com.itude.mobile.mobbl.core.model.MBDocument;
 
 public class DelayAction implements MBAction
 {

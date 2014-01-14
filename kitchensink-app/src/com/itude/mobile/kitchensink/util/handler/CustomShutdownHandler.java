@@ -13,18 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.itude.mobile.kitchensink.util;
+package com.itude.mobile.kitchensink.util.handler;
 
-import com.itude.mobile.mobbl2.client.core.view.builders.datatypes.MBBaseDataTypeFormatter;
+import com.itude.mobile.mobbl.core.controller.MBShutdownHandler;
 
-public class FirstLetterFormatter extends MBBaseDataTypeFormatter
+public class CustomShutdownHandler extends MBShutdownHandler
 {
 
   @Override
-  protected String actuallyFormat(String value)
+  public void onShutdown()
   {
-    if (value.length() != 0) return value.substring(0, 1).toUpperCase(getLocale());
-    else return value;
+    finish();
   }
 
 }

@@ -23,12 +23,12 @@ import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 
 import com.itude.mobile.kitchensink.KitchenSinkConstants;
-import com.itude.mobile.mobbl2.client.core.controller.MBApplicationController;
-import com.itude.mobile.mobbl2.client.core.services.MBResourceService;
-import com.itude.mobile.mobbl2.client.core.view.MBPanel;
-import com.itude.mobile.mobbl2.client.core.view.builders.MBPanelViewBuilder;
-import com.itude.mobile.mobbl2.client.core.view.builders.MBPanelViewBuilder.BuildState;
-import com.itude.mobile.mobbl2.client.core.view.builders.MBViewBuilder;
+import com.itude.mobile.mobbl.core.controller.MBApplicationController;
+import com.itude.mobile.mobbl.core.services.MBResourceService;
+import com.itude.mobile.mobbl.core.view.MBPanel;
+import com.itude.mobile.mobbl.core.view.builders.MBPanelViewBuilder;
+import com.itude.mobile.mobbl.core.view.builders.MBPanelViewBuilder.BuildState;
+import com.itude.mobile.mobbl.core.view.builders.MBViewBuilder;
 
 public class CustomPanelBuilder extends MBViewBuilder implements MBPanelViewBuilder.Builder
 {

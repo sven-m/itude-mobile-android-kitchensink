@@ -17,12 +17,12 @@ package com.itude.mobile.kitchensink.actions;
 
 import android.util.Log;
 
-import com.itude.mobile.mobbl2.client.core.controller.MBAction;
-import com.itude.mobile.mobbl2.client.core.controller.MBOutcome;
-import com.itude.mobile.mobbl2.client.core.model.MBDocument;
-import com.itude.mobile.mobbl2.client.core.model.MBElement;
-import com.itude.mobile.mobbl2.client.core.services.MBDataManagerService;
-import com.itude.mobile.mobbl2.client.core.util.Constants;
+import com.itude.mobile.mobbl.core.controller.MBAction;
+import com.itude.mobile.mobbl.core.controller.MBOutcome;
+import com.itude.mobile.mobbl.core.model.MBDocument;
+import com.itude.mobile.mobbl.core.model.MBElement;
+import com.itude.mobile.mobbl.core.services.MBDataManagerService;
+import com.itude.mobile.mobbl.core.util.Constants;
 
 public class RestServiceAction implements MBAction
 {

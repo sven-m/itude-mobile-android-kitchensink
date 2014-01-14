@@ -19,8 +19,8 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 
 import com.itude.mobile.kitchensink.KitchenSinkConstants;
-import com.itude.mobile.mobbl2.client.core.controller.util.indicator.MBCountingIndicator;
-import com.itude.mobile.mobbl2.client.core.util.MBCustomAttributeContainer;
+import com.itude.mobile.mobbl.core.controller.util.indicator.MBCountingIndicator;
+import com.itude.mobile.mobbl.core.util.MBCustomAttributeContainer;
 
 public class CustomIndicator extends MBCountingIndicator
 {

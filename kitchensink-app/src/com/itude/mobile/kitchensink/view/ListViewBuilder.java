@@ -26,13 +26,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SectionIndexer;
 
-import com.itude.mobile.mobbl2.client.core.controller.MBApplicationController;
-import com.itude.mobile.mobbl2.client.core.view.MBComponent;
-import com.itude.mobile.mobbl2.client.core.view.MBField;
-import com.itude.mobile.mobbl2.client.core.view.MBPanel;
-import com.itude.mobile.mobbl2.client.core.view.builders.MBPanelViewBuilder;
-import com.itude.mobile.mobbl2.client.core.view.builders.MBPanelViewBuilder.BuildState;
-import com.itude.mobile.mobbl2.client.core.view.builders.MBViewBuilder;
+import com.itude.mobile.mobbl.core.controller.MBApplicationController;
+import com.itude.mobile.mobbl.core.view.MBComponent;
+import com.itude.mobile.mobbl.core.view.MBField;
+import com.itude.mobile.mobbl.core.view.MBPanel;
+import com.itude.mobile.mobbl.core.view.builders.MBPanelViewBuilder;
+import com.itude.mobile.mobbl.core.view.builders.MBPanelViewBuilder.BuildState;
+import com.itude.mobile.mobbl.core.view.builders.MBViewBuilder;
 
 public class ListViewBuilder extends MBViewBuilder implements MBPanelViewBuilder.Builder
 {

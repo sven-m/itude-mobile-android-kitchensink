@@ -7,10 +7,10 @@
 	</parent>
 	<artifactId>kitchensink-app</artifactId>
 	<packaging>apk</packaging>
-	<name>Android MOBBL Kitchensink App</name>
-	<description>Android MOBBL Kitchensink Application</description>
-	<url>http://www.itude.com</url>
-	<inceptionYear>2012</inceptionYear>
+	<name>Android Kitchensink App</name>
+	<description>Android Kitchensink Application demonstrates the possibilities of MOBBL</description>
+	<url>http://mobbl.org/</url>
+	<inceptionYear>2013</inceptionYear>
 	<developers>
 		<developer>
 			<name>Pjotter Tommassen</name>

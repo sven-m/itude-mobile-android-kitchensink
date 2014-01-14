@@ -18,8 +18,8 @@ package com.itude.mobile.kitchensink.view;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.itude.mobile.mobbl2.client.core.controller.util.MBBasicViewController;
-import com.itude.mobile.mobbl2.client.core.view.MBPanel;
+import com.itude.mobile.mobbl.core.controller.util.MBBasicViewController;
+import com.itude.mobile.mobbl.core.view.MBPanel;
 
 public class CustomLayout extends MBBasicViewController
 {

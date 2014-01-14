@@ -16,10 +16,10 @@
 package com.itude.mobile.kitchensink.actions;
 
 import com.itude.mobile.android.util.DeviceUtil;
-import com.itude.mobile.mobbl2.client.core.controller.MBAction;
-import com.itude.mobile.mobbl2.client.core.controller.MBOutcome;
-import com.itude.mobile.mobbl2.client.core.model.MBDocument;
-import com.itude.mobile.mobbl2.client.core.services.MBDataManagerService;
+import com.itude.mobile.mobbl.core.controller.MBAction;
+import com.itude.mobile.mobbl.core.controller.MBOutcome;
+import com.itude.mobile.mobbl.core.model.MBDocument;
+import com.itude.mobile.mobbl.core.services.MBDataManagerService;
 
 public class CustomAction implements MBAction
 {
