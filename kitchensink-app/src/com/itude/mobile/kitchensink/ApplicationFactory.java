@@ -26,8 +26,10 @@ import com.itude.mobile.kitchensink.view.CustomViewLogic;
 import com.itude.mobile.kitchensink.view.LayoutBasedViewController;
 import com.itude.mobile.kitchensink.view.OrderedListViewController;
 import com.itude.mobile.kitchensink.view.SessionSwitchViewController;
+import com.itude.mobile.kitchensink.view.SlidingMenuContentWrapper;
 import com.itude.mobile.mobbl.core.actions.MBFireInitialOutcomes;
 import com.itude.mobile.mobbl.core.controller.MBApplicationFactory;
+import com.itude.mobile.mobbl.core.view.builders.MBContentViewWrapper;
 
 public class ApplicationFactory extends MBApplicationFactory
 {
@@ -72,5 +74,11 @@ public class ApplicationFactory extends MBApplicationFactory
     };
 
     return registry;
+  }
+
+  @Override
+  public MBContentViewWrapper createContentViewWrapper()
+  {
+    return new SlidingMenuContentWrapper();
   }
 }
