@@ -15,7 +15,6 @@
  */
 package com.itude.mobile.kitchensink;
 
-import com.itude.mobile.kitchensink.services.OAuthRestServiceDataHandler;
 import com.itude.mobile.kitchensink.styling.CustomPanelBuilder;
 import com.itude.mobile.kitchensink.styling.StyleHandler;
 import com.itude.mobile.kitchensink.util.formatter.FirstLetterFormatter;
@@ -27,7 +26,6 @@ import com.itude.mobile.mobbl.core.controller.MBApplicationController;
 import com.itude.mobile.mobbl.core.controller.MBApplicationFactory;
 import com.itude.mobile.mobbl.core.controller.MBViewManager;
 import com.itude.mobile.mobbl.core.controller.util.indicator.MBIndicatorController;
-import com.itude.mobile.mobbl.core.services.MBDataManagerService;
 import com.itude.mobile.mobbl.core.services.MBMetadataService;
 import com.itude.mobile.mobbl.core.util.Constants;
 import com.itude.mobile.mobbl.core.view.builders.MBViewBuilderFactory;
@@ -51,8 +49,6 @@ public class ApplicationController extends MBApplicationController
 
     MBViewBuilderFactory.getInstance().getPanelViewBuilder()
         .registerBuilder(Constants.C_ROW, KitchenSinkConstants.C_STYLE_AWESOME, new CustomPanelBuilder());
-
-    MBDataManagerService.getInstance().registerDataHandler(new OAuthRestServiceDataHandler(), "OAuthRestServiceDataHandler");
 
     MBViewBuilderFactory.getInstance().getPanelViewBuilder().registerBuilder(KitchenSinkConstants.C_PANEL_LISTVIEW, new ListViewBuilder());
     MBViewBuilderFactory.getInstance().getFieldViewBuilder()

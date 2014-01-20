@@ -76,13 +76,6 @@
             <Outcome origin="*" name="OUTCOME-images" action="PAGE-images" noBackgroundProcessing="TRUE" />
             
             <Outcome origin="*" name="OUTCOME-throw-exception" action="ExceptionExampleAction" noBackgroundProcessing="TRUE" />
-            
-            <!-- Rest services -->
-            <Outcome origin="*" name="OUTCOME-rest-services" action="RestServiceAction" noBackgroundProcessing="TRUE" />
-            
-            
-            
-
         </Wiring>
     </Controller>
 </Configuration>

@@ -103,47 +103,8 @@
                     <Attribute name="url" type="string" />
                 </Element>                
             </Document>
-            
-            <!-- checklist.com proof of concept -->
-            <Document name="tasks" dataManager="OAuthRestServiceDataHandler">
-                <Element name="tasks">
-                    <Element name="id">
-                       <Attribute name="text()" type="string" />
-                    </Element>
-                    <Element name="name">
-                        <Attribute name="text()" type="string" />
-                    </Element>
-                    <Element name="position">
-                        <Attribute name="text()" type="string" />
-                    </Element>
-                </Element>
-            </Document>
-            
-            <Document name="task" dataManager="OAuthRestServiceDataHandler">
-                <Element name="id">
-                   <Attribute name="text()" type="string" />
-                </Element>
-                <Element name="name">
-                    <Attribute name="text()" type="string" />
-                </Element>
-                <Element name="tasks">
-                    <Element name="tasks">
-                        <Element name="id">
-                           <Attribute name="text()" type="string" />
-                        </Element>
-                        <Element name="name">
-                            <Attribute name="text()" type="string" />
-                        </Element>
-                        <Element name="position">
-                            <Attribute name="text()" type="string" />
-                        </Element>
-                    </Element>
-                </Element>
-            </Document>
-            
+           
             <!-- Session management, in order to test the dialog switcheroo -->
-            
-            
             <Document name="Session" dataManager="MBMemoryDataHandler" autoCreate="true">
                 <Element name="Type" minOccurs="1">
                     <Attribute name="text()" type="SessionType" defaultValue="hippie" />                    
