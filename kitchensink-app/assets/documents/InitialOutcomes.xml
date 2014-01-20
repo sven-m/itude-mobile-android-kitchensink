@@ -4,6 +4,6 @@
     <Outcome action="OUTCOME-session-switcher" dialog="DIALOG-tab-session" /> 
 
     <Outcome action="OUTCOME-tab-info" dialog="DIALOG-tab-info" />
-    <!-- <Outcome action="OUTCOME-menu" dialog="DIALOG-menu" /> -->
+    <Outcome action="OUTCOME-menu" dialog="DIALOG-menu" />
         
 </InitialOutcomes>
