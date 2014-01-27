@@ -163,6 +163,8 @@
 								<phase>process-resources</phase>
 								<goals>
 									<goal>manifest-update</goal>
+									<goal>proguard</goal>
+									<goal>generate-sources</goal>
 								</goals>
 							</execution>
 							<execution>
