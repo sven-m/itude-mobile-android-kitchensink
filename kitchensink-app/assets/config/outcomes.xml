@@ -36,7 +36,7 @@
             <Outcome origin="*" name="OUTCOME-catalog-foreground" action="PAGE-catalog" noBackgroundProcessing="TRUE"/>
             
             <!-- transferDocument=TRUE causes the document in the master page to be transferred -->
-            <Outcome origin="L eft" name="OUTCOME-plant-detail" action="PAGE-plant-detail" transferDocument="TRUE" dialog="Right" displayMode="REPLACE"/>
+            <Outcome origin="DIALOG-tab-split" name="OUTCOME-plant-detail" action="PAGE-plant-detail" transferDocument="TRUE" dialog="Right" displayMode="REPLACE"/>
             <Outcome origin="*" name="OUTCOME-plant-detail" action="PAGE-plant-detail" transferDocument="TRUE" displayMode="MODAL"/>
 
             <Outcome origin="*" name="OUTCOME-lists" action="PAGE-lists" />
