@@ -4,9 +4,9 @@ Sample project that shows the possibilities of using [Mobbl](https://github.com/
 
 ## Contribute
 
-If you find a bug or have a new feature you want to add, just create a pull request and submit it to us. You can also [file an issue](https://github.com/ItudeMobile/itude-mobile-android-mobbl-kitchensink/issues/new).
+If you find a bug or have a new feature you want to add, just create a pull request and submit it to us. You can also [file an issue](https://github.com/ItudeMobile/itude-mobile-android-kitchensink/issues/new).
 
-Please note, if you have a pull request, make sure to use the [develop branch](https://github.com/ItudeMobile/itude-mobile-android-mobbl-kitchensink/tree/develop) as your base.
+Please note, if you have a pull request, make sure to use the [develop branch](https://github.com/ItudeMobile/itude-mobile-android-kitchensink/tree/develop) as your base.
 
 #### Formatting
 
