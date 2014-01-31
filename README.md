@@ -1,4 +1,4 @@
-# Android MOBBL Kitchensink
+# Android Kitchensink
 
 Sample project that shows the possibilities of using [Mobbl](https://github.com/ItudeMobile/itude-mobile-android-mobbl).
 
