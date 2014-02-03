@@ -5,7 +5,7 @@
 
     <Outcome action="OUTCOME-tab-info" dialog="DIALOG-tab-info" />
     <Outcome action="OUTCOME-menu" dialog="DIALOG-menu" />
-        <Outcome action="OUTCOME-tab-info" dialog="Left" />
-        <Outcome action="OUTCOME-tab-info" dialog="Right" />
+    <Outcome action="OUTCOME-tab-info" dialog="DIALOG-tab-split-left" />
+    <Outcome action="OUTCOME-tab-info" dialog="DIALOG-tab-split-right" />
         
 </InitialOutcomes>
