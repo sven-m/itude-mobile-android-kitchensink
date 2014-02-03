@@ -9,7 +9,9 @@
                 <PageStack name="Right" mode="STACK" />
 			</Dialog>
             
-			<Dialog name="DIALOG-menu" mode="STACK" showAs="MENU"  contentType="SINGLE"/>            	
+			<Dialog name="DIALOG-menu" mode="STACK" showAs="MENU"  contentType="SINGLE"/>
+			
+			<Dialog name="DIALOG-modal" mode="STACK" decorator="MODAL"  contentType="SINGLE" fullscreen="TRUE" />	
 		</Dialogs>
 	</View>
 </Configuration>
