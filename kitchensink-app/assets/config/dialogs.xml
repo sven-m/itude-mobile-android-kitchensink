@@ -1,15 +1,15 @@
 <Configuration xmlns="http://itude.com/schemas/MB/2.0">
     <View>	
         <Dialogs>
-  			<Dialog name="DIALOG-tab-home" mode="STACK" icon="ICON-tab_home" title="Home" showAs="DOCUMENT" />
-  		    <Dialog name="DIALOG-tab-session" mode="STACK" icon="ICON-tab_home" title="Session Switcheroo" showAs="DOCUMENT" />
-  			<Dialog name="DIALOG-tab-info" mode="STACK" icon="ICON-tab_info" title="Info" showAs="DOCUMENT" preCondition="'${Session:/Type[0]/@text()}'=='hippie'"/>
-            <Dialog name="DIALOG-tab-split" mode="STACK" icon="ICON-tab_info" title="Split!" showAs="DOCUMENT">
+  			<Dialog name="DIALOG-tab-home" mode="STACK" icon="ICON-tab_home" title="Home" showAs="DOCUMENT"  contentType="SINGLE" />
+  		    <Dialog name="DIALOG-tab-session" mode="STACK" icon="ICON-tab_home" title="Session Switcheroo" showAs="DOCUMENT" contentType="SINGLE"/>
+  			<Dialog name="DIALOG-tab-info" mode="STACK" icon="ICON-tab_info" title="Info" showAs="DOCUMENT" preCondition="'${Session:/Type[0]/@text()}'=='hippie'" contentType="SINGLE"/>
+            <Dialog name="DIALOG-tab-split" mode="STACK" icon="ICON-tab_info" title="Split!" showAs="DOCUMENT" contentType="SPLIT">
                 <PageStack name="Left" mode="STACK" />
                 <PageStack name="Right" mode="STACK" />
 			</Dialog>
             
-			<Dialog name="DIALOG-menu" mode="STACK" showAs="MENU" />            	
+			<Dialog name="DIALOG-menu" mode="STACK" showAs="MENU"  contentType="SINGLE"/>            	
 		</Dialogs>
 	</View>
 </Configuration>
