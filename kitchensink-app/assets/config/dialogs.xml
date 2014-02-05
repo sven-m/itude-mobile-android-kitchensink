@@ -11,7 +11,7 @@
             
 			<Dialog name="DIALOG-menu" mode="STACK" decorator="MENU"  contentType="SINGLE"/>
 			
-			<Dialog name="DIALOG-modal" mode="STACK" decorator="MODAL"  contentType="SINGLE" fullscreen="TRUE" />	
+			<Dialog name="DIALOG-modal" mode="STACK" decorator="MODAL"  contentType="SINGLE" />	
 		</Dialogs>
 	</View>
 </Configuration>
