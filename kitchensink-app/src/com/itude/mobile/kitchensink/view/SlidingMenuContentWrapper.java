@@ -12,6 +12,7 @@ import com.itude.mobile.mobbl.core.controller.MBDialogManager.MBDialogChangeList
 import com.itude.mobile.mobbl.core.controller.MBViewManager;
 import com.itude.mobile.mobbl.core.controller.MBViewManager.HomeButtonHandler;
 import com.itude.mobile.mobbl.core.view.builders.MBContentViewWrapper;
+import com.itude.mobile.mobbl.core.view.builders.dialog.MenuDialogDecorator;
 
 public class SlidingMenuContentWrapper implements MBContentViewWrapper
 {
@@ -56,7 +57,7 @@ public class SlidingMenuContentWrapper implements MBContentViewWrapper
 
     // grab the dialog containing the menu
     MBDialogManager dialogManager = MBViewManager.getInstance().getDialogManager();
-    MBDialogController menu = dialogManager.getMenuDialog();
+    MBDialogController menu = MenuDialogDecorator.getMenuDialog();
 
     AssertUtil.notNull("menu", menu);
 
