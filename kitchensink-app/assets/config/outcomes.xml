@@ -14,7 +14,7 @@
             <Outcome origin="*" name="OUTCOME-pop_all" action="none" displayMode="POPALL"/>
             
             <!-- ********************* Exception handling ******************** -->
-            <Outcome origin="*" name="exception" action="PAGE-exception" displayMode="MODALWITHCLOSEBUTTON"/>
+            <Outcome origin="*" name="exception" action="PAGE-exception" stack="DIALOG-modal" />
             <Outcome origin="*" name="NetworkException" action="NetworkException"/>
 
             
@@ -36,16 +36,14 @@
             <Outcome origin="*" name="OUTCOME-catalog-foreground" action="PAGE-catalog" noBackgroundProcessing="TRUE"/>
             
             <!-- transferDocument=TRUE causes the document in the master page to be transferred -->
-            <Outcome origin="STACK-left" name="OUTCOME-plant-detail" action="PAGE-plant-detail" transferDocument="TRUE" dialog="STACK-right" displayMode="REPLACE"/>
-            <Outcome origin="*" name="OUTCOME-plant-detail" action="PAGE-plant-detail" transferDocument="TRUE" dialog="DIALOG-modal"/>
+            <Outcome origin="DIALOG-tab-split" name="OUTCOME-plant-detail" action="PAGE-plant-detail" transferDocument="TRUE" stack="RIGHT" />
+            <Outcome origin="DIALOG-tab-info" name="OUTCOME-plant-detail" action="PAGE-plant-detail" transferDocument="TRUE" stack="DIALOG-modal" />
+            <Outcome origin="*" name="OUTCOME-plant-detail" action="PAGE-plant-detail" transferDocument="TRUE"  />
 
             <Outcome origin="*" name="OUTCOME-lists" action="PAGE-lists" />
             <Outcome origin="*" name="OUTCOME-empty-screen" action="PAGE-empty-screen"/>
 
-            <!-- Modal screen types are displayMode = MODAL|MODALWITHCLOSEBUTTON
-            for iPad: MODALFORMSHEET|MODALFORMSHEETWITHCLOSEBUTTON|MODALPAGESHEET|MODALPAGESHEETWITHCLOSEBUTTON|MODALFULLSCREEN|MODALFULLSCREENWITHCLOSEBUTTON|MODALCURRENTCONTEXT|MODALCURRENTCONTEXTWITHCLOSEBUTTON
-            -->
-            <Outcome origin="*" name="OUTCOME-modal" action="PAGE-catalog" dialog="DIALOG-modal" noBackgroundProcessing="TRUE"/>
+            <Outcome origin="*" name="OUTCOME-modal" action="PAGE-catalog" stack="DIALOG-modal" noBackgroundProcessing="TRUE"/>
 
             <!-- Note the transferDocument=TRUE attribute: this causes the document from the calling Action to be passed to the page
                  If you omit the transferDocument attribute the default behaviour is to create a new Document as specified in the Page definition 

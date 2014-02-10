@@ -10,7 +10,28 @@
 	<description>Android Kitchensink</description>
 	<url>http://www.itude.com</url>
 	<inceptionYear>2013</inceptionYear>
+	<organization>
+		<name>Itude Mobile B.V</name>
+		<url>http://www.itude.com/</url>
+	</organization>
+    
 	<developers>
+		<developer>
+			<name>Coen Houtman</name>
+			<id>c.houtman</id>
+			<roles>
+				<role>Developer</role>
+				<role>Contributor</role>
+			</roles>
+		</developer>
+		<developer>
+			<name>Ali Derbane</name>
+			<id>a.derbane</id>
+			<roles>
+				<role>Developer</role>
+				<role>Contributor</role>
+			</roles>
+		</developer>
 		<developer>
 			<name>Pjotter Tommassen</name>
 			<id>p.tommassen</id>
@@ -149,7 +170,7 @@
     </build>
     
     <properties>
-    	<core.lib.version>3.2.0.11</core.lib.version>
+    	<core.lib.version>3.2.0.12</core.lib.version>
     	<util.lib.version>0.2.0.1</util.lib.version>
     	<android.version>4.4</android.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
