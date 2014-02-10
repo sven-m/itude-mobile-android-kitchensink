@@ -10,8 +10,28 @@
 	<name>Android Kitchensink App</name>
 	<description>Android Kitchensink Application demonstrates the possibilities of MOBBL</description>
 	<url>http://mobbl.org/</url>
-	<inceptionYear>2013</inceptionYear>
+	<inceptionYear>2014</inceptionYear>
+	<organization>
+		<name>Itude Mobile B.V</name>
+		<url>http://www.itude.com/</url>
+	</organization>
 	<developers>
+		<developer>
+			<name>Coen Houtman</name>
+			<id>c.houtman</id>
+			<roles>
+				<role>Developer</role>
+				<role>Contributor</role>
+			</roles>
+		</developer>
+		<developer>
+			<name>Ali Derbane</name>
+			<id>a.derbane</id>
+			<roles>
+				<role>Developer</role>
+				<role>Contributor</role>
+			</roles>
+		</developer>
 		<developer>
 			<name>Pjotter Tommassen</name>
 			<id>p.tommassen</id>
@@ -28,9 +48,14 @@
 				<role>Contributor</role>
 			</roles>
 		</developer>
-		
 	</developers>
-
+	<licenses>
+		<license>
+        	<name>The Apache Software License, Version 2.0</name>
+            <url>LICENSE</url>
+        </license>
+    </licenses>
+    
 	<dependencies>
 		<dependency>
 			<groupId>com.google.android</groupId>
