@@ -1,0 +1,6 @@
+/target
+/test_server
+
+## generic files to ignore
+*.DS_Store
+/bin
