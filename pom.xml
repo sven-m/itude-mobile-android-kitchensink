@@ -100,7 +100,7 @@
     
 	<modules>
 		<module>kitchensink-app</module>
-		<!--module>kitchensink-app-test</module-->
+		<module>kitchensink-app-test</module>
 	</modules>
 	
 	<issueManagement>
