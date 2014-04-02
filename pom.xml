@@ -171,7 +171,7 @@
     </build>
     
     <properties>
-    	<core.lib.version>3.2.0.16</core.lib.version>
+    	<core.lib.version>3.2.0.17</core.lib.version>
     	<util.lib.version>0.2.0.1</util.lib.version>
     	<android.version>4.4</android.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
