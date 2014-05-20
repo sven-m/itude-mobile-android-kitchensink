@@ -100,7 +100,7 @@
                 <plugin>
                     <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                     <artifactId>android-maven-plugin</artifactId>
-                    <version>3.7.0</version>
+                    <version>3.9.0-rc.1</version>
                     <configuration>
 						<sdk>
 							<platform>19</platform>
@@ -140,9 +140,10 @@
     </build>
     
     <properties>
-    	<core.lib.version>3.2.0.19</core.lib.version>
+    	<core.lib.version>3.2.0.20</core.lib.version>
     	<android.version>4.4</android.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <android.calabash.runner.version>0.1.0.1</android.calabash.runner.version>
     </properties>
     
     <repositories>

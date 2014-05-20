@@ -79,7 +79,6 @@
 	</build>
 
 	<properties>
-		<android.calabash.runner.version>0.0.1.4</android.calabash.runner.version>
 		<apk.root.folder>../kitchensink-app/target</apk.root.folder>
 	</properties>
 </project>
