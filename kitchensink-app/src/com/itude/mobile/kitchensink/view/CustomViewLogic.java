@@ -78,4 +78,10 @@ public class CustomViewLogic extends MBBasicViewController implements MBValueCha
 
   }
 
+  @Override
+  public boolean shouldHandleOutcome(MBOutcome outcome)
+  {
+    return true;
+  }
+
 }
