@@ -26,6 +26,7 @@ import com.itude.mobile.kitchensink.view.LayoutBasedViewController;
 import com.itude.mobile.kitchensink.view.OrderedListViewController;
 import com.itude.mobile.kitchensink.view.SessionSwitchViewController;
 import com.itude.mobile.kitchensink.view.SlidingMenuContentWrapper;
+import com.itude.mobile.kitchensink.view.ViewBindingController;
 import com.itude.mobile.mobbl.core.actions.MBFireInitialOutcomes;
 import com.itude.mobile.mobbl.core.controller.MBApplicationFactory;
 import com.itude.mobile.mobbl.core.view.builders.MBContentViewWrapper;
@@ -68,6 +69,7 @@ public class ApplicationFactory extends MBApplicationFactory
         registerController("PAGE-page-with-xib", LayoutBasedViewController.class);
         registerController("PAGE-catalog", OrderedListViewController.class);
         registerController("PAGE-session-switcher", SessionSwitchViewController.class);
+        registerController("PAGE-modern-catalog", ViewBindingController.class);
       }
     };
 

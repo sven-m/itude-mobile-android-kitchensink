@@ -1,0 +1,32 @@
+<Configuration>
+
+    <View>
+
+        <Page
+            name="PAGE-modern-catalog"
+            document="CATALOG"
+            scrollable="false"
+            title="Modern Catalog" >
+
+            <Panel name="PlantList" >
+
+                <ForEach
+                    suppressRowComponent="TRUE"
+                    value="/PLANT" >
+
+                    <Panel
+                        name="Plant"
+                        outcome="OUTCOME-plant-detail"
+                        path="."
+                        type="ROW" >
+
+                        <Field
+                            name="Light"
+                            path="./LIGHT[0]/@text()" />
+                    </Panel>
+                </ForEach>
+            </Panel>
+        </Page>
+    </View>
+
+</Configuration>

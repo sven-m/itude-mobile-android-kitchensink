@@ -89,5 +89,8 @@
         <Include name="config/pages/PAGE-search-results.xml"/>
         <Include name="config/pages/PAGE-session.xml"/>
         
+        <Include name="config/pages/PAGE-modern_catalog.xml"/>
+        
+        
     </View>
 </Configuration>
