@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.itude.mobile.kitchensink.R;
 import com.itude.mobile.mobbl.core.controller.util.MBBasicViewController;
 
 public class PageBinder extends BaseViewBinder
@@ -31,7 +30,7 @@ public class PageBinder extends BaseViewBinder
 
   public ViewGroup bind(int initialView)
   {
-    ViewGroup result = (ViewGroup) state.inflater.inflate(R.layout.modern_layout, null);
+    ViewGroup result = (ViewGroup) state.inflater.inflate(initialView, null);
     state.parent = result;
 
     bindView(state);

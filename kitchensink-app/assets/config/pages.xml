@@ -90,6 +90,7 @@
         <Include name="config/pages/PAGE-session.xml"/>
         
         <Include name="config/pages/PAGE-modern_catalog.xml"/>
+        <Include name="config/pages/PAGE-modern-plant-detail.xml"/>
         
         
     </View>

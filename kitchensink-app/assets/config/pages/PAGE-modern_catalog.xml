@@ -16,13 +16,21 @@
 
                     <Panel
                         name="Plant"
-                        outcome="OUTCOME-plant-detail"
+                        outcome="OUTCOME-modern-plant-detail"
                         path="."
                         type="ROW" >
 
                         <Field
+                            name="CommonName"
+                            path="COMMON[0]/@text()" />
+
+                        <Field
+                            name="BotanicalName"
+                            path="BOTANICAL[0]/@text()" />
+
+                        <Field
                             name="Light"
-                            path="./LIGHT[0]/@text()" />
+                            path="LIGHT[0]/@text()" />
                     </Panel>
                 </ForEach>
             </Panel>

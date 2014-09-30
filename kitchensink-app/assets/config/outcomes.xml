@@ -44,6 +44,8 @@
             <Outcome origin="*" name="OUTCOME-empty-screen" action="PAGE-empty-screen"/>
             
             <Outcome origin="*" name="OUTCOME-modern-catalog" action="PAGE-modern-catalog" />
+            <Outcome origin="*" name="OUTCOME-modern-plant-detail" action="PAGE-modern-plant-detail" transferDocument="TRUE"  />
+            
 
             <Outcome origin="*" name="OUTCOME-modal" action="PAGE-catalog" stack="DIALOG-modal" noBackgroundProcessing="TRUE"/>
 
