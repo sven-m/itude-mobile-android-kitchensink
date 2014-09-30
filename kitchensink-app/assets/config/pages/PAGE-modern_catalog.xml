@@ -32,6 +32,11 @@
                             name="Light"
                             dataType="domain"
                             path="LIGHT[0]/@text()" />
+                        
+						<Field
+                            name="Coolness"
+                            path="COOLNESS[0]/@text()" />
+                        
                     </Panel>
                 </ForEach>
             </Panel>

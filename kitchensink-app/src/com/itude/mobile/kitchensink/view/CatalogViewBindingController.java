@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 
 import com.itude.mobile.kitchensink.R;
 import com.itude.mobile.kitchensink.view.binding.BaseViewBinder;
+import com.itude.mobile.kitchensink.view.binding.CompoundButtonBinder;
 import com.itude.mobile.kitchensink.view.binding.ListViewBinder;
 import com.itude.mobile.kitchensink.view.binding.PageBinder;
 import com.itude.mobile.kitchensink.view.binding.TextBinder;
@@ -36,6 +37,7 @@ public class CatalogViewBindingController extends MBBasicViewController
     binder.registerBinding("Light", TextBinder.getInstance(R.id.light));
     binder.registerBinding("CommonName", TextBinder.getInstance(R.id.commonName));
     binder.registerBinding("BotanicalName", TextBinder.getInstance(R.id.botanicalName));
+    binder.registerBinding("Coolness", CompoundButtonBinder.getInstance(R.id.coolness));
     return binder.bind(R.layout.modern_layout);
   }
 
