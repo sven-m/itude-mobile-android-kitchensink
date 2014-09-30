@@ -39,4 +39,10 @@ public class CatalogViewBindingController extends MBBasicViewController
     return binder.bind(R.layout.modern_layout);
   }
 
+  @Override
+  public void handleOnWindowActivated()
+  {
+    rebuildView(true);
+  }
+
 }

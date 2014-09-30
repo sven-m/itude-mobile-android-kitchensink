@@ -30,6 +30,7 @@
 
                         <Field
                             name="Light"
+                            dataType="domain"
                             path="LIGHT[0]/@text()" />
                     </Panel>
                 </ForEach>

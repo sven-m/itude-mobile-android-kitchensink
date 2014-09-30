@@ -27,7 +27,8 @@ public class TextBinder extends BaseViewBinder
 
     if (text != null)
     {
-      text.setText((CharSequence) state.document.getValueForPath(state.component.getAbsoluteDataPath()));
+      MBField field = (MBField) state.component;
+      text.setText(field.getValuesForDisplay());
       if (text instanceof EditText) text.addTextChangedListener((MBField) state.component);
     }
 
