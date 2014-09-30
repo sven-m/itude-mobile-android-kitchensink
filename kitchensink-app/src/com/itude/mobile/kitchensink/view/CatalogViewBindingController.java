@@ -1,13 +1,14 @@
 package com.itude.mobile.kitchensink.view;
 
+import android.content.res.Configuration;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.itude.mobile.kitchensink.R;
+import com.itude.mobile.kitchensink.view.binding.AdapterViewBinder;
 import com.itude.mobile.kitchensink.view.binding.BaseViewBinder;
 import com.itude.mobile.kitchensink.view.binding.CompoundButtonBinder;
-import com.itude.mobile.kitchensink.view.binding.ListViewBinder;
 import com.itude.mobile.kitchensink.view.binding.PageBinder;
 import com.itude.mobile.kitchensink.view.binding.TextBinder;
 import com.itude.mobile.mobbl.core.controller.util.MBBasicViewController;
@@ -32,7 +33,7 @@ public class CatalogViewBindingController extends MBBasicViewController
   protected ViewGroup buildInitialView(LayoutInflater inflater)
   {
     PageBinder binder = new PageBinder(inflater, this);
-    binder.registerBinding("PlantList", ListViewBinder.getInstance(android.R.id.list));
+    binder.registerBinding("PlantList", AdapterViewBinder.getInstance(android.R.id.list));
     binder.registerBinding("Plant", new PlantBinder());
     binder.registerBinding("Light", TextBinder.getInstance(R.id.light));
     binder.registerBinding("CommonName", TextBinder.getInstance(R.id.commonName));
@@ -42,9 +43,9 @@ public class CatalogViewBindingController extends MBBasicViewController
   }
 
   @Override
-  public void handleOnWindowActivated()
+  public boolean handleOrientationChange(Configuration config)
   {
     rebuildView(true);
+    return super.handleOrientationChange(config);
   }
-
 }

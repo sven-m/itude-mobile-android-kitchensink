@@ -8,6 +8,7 @@
             <Field name="Availability" path="AVAILABILITY[0]/@text()"/>
 			<Field name="Price" path="PRICE[0]/@text()"/>
 			<Field name="Coolness" path="COOLNESS[0]/@text()" />
+			<Field name="Back" outcome="OUTCOME-pop" />
         </Page>        
 
     </View>

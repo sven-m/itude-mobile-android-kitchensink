@@ -5,6 +5,7 @@ import android.view.ViewGroup;
 
 import com.itude.mobile.kitchensink.R;
 import com.itude.mobile.kitchensink.view.binding.CompoundButtonBinder;
+import com.itude.mobile.kitchensink.view.binding.EmptyBinder;
 import com.itude.mobile.kitchensink.view.binding.PageBinder;
 import com.itude.mobile.kitchensink.view.binding.RatingBarBinder;
 import com.itude.mobile.kitchensink.view.binding.SpinnerBinder;
@@ -25,6 +26,7 @@ public class DetailViewBindingController extends MBBasicViewController
     binder.registerBinding("Price", TextBinder.getInstance(R.id.price));
     binder.registerBinding("Availability", TextBinder.getInstance(R.id.availability));
     binder.registerBinding("Coolness", CompoundButtonBinder.getInstance(R.id.coolness));
+    binder.registerBinding("Back", EmptyBinder.getInstance(R.id.back));
 
     return binder.bind(R.layout.plant_detail_layout);
   }

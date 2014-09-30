@@ -4,29 +4,30 @@ import java.util.List;
 
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
 import com.itude.mobile.mobbl.core.view.MBComponent;
 
-public class ListViewBinder implements ViewBinder
+public class AdapterViewBinder implements ViewBinder
 {
   private final int id;
 
-  protected ListViewBinder(int id)
+  protected AdapterViewBinder(int id)
   {
     this.id = id;
   }
 
-  public static ListViewBinder getInstance(int id)
+  public static AdapterViewBinder getInstance(int id)
   {
-    return new ListViewBinder(id);
+    return new AdapterViewBinder(id);
   }
 
   @Override
   public View bindView(BuildState state)
   {
-    ListView result = (ListView) state.parent.findViewById(id);
+    @SuppressWarnings("unchecked")
+    AdapterView<MOBBLListViewAdapter> result = (AdapterView<MOBBLListViewAdapter>) state.parent.findViewById(id);
     result.setAdapter(new MOBBLListViewAdapter(state));
     return result;
   }
