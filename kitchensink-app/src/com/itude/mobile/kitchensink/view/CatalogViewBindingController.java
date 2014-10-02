@@ -6,12 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.itude.mobile.kitchensink.R;
-import com.itude.mobile.kitchensink.view.binding.AdapterViewBinder;
-import com.itude.mobile.kitchensink.view.binding.BaseViewBinder;
-import com.itude.mobile.kitchensink.view.binding.CompoundButtonBinder;
-import com.itude.mobile.kitchensink.view.binding.PageBinder;
-import com.itude.mobile.kitchensink.view.binding.TextBinder;
 import com.itude.mobile.mobbl.core.controller.util.MBBasicViewController;
+import com.itude.mobile.mobbl.core.view.bindings.AdapterViewBinder;
+import com.itude.mobile.mobbl.core.view.bindings.BaseViewBinder;
+import com.itude.mobile.mobbl.core.view.bindings.CompoundButtonBinder;
+import com.itude.mobile.mobbl.core.view.bindings.PageBinder;
+import com.itude.mobile.mobbl.core.view.bindings.TextBinder;
 
 public class CatalogViewBindingController extends MBBasicViewController
 {

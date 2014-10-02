@@ -4,13 +4,13 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import com.itude.mobile.kitchensink.R;
-import com.itude.mobile.kitchensink.view.binding.CompoundButtonBinder;
-import com.itude.mobile.kitchensink.view.binding.EmptyBinder;
-import com.itude.mobile.kitchensink.view.binding.PageBinder;
-import com.itude.mobile.kitchensink.view.binding.RatingBarBinder;
-import com.itude.mobile.kitchensink.view.binding.SpinnerBinder;
-import com.itude.mobile.kitchensink.view.binding.TextBinder;
 import com.itude.mobile.mobbl.core.controller.util.MBBasicViewController;
+import com.itude.mobile.mobbl.core.view.bindings.CompoundButtonBinder;
+import com.itude.mobile.mobbl.core.view.bindings.EmptyBinder;
+import com.itude.mobile.mobbl.core.view.bindings.PageBinder;
+import com.itude.mobile.mobbl.core.view.bindings.RatingBarBinder;
+import com.itude.mobile.mobbl.core.view.bindings.SpinnerBinder;
+import com.itude.mobile.mobbl.core.view.bindings.TextBinder;
 
 public class DetailViewBindingController extends MBBasicViewController
 {
