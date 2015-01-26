@@ -20,8 +20,10 @@ import com.itude.mobile.kitchensink.actions.DelayAction;
 import com.itude.mobile.kitchensink.actions.ExceptionAction;
 import com.itude.mobile.kitchensink.actions.search.DisplaySearchAction;
 import com.itude.mobile.kitchensink.actions.search.SearchAction;
+import com.itude.mobile.kitchensink.view.CatalogViewBindingController;
 import com.itude.mobile.kitchensink.view.CustomLayout;
 import com.itude.mobile.kitchensink.view.CustomViewLogic;
+import com.itude.mobile.kitchensink.view.DetailViewBindingController;
 import com.itude.mobile.kitchensink.view.LayoutBasedViewController;
 import com.itude.mobile.kitchensink.view.OrderedListViewController;
 import com.itude.mobile.kitchensink.view.SessionSwitchViewController;
@@ -68,6 +70,8 @@ public class ApplicationFactory extends MBApplicationFactory
         registerController("PAGE-page-with-xib", LayoutBasedViewController.class);
         registerController("PAGE-catalog", OrderedListViewController.class);
         registerController("PAGE-session-switcher", SessionSwitchViewController.class);
+        registerController("PAGE-modern-catalog", CatalogViewBindingController.class);
+        registerController("PAGE-modern-plant-detail", DetailViewBindingController.class);
       }
     };
 
