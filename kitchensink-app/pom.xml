@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>com.itude.mobile.android.kitchensink</groupId>
 		<artifactId>kitchensink</artifactId>
-		<version>0.1.0.0-SNAPSHOT</version>
+		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>kitchensink-app</artifactId>
 	<packaging>apk</packaging>
