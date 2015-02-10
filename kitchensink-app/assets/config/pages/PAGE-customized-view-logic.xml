@@ -1,4 +1,4 @@
-<Configuration>
+<Configuration xmlns="http://itude.com/schemas/MB/2.0">
     <View>
        <Page name="PAGE-customized-view-logic" document="FieldTypes" title="Custom view logic">
             <Panel type="LIST">

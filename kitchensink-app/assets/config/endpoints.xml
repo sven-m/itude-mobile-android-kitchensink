@@ -1,4 +1,4 @@
-<EndPoints xmlns="https://itude.com/schemas/MB/1.0">
+<EndPoints xmlns="http://itude.com/schemas/MB/1.0">
 
     <ResultListeners>
         <!--ResultListener name="TimedOutResultListener" matchExpression="faultcode*F0080002"/-->
