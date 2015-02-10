@@ -62,7 +62,7 @@
                         <Attribute name="text()" type="string" />
                     </Element>
                     <Element name="ZONE">
-                        <Attribute name="text()" type="string" />
+                        <Attribute name="text()" type="float" />
                     </Element>
                     <Element name="LIGHT">
                         <Attribute name="text()" type="Plant-Light"/>
@@ -71,7 +71,10 @@
                         <Attribute name="text()" type="string" />
                     </Element>
                     <Element name="AVAILABILITY">
-                        <Attribute name="text()" type="string" />
+                        <Attribute name="text()" type="int" />
+                    </Element>
+                    <Element name="COOLNESS">
+                        <Attribute name="text()" type="boolean" />
                     </Element>
                 </Element>
             </Document>

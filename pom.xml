@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.itude.mobile.android.kitchensink</groupId>
 	<artifactId>kitchensink</artifactId>
-	<version>0.1.0.0-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Android Kitchensink</name>
 	<description>Android Kitchensink</description>
@@ -140,7 +140,7 @@
     </build>
     
     <properties>
-    	<core.lib.version>3.2.0.28</core.lib.version>
+    	<core.lib.version>4.0.0</core.lib.version>
     	<android.version>4.4</android.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <android.calabash.runner.version>0.1.0.1</android.calabash.runner.version>

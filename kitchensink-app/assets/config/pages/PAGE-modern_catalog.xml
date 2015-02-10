@@ -1,0 +1,46 @@
+<Configuration>
+
+    <View>
+
+        <Page
+            name="PAGE-modern-catalog"
+            document="CATALOG"
+            scrollable="false"
+            title="Modern Catalog" >
+
+            <Panel name="PlantList" >
+
+                <ForEach
+                    suppressRowComponent="TRUE"
+                    value="/PLANT" >
+
+                    <Panel
+                        name="Plant"
+                        outcome="OUTCOME-modern-plant-detail"
+                        path="."
+                        type="ROW" >
+
+                        <Field
+                            name="CommonName"
+                            path="COMMON[0]/@text()" />
+
+                        <Field
+                            name="BotanicalName"
+                            path="BOTANICAL[0]/@text()" />
+
+                        <Field
+                            name="Light"
+                            dataType="domain"
+                            path="LIGHT[0]/@text()" />
+                        
+						<Field
+                            name="Coolness"
+                            path="COOLNESS[0]/@text()" />
+                        
+                    </Panel>
+                </ForEach>
+            </Panel>
+        </Page>
+    </View>
+
+</Configuration>
