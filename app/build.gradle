@@ -1,0 +1,50 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.notlocalhost.gradle:gradle-calabash-android-plugin:1.+'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'calabash-test'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+
+        minSdkVersion 9
+        targetSdkVersion 19
+   }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    lintOptions {
+        lintConfig file("lint.xml")
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'LICENSE.txt'
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:19.1.0'
+    compile ('com.itude.mobile.android.mobbl:android-mobbl-lib:5.0.0@aar') {
+        transitive=true
+    }
+}
+
+calabashTest {
+    featuresPath = {project.name}"/src/androidFunctionalTest/features/"
+}
