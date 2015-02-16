@@ -1,4 +1,4 @@
-<Configuration>
+<Configuration xmlns="http://itude.com/schemas/MB/2.0">
     <View>
         <Page name="PAGE-lists" document="MBEmptyDoc" title="List layout">
             <Panel type="LIST">

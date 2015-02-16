@@ -1,6 +1,6 @@
-<Configuration>
+<Configuration xmlns="http://itude.com/schemas/MB/2.0">
     <View>
-<Page name="PAGE-home" document="MBEmptyDoc" title="MOBBL Examples">
+        <Page name="PAGE-home" document="MBEmptyDoc" title="MOBBL Examples">
             <Panel type="LIST">
                 <Panel type="SECTION" title="Navigation examples">
                     <Panel type="ROW" outcome="OUTCOME-empty-screen">
