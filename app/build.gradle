@@ -1,24 +1,17 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'org.notlocalhost.gradle:gradle-calabash-android-plugin:1.+'
-    }
-}
-
 apply plugin: 'com.android.application'
-apply plugin: 'calabash-test'
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "19.1.0"
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
+        applicationId "com.itude.mobile.kitchensink"
+        minSdkVersion 15
+        targetSdkVersion 21
 
-        minSdkVersion 9
-        targetSdkVersion 19
-   }
+        testApplicationId "com.itude.mobile.kitchensink.test"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
@@ -39,12 +32,9 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:19.1.0'
-    compile ('com.itude.mobile.android.mobbl:android-mobbl-lib:5.0.0@aar') {
-        transitive=true
+    compile('com.itude.mobile.android.mobbl:android-mobbl-lib:6.0.0@aar') {
+        transitive = true
     }
-}
-
-calabashTest {
-    featuresPath = {project.name}"/src/androidFunctionalTest/features/"
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.0'
+    androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
 }

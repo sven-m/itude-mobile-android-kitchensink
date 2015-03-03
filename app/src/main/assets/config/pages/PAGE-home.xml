@@ -4,7 +4,7 @@
             <Panel type="LIST">
                 <Panel type="SECTION" title="Navigation examples">
                     <Panel type="ROW" outcome="OUTCOME-empty-screen">
-                        <Field type="LABEL" label="Page navigation via row"/>
+                        <Field type="LABEL" label="Page navigation via row."/>
                     </Panel>
                     <Panel type="ROW" outcome="OUTCOME-empty-screen">
                         <Field type="LABEL" label="Page navigation via row" />

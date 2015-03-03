@@ -15,37 +15,60 @@
  */
 package com.itude.mobile.kitchensink.styling;
 
+import android.graphics.Color;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.itude.mobile.mobbl.core.util.ScreenConstants;
 import com.itude.mobile.mobbl.core.view.MBField;
 import com.itude.mobile.mobbl.core.view.builders.MBStyleHandler;
 
-public class StyleHandler extends MBStyleHandler
-{
-  @Override
-  public void styleLabel(TextView view, MBField field)
-  {
-    super.styleLabel(view, field);
+public class StyleHandler extends MBStyleHandler {
+    @Override
+    public void styleLabel(TextView view, MBField field) {
+        super.styleLabel(view, field);
 
-    if (field != null)
-    {
-      if ("style2".equals(field.getStyle()))
-      {
-        view.setBackgroundResource(android.R.color.holo_red_light);
-      }
-      else if ("style3".equals(field.getStyle()))
-      {
-        view.setBackgroundResource(android.R.color.holo_purple);
-      }
+        if (field != null) {
+            if ("style2".equals(field.getStyle())) {
+                view.setBackgroundResource(android.R.color.holo_red_light);
+            } else if ("style3".equals(field.getStyle())) {
+                view.setBackgroundResource(android.R.color.holo_purple);
+            } else {
+                view.setTextColor(Color.DKGRAY);
+            }
+        }
     }
-  }
 
-  @Override
-  public void styleListPanel(LinearLayout view, String style, boolean notDirectChildOfSection)
-  {
-    super.styleListPanel(view, style, notDirectChildOfSection);
+    @Override
+    public void styleListPanel(LinearLayout view, String style, boolean notDirectChildOfSection) {
+        super.styleListPanel(view, style, notDirectChildOfSection);
 
-    if ("style1".equals(style)) view.setBackgroundResource(android.R.color.white);
-  }
+        if ("style1".equals(style)) view.setBackgroundResource(android.R.color.white);
+    }
+
+    @Override
+    public void styleSectionHeaderText(TextView title) {
+        super.styleSectionHeaderText(title);
+        title.setTextColor(Color.BLUE);
+        title.setMinimumHeight(ScreenConstants.FIFTY);
+    }
+
+    @Override
+    public void stylePageHeaderTitle(TextView view) {
+        super.stylePageHeaderTitle(view);
+        view.setTextColor(Color.BLACK);
+    }
+
+    @Override
+    public void styleClickableRow(RelativeLayout view, String style) {
+        super.styleClickableRow(view, style);
+        view.setBackgroundColor(Color.LTGRAY);
+    }
+
+    @Override
+    public void styleSubLabel(TextView view) {
+        super.styleSubLabel(view);
+        view.setTextColor(Color.DKGRAY);
+    }
 }

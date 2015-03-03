@@ -46,7 +46,8 @@
             <Document name="ApplicationState" dataManager="MBFileDataHandler" autoCreate="TRUE">
                 <Element name="Device" minOccurs="1">
                     <Attribute name="deviceID" type="string" defaultValue=""/>
-                    <Attribute name="deviceType" type="string" defaultValue=""/>
+                    <Attribute name="osVersion" type="string" defaultValue=""/>
+                    <Attribute name="screenType" type="string" defaultValue=""/>
                     <Attribute name="deviceIsRegistered" type="string" defaultValue="false" />
                 </Element>
             </Document>
