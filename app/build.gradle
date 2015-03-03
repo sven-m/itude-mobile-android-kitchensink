@@ -1,15 +1,4 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'org.notlocalhost.gradle:gradle-calabash-android-plugin:1.+'
-    }
-}
-
 apply plugin: 'com.android.application'
-apply plugin: 'calabash-test'
-
 
 android {
     compileSdkVersion 21
@@ -48,8 +37,4 @@ dependencies {
     }
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.0'
     androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
-}
-
-calabashTest {
-    featuresPath = { project.name } "/src/androidFunctionalTest/features/"
 }
