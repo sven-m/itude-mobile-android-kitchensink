@@ -50,9 +50,12 @@
         
         <Page name="PAGE-device-info" document="ApplicationState" title="Device Info">
             <Panel type="LIST">
-            <Panel type="ROW">
-                        <Field type="TEXT" path="Device[0]/@deviceType"/>
-                    </Panel>
+                <Panel type="ROW">
+                    <Field type="TEXT" path="Device[0]/@osVersion"/>
+                </Panel>
+                <Panel type="ROW">
+                    <Field type="TEXT" path="Device[0]/@screenType"/>
+                </Panel>
             </Panel>
         </Page>
         

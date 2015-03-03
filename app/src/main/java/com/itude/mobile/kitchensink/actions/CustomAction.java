@@ -21,31 +21,28 @@ import com.itude.mobile.mobbl.core.controller.MBOutcome;
 import com.itude.mobile.mobbl.core.model.MBDocument;
 import com.itude.mobile.mobbl.core.services.MBDataManagerService;
 
-public class CustomAction implements MBAction
-{
+public class CustomAction implements MBAction {
 
-  @Override
-  public MBOutcome execute(MBDocument document, String path)
-  {
+    @Override
+    public MBOutcome execute(MBDocument document, String path) {
 
-    MBDocument doc = MBDataManagerService.getInstance().loadDocument("ApplicationState");
-    doc.setValue(DeviceUtil.getInstance().getDeviceType(), "Device[0]/@deviceType");
+        MBDocument doc = MBDataManagerService.getInstance().loadDocument("ApplicationState");
+        doc.setValue(DeviceUtil.getInstance().getOSVersion(), "Device[0]/@osVersion");
+        doc.setValue(DeviceUtil.getInstance().getScreenType(), "Device[0]/@screenType");
 
-    try
-    {
-      Thread.currentThread().sleep(5000);
+
+        try {
+            Thread.currentThread().sleep(5000);
+        } catch (InterruptedException e) {
+        }
+
+        MBOutcome oc = new MBOutcome();
+        oc.setOutcomeName("OUTCOME-display-device-info");
+        oc.setNoBackgroundProcessing(true);
+        oc.setTransferDocument(true);
+        oc.setDocument(doc);
+
+        return oc;
     }
-    catch (InterruptedException e)
-    {
-    }
-
-    MBOutcome oc = new MBOutcome();
-    oc.setOutcomeName("OUTCOME-display-device-info");
-    oc.setNoBackgroundProcessing(true);
-    oc.setTransferDocument(true);
-    oc.setDocument(doc);
-
-    return oc;
-  }
 
 }
