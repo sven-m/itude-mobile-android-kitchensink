@@ -29,6 +29,21 @@ android {
         exclude 'META-INF/LICENSE'
         exclude 'LICENSE.txt'
     }
+
+
+    buildTypes {
+        debug {
+            debuggable true
+        }
+        release {
+            debuggable false
+
+            minifyEnabled true
+            proguardFiles '../proguard/proguard-project.pro',
+                    '../proguard/proguard-mobbl.pro',
+                    getDefaultProguardFile('proguard-android-optimize.txt')
+        }
+    }
 }
 
 dependencies {
