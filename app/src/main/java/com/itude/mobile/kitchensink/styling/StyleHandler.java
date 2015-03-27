@@ -20,7 +20,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.itude.mobile.mobbl.core.util.ScreenConstants;
+import com.itude.mobile.mobbl.core.util.MBScreenConstants;
 import com.itude.mobile.mobbl.core.view.MBField;
 import com.itude.mobile.mobbl.core.view.builders.MBStyleHandler;
 
@@ -51,7 +51,7 @@ public class StyleHandler extends MBStyleHandler {
     public void styleSectionHeaderText(TextView title) {
         super.styleSectionHeaderText(title);
         title.setTextColor(Color.BLUE);
-        title.setMinimumHeight(ScreenConstants.FIFTY);
+        title.setMinimumHeight(MBScreenConstants.FIFTY);
     }
 
     @Override

@@ -1,5 +1,23 @@
 <resources>
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light" />
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="actionBarStyle">@style/AppActionBar</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/material_blue_grey_800</item>
+        <item name="colorAccent">@color/material_deep_teal_500</item>
+    </style>
+
+    <color name="colorPrimary">@color/material_blue_grey_800</color>
+
+    <style name="AppActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="titleTextStyle">@style/AppTitleTextStyle</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
 
 </resources>
