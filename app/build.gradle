@@ -47,7 +47,7 @@ android {
 }
 
 dependencies {
-    compile('com.itude.mobile.android.mobbl:android-mobbl-lib:6.0.0@aar') {
+    compile('com.itude.mobile.android.mobbl:android-mobbl-lib:7.0.0@aar') {
         transitive = true
     }
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.0'
