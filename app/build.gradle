@@ -29,10 +29,25 @@ android {
         exclude 'META-INF/LICENSE'
         exclude 'LICENSE.txt'
     }
+
+
+    buildTypes {
+        debug {
+            debuggable true
+        }
+        release {
+            debuggable false
+
+            minifyEnabled true
+            proguardFiles '../proguard/proguard-project.pro',
+                    '../proguard/proguard-mobbl.pro',
+                    getDefaultProguardFile('proguard-android-optimize.txt')
+        }
+    }
 }
 
 dependencies {
-    compile('com.itude.mobile.android.mobbl:android-mobbl-lib:6.0.0@aar') {
+    compile('com.itude.mobile.android.mobbl:android-mobbl-lib:7.0.0@aar') {
         transitive = true
     }
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.0'

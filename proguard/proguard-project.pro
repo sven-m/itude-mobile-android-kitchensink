@@ -5,13 +5,13 @@
 -verbose
 -optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
 
--dontwarn org.mozilla.javascript.**
+# Apache
 -dontwarn org.apache.http.**
--dontwarn android.support.v4.**
+-dontwarn org.apache.commons.**
+-keep class org.apache.http.** { *; }
+-keepclassmembers public class org.apache.http.** { *; }
 
--keep public class org.mozilla.javascript.** 
-
--keep public class * extends com.itude.mobile.mobbl.core.controller.MBApplicationController
+# General
 -keep public class * extends android.app.Activity
 -keep public class * extends android.app.Application
 -keep public class * extends android.app.Service
@@ -51,10 +51,8 @@
     public static <fields>;
 }
 
--keep public class * extends com.itude.mobile.mobbl.core.view.components.tabbar.MBActionBarBuilder {
-	public <init>(android.content.Context);
+-keepclasseswithmembernames class * {
+    native <methods>;
 }
 
--keep public class * extends com.itude.mobile.mobbl.core.view.builders.MBDialogDecorator {
-	public <init>(com.itude.mobile.mobbl.core.controller.MBDialogController);
-}
+

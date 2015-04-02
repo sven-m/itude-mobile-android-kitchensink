@@ -6,9 +6,7 @@
 			<Action name="FireInitialOutcomes" className="FireInitialOutcomes"/>
             <Action name="CustomAction" className="CustomAction"/>
             <Action name="ExceptionExampleAction" className="ExceptionExampleAction"/>
-            <Action name="SearchAction" className="SearchAction"/>
-            <Action name="DisplaySearchAction" className="DisplaySearchAction"/>
-			<Action name="DelayAction" className="DelayAction"/>
+            <Action name="DelayAction" className="DelayAction"/>
 		</Actions>
 	</Controller>
 </Configuration>

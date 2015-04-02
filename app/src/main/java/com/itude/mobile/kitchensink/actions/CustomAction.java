@@ -16,6 +16,7 @@
 package com.itude.mobile.kitchensink.actions;
 
 import com.itude.mobile.android.util.DeviceUtil;
+import com.itude.mobile.android.util.ScreenUtil;
 import com.itude.mobile.mobbl.core.controller.MBAction;
 import com.itude.mobile.mobbl.core.controller.MBOutcome;
 import com.itude.mobile.mobbl.core.model.MBDocument;
@@ -28,7 +29,7 @@ public class CustomAction implements MBAction {
 
         MBDocument doc = MBDataManagerService.getInstance().loadDocument("ApplicationState");
         doc.setValue(DeviceUtil.getInstance().getOSVersion(), "Device[0]/@osVersion");
-        doc.setValue(DeviceUtil.getInstance().getScreenType(), "Device[0]/@screenType");
+        doc.setValue(ScreenUtil.getInstance().getScreenType(), "Device[0]/@screenType");
 
 
         try {
