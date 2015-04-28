@@ -1,11 +1,12 @@
 <Configuration xmlns="http://itude.com/schemas/MB/2.0">
     <View>
-       <Page name="PAGE-customized-components" document="FieldTypes" title="Custom view logic">
+        <Page name="PAGE-customized-components" document="FieldTypes" title="Custom view logic">
             <Panel name="myPanel" type="LIST" style="style1">
-                <Panel type="ROW" >
-                    <Field type="TEXT" label="&lt;html&gt;StyleHandler classes can influence all generated UI elements. Alternatively custom PageBuilders, PanelBuilders or FieldBuilders can be used. StyleHandlers are used on this page. Builders are more advanced and are not in this example.&lt;/html&gt;" />
+                <Panel type="ROW">
+                    <Field type="TEXT"
+                        label="&lt;html&gt;StyleHandler classes can influence all generated UI elements. Alternatively custom PageBuilders, PanelBuilders or FieldBuilders can be used. StyleHandlers are used on this page. Builders are more advanced and are not in this example.&lt;/html&gt;" />
                 </Panel>
-                <Panel type="ROW"  outcome="OUTCOME-empty-screen">
+                <Panel type="ROW" outcome="OUTCOME-empty-screen">
                     <Field type="LABEL" label="Do stuff!" style="style2" />
                 </Panel>
                 <Panel type="ROW">

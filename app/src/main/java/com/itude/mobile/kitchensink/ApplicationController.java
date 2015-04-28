@@ -29,33 +29,31 @@ import com.itude.mobile.mobbl.core.util.MBConstants;
 import com.itude.mobile.mobbl.core.view.builders.MBViewBuilderFactory;
 import com.itude.mobile.mobbl.core.view.builders.datatypes.MBDataTypeFormatterFactory;
 
-public class ApplicationController extends MBApplicationController
-{
+public class ApplicationController extends MBApplicationController {
 
-  @Override
-  public void startController()
-  {
-    MBApplicationFactory.setInstance(new ApplicationFactory());
+    @Override
+    public void startController() {
+        MBApplicationFactory.setInstance(new ApplicationFactory());
 
-    MBMetadataService.setConfigName("config/config.xml");
-    MBMetadataService.setEndpointsName("config/endpoints.xml");
+        MBMetadataService.setConfigName("config/config.xml");
+        MBMetadataService.setEndpointsName("config/endpoints.xml");
 
-    MBViewBuilderFactory.getInstance().setStyleHandler(new StyleHandler());
+        MBViewBuilderFactory.getInstance().setStyleHandler(new StyleHandler());
 
-    MBViewBuilderFactory.getInstance().getPanelViewBuilder()
-        .registerBuilder(KitchenSinkConstants.C_PANEL_AWESOMEROW, new CustomPanelBuilder());
+        MBViewBuilderFactory.getInstance().getPanelViewBuilder()
+                .registerBuilder(KitchenSinkConstants.C_PANEL_AWESOMEROW, new CustomPanelBuilder());
 
-    MBViewBuilderFactory.getInstance().getPanelViewBuilder()
-        .registerBuilder(MBConstants.C_ROW, KitchenSinkConstants.C_STYLE_AWESOME, new CustomPanelBuilder());
+        MBViewBuilderFactory.getInstance().getPanelViewBuilder()
+                .registerBuilder(MBConstants.C_ROW, KitchenSinkConstants.C_STYLE_AWESOME, new CustomPanelBuilder());
 
-    MBViewBuilderFactory.getInstance().getPanelViewBuilder().registerBuilder(KitchenSinkConstants.C_PANEL_LISTVIEW, new ListViewBuilder());
-    MBViewBuilderFactory.getInstance().getFieldViewBuilder()
-        .registerBuilder(SectionMarkerFieldViewBuilder.TYPE, new SectionMarkerFieldViewBuilder());
+        MBViewBuilderFactory.getInstance().getPanelViewBuilder().registerBuilder(KitchenSinkConstants.C_PANEL_LISTVIEW, new ListViewBuilder());
+        MBViewBuilderFactory.getInstance().getFieldViewBuilder()
+                .registerBuilder(SectionMarkerFieldViewBuilder.TYPE, new SectionMarkerFieldViewBuilder());
 
-    MBDataTypeFormatterFactory.getInstance().registerFormatter("firstLetter", new FirstLetterFormatter());
+        MBDataTypeFormatterFactory.getInstance().registerFormatter("firstLetter", new FirstLetterFormatter());
 
-    MBIndicatorController.getInstance().setActivityIndicator(new CustomIndicator());
+        MBIndicatorController.getInstance().setActivityIndicator(new CustomIndicator());
 
-    startApplication(ApplicationFactory.getInstance());
-  }
+        startApplication(ApplicationFactory.getInstance());
+    }
 }

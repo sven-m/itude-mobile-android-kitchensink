@@ -1,8 +1,8 @@
 <Application>
-    <Property name="application" value="Default"/>
-	<Property name="inDevelopment" value="false"/>
-	<Property name="enableStrictMode" value="false"/>
-	
-	<Property name="localeCode" value="nl_NL"/>
-    <Property name="styleScheme" value="default"/>
+    <Property name="application" value="Default" />
+    <Property name="inDevelopment" value="false" />
+    <Property name="enableStrictMode" value="false" />
+
+    <Property name="localeCode" value="nl_NL" />
+    <Property name="styleScheme" value="default" />
 </Application>

@@ -22,14 +22,12 @@ import com.itude.mobile.mobbl.core.view.builders.MBFieldViewBuilder;
 import com.itude.mobile.mobbl.core.view.builders.MBViewBuilder;
 
 // fields of this type aren't added to the view; they only function as markers to be picked up by the ListViewBuilder
-public class SectionMarkerFieldViewBuilder extends MBViewBuilder implements MBFieldViewBuilder.Builder
-{
-  public static final String TYPE = "SECTION-MARKER";
+public class SectionMarkerFieldViewBuilder extends MBViewBuilder implements MBFieldViewBuilder.Builder {
+    public static final String TYPE = "SECTION-MARKER";
 
-  @Override
-  public View buildField(MBField field)
-  {
-    return null;
-  }
+    @Override
+    public View buildField(MBField field) {
+        return null;
+    }
 
 }

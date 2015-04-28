@@ -3,13 +3,13 @@ package com.itude.mobile.kitchensink.test;
 import android.support.test.espresso.assertion.ViewAssertions;
 import android.test.ActivityInstrumentationTestCase2;
 
+import com.itude.mobile.mobbl.core.controller.MBDefaultViewManager;
+
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.Espresso.pressBack;
+import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
-import static android.support.test.espresso.action.ViewActions.click;
-
-import com.itude.mobile.mobbl.core.controller.MBDefaultViewManager;
 
 public class NavigationTest extends ActivityInstrumentationTestCase2<MBDefaultViewManager> {
 

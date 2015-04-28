@@ -1,6 +1,5 @@
 package com.itude.mobile.kitchensink.view;
 
-import android.content.res.Resources;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.DrawerLayout.LayoutParams;
@@ -14,7 +13,6 @@ import com.itude.mobile.mobbl.core.controller.MBDialogManager;
 import com.itude.mobile.mobbl.core.controller.MBDialogManager.MBDialogChangeListener;
 import com.itude.mobile.mobbl.core.controller.MBHomeButtonHandler;
 import com.itude.mobile.mobbl.core.controller.MBViewManager;
-import com.itude.mobile.mobbl.core.util.MBScreenConstants;
 import com.itude.mobile.mobbl.core.view.builders.MBContentViewWrapper;
 import com.itude.mobile.mobbl.core.view.builders.dialog.MenuDialogDecorator;
 

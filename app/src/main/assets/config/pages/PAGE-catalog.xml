@@ -2,37 +2,22 @@
 
     <View>
 
-        <Page
-            name="PAGE-catalog"
-            document="CATALOG"
-            scrollable="false"
-            title="Catalog" >
+        <Page name="PAGE-catalog" document="CATALOG" scrollable="false" title="Catalog">
 
-            <Panel type="LIST" >
+            <Panel type="LIST">
 
-                <Panel
-                    title="Plants"
-                    type="SECTION" >
+                <Panel title="Plants" type="SECTION">
 
-                    <Panel type="LISTVIEW" >
+                    <Panel type="LISTVIEW">
 
-                        <ForEach
-                            suppressRowComponent="TRUE"
-                            value="/PLANT" >
+                        <ForEach suppressRowComponent="TRUE" value="/PLANT">
 
-                            <Panel
-                                outcome="OUTCOME-plant-detail"
-                                path="."
-                                type="ROW" >
+                            <Panel outcome="OUTCOME-plant-detail" path="." type="ROW">
 
-                                <Field
-                                    dataType="firstLetter"
-                                    path="COMMON[0]/@text()"
+                                <Field dataType="firstLetter" path="COMMON[0]/@text()"
                                     type="SECTION-MARKER" />
 
-                                <Field
-                                    path="COMMON[0]/@text()"
-                                    type="LABEL" />
+                                <Field path="COMMON[0]/@text()" type="LABEL" />
 
                                 <!-- <Field type="BUTTON" style="NAVIGATION" path="." outcome="OUTCOME-plant-detail"/> -->
                             </Panel>
@@ -44,18 +29,11 @@
 
                 <!-- Demonstrates the outcome on a Panel of type="ROW" -->
 
-                <Panel
-                    title="Outcome example with path"
-                    type="SECTION" >
+                <Panel title="Outcome example with path" type="SECTION">
 
-                    <Panel
-                        outcome="OUTCOME-plant-detail"
-                        path="/PLANT[1]"
-                        type="ROW" >
+                    <Panel outcome="OUTCOME-plant-detail" path="/PLANT[1]" type="ROW">
 
-                        <Field
-                            path="PLANT[1]/COMMON[0]/@text()"
-                            type="LABEL" />
+                        <Field path="PLANT[1]/COMMON[0]/@text()" type="LABEL" />
                     </Panel>
                 </Panel>
             </Panel>

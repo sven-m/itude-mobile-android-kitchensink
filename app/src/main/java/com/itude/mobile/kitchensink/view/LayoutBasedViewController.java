@@ -28,44 +28,40 @@ import com.itude.mobile.mobbl.core.controller.util.MBBasicViewController;
 import com.itude.mobile.mobbl.core.services.MBDataManagerService;
 import com.itude.mobile.mobbl.core.view.MBField;
 
-public class LayoutBasedViewController extends MBBasicViewController
-{
-  private TextView _label;
-  private Button   _button;
-  private EditText _text;
+public class LayoutBasedViewController extends MBBasicViewController {
+    private TextView _label;
+    private Button _button;
+    private EditText _text;
 
-  private MBField  _labelField;
-  private MBField  _buttonField;
+    private MBField _labelField;
+    private MBField _buttonField;
 
-  @Override
-  protected ViewGroup buildInitialView(LayoutInflater inflater)
-  {
-    ViewGroup view = (ViewGroup) inflater.inflate(R.layout.layout_based_view, null);
+    @Override
+    protected ViewGroup buildInitialView(LayoutInflater inflater) {
+        ViewGroup view = (ViewGroup) inflater.inflate(R.layout.layout_based_view, null);
 
-    _labelField = getPage().getFirstDescendantOfKindWithName(MBField.class, "inputfield");
-    String labelText = _labelField.getLabel();
-    _label = (TextView) view.findViewById(R.id.label);
-    _label.setText(labelText);
+        _labelField = getPage().getFirstDescendantOfKindWithName(MBField.class, "inputfield");
+        String labelText = _labelField.getLabel();
+        _label = (TextView) view.findViewById(R.id.label);
+        _label.setText(labelText);
 
-    _buttonField = getPage().getFirstDescendantOfKindWithName(MBField.class, "button");
-    String buttonText = _buttonField.getLabel();
-    _button = (Button) view.findViewById(R.id.button);
-    _button.setText(buttonText);
-    _button.setOnClickListener(new OnClickListener()
-    {
+        _buttonField = getPage().getFirstDescendantOfKindWithName(MBField.class, "button");
+        String buttonText = _buttonField.getLabel();
+        _button = (Button) view.findViewById(R.id.button);
+        _button.setText(buttonText);
+        _button.setOnClickListener(new OnClickListener() {
 
-      @Override
-      public void onClick(View v)
-      {
-        _labelField.setValue(_text.getText().toString());
-        MBDataManagerService.getInstance().storeDocument(getPage().getDocument());
-        rebuildView(true);
-      }
-    });
+            @Override
+            public void onClick(View v) {
+                _labelField.setValue(_text.getText().toString());
+                MBDataManagerService.getInstance().storeDocument(getPage().getDocument());
+                rebuildView(true);
+            }
+        });
 
-    _text = (EditText) view.findViewById(R.id.text);
+        _text = (EditText) view.findViewById(R.id.text);
 
-    return view;
-  }
+        return view;
+    }
 
 }
