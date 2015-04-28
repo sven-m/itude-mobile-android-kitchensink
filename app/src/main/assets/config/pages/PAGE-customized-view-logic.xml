@@ -1,6 +1,6 @@
 <Configuration xmlns="http://itude.com/schemas/MB/2.0">
     <View>
-       <Page name="PAGE-customized-view-logic" document="FieldTypes" title="Custom view logic">
+        <Page name="PAGE-customized-view-logic" document="FieldTypes" title="Custom view logic">
             <Panel type="LIST">
                 <!-- Panels can have preConditions which are evaluated with (limited) javascript logic 
                     First the expression is parsed and path references evaluated by MOBBL. 
@@ -10,11 +10,13 @@
                     first Form element contains the text 'Formatting Error'}
                 -->
                 <Panel type="ROW">
-                    <Field type="TEXT" label="&lt;html&gt;This controller does two things.&lt;ol&gt; &lt;li&gt;react to a button (Outcome is not defined globally, therefore an error is thrown).&lt;/li&gt;&lt;li&gt;react to changes in the gender field and conditionally display a message&lt;/li&gt; &lt;/ol&gt; The page definition contains a conditional row with the message &lt;/html&gt;" />
+                    <Field type="TEXT"
+                        label="&lt;html&gt;This controller does two things.&lt;ol&gt; &lt;li&gt;react to a button (Outcome is not defined globally, therefore an error is thrown).&lt;/li&gt;&lt;li&gt;react to changes in the gender field and conditionally display a message&lt;/li&gt; &lt;/ol&gt; The page definition contains a conditional row with the message &lt;/html&gt;" />
                 </Panel>
                 <Panel type="ROW">
                     <Field type="LABEL" label="Local outcome handling" />
-                    <Field type="BUTTON" label="Do stuff!" style="NETWORK" outcome="LOCAL-OUTCOME1"/>
+                    <Field type="BUTTON" label="Do stuff!" style="NETWORK"
+                        outcome="LOCAL-OUTCOME1" />
                 </Panel>
                 <Panel type="ROW">
                     <Field type="DROPDOWNLIST" path="Form[0]/@gender" />
@@ -24,37 +26,35 @@
                     <Field type="LABEL" path="Form[0]/@comment" />
                     <Field type="SUBLABEL" label="Display conditional message" />
                 </Panel>
-                
-                
+
 
                 <!-- Custom rows can be added by specifiying a style and implementing a subclass of MBRowViewBuilder for
                      the custom style. Don't forget to register the MBRowViewBuilder implementation with the
                      MBRowViewBuilderFactory in CustomAppDelegate:startController.
                      The MBRowViewBuilder registered with this type is 'CustomRowViewBuilder'. -->
-                     
-                     
+
+
                 <Panel type="AWESOMEROW" pony="derpy">
                     <Field type="LABEL" label="Derpy Hooves!" />
                 </Panel>
-                
-                
+
+
                 <Panel type="ROW" style="AWESOME" pony="pinkie">
                     <Field type="LABEL" label="Pinkie Pie!" />
                 </Panel>
-                
-                
+
+
                 <Panel type="AWESOMEROW" pony="djpon3">
                     <Field type="LABEL" label="DJ Pon-3!" />
                 </Panel>
-                
-                
-                
+
+
                 <Panel type="ROW">
                     <Field type="CHECKBOX" path="Form[0]/@checkbox" />
                     <Field type="LABEL" label="ON!" preCondition="${Form[0]/@checkbox}" />
                     <Field type="LABEL" label="OFF!" preCondition="!${Form[0]/@checkbox}" />
                 </Panel>
-                
+
             </Panel>
         </Page>
     </View>

@@ -30,54 +30,46 @@ import com.itude.mobile.mobbl.core.actions.MBFireInitialOutcomes;
 import com.itude.mobile.mobbl.core.controller.MBApplicationFactory;
 import com.itude.mobile.mobbl.core.view.builders.MBContentViewWrapper;
 
-public class ApplicationFactory extends MBApplicationFactory
-{
+public class ApplicationFactory extends MBApplicationFactory {
 
-  @Override
-  protected ActionMappings.Registry getActionRegistry()
-  {
-    ActionMappings.Registry registry = new ActionMappings.Registry()
-    {
+    @Override
+    protected ActionMappings.Registry getActionRegistry() {
+        ActionMappings.Registry registry = new ActionMappings.Registry() {
 
-      @Override
-      protected void registerMappings()
-      {
-        registerAction("FireInitialOutcomes", MBFireInitialOutcomes.class);
-        registerAction("CustomAction", CustomAction.class);
-        registerAction("ExceptionExampleAction", ExceptionAction.class);
+            @Override
+            protected void registerMappings() {
+                registerAction("FireInitialOutcomes", MBFireInitialOutcomes.class);
+                registerAction("CustomAction", CustomAction.class);
+                registerAction("ExceptionExampleAction", ExceptionAction.class);
 
-        registerAction("DelayAction", DelayAction.class);
-      }
+                registerAction("DelayAction", DelayAction.class);
+            }
 
-    };
-    return registry;
-  }
+        };
+        return registry;
+    }
 
-  @Override
-  protected ControllerMappings.Registry getControllerRegistry()
-  {
-    ControllerMappings.Registry registry = new ControllerMappings.Registry()
-    {
+    @Override
+    protected ControllerMappings.Registry getControllerRegistry() {
+        ControllerMappings.Registry registry = new ControllerMappings.Registry() {
 
-      @Override
-      protected void registerMappings()
-      {
-        registerController("PAGE-customized-view-logic", CustomViewLogic.class);
-        registerController("PAGE-customized-layout", CustomLayout.class);
-        registerController("PAGE-page-with-xib", LayoutBasedViewController.class);
-        registerController("PAGE-catalog", OrderedListViewController.class);
-        registerController("PAGE-session-switcher", SessionSwitchViewController.class);
-        registerController("PAGE-modern-catalog", CatalogViewBindingController.class);
-        registerController("PAGE-modern-plant-detail", DetailViewBindingController.class);
-      }
-    };
+            @Override
+            protected void registerMappings() {
+                registerController("PAGE-customized-view-logic", CustomViewLogic.class);
+                registerController("PAGE-customized-layout", CustomLayout.class);
+                registerController("PAGE-page-with-xib", LayoutBasedViewController.class);
+                registerController("PAGE-catalog", OrderedListViewController.class);
+                registerController("PAGE-session-switcher", SessionSwitchViewController.class);
+                registerController("PAGE-modern-catalog", CatalogViewBindingController.class);
+                registerController("PAGE-modern-plant-detail", DetailViewBindingController.class);
+            }
+        };
 
-    return registry;
-  }
+        return registry;
+    }
 
-  @Override
-  public MBContentViewWrapper createContentViewWrapper()
-  {
-    return new SlidingMenuContentWrapper();
-  }
+    @Override
+    public MBContentViewWrapper createContentViewWrapper() {
+        return new SlidingMenuContentWrapper();
+    }
 }

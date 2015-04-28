@@ -17,14 +17,12 @@ package com.itude.mobile.kitchensink.util.formatter;
 
 import com.itude.mobile.mobbl.core.view.builders.datatypes.MBBaseDataTypeFormatter;
 
-public class FirstLetterFormatter extends MBBaseDataTypeFormatter
-{
+public class FirstLetterFormatter extends MBBaseDataTypeFormatter {
 
-  @Override
-  protected String actuallyFormat(String value)
-  {
-    if (value.length() != 0) return value.substring(0, 1).toUpperCase(getLocale());
-    else return value;
-  }
+    @Override
+    protected String actuallyFormat(String value) {
+        if (value.length() != 0) return value.substring(0, 1).toUpperCase(getLocale());
+        else return value;
+    }
 
 }

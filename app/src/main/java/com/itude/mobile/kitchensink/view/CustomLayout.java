@@ -21,14 +21,12 @@ import android.view.ViewGroup;
 import com.itude.mobile.mobbl.core.controller.util.MBBasicViewController;
 import com.itude.mobile.mobbl.core.view.MBPanel;
 
-public class CustomLayout extends MBBasicViewController
-{
-  @Override
-  protected ViewGroup buildInitialView(LayoutInflater inflater)
-  {
-    MBPanel panel = getPage().getFirstChildOfKindWithName(MBPanel.class, "myPanel");
-    ViewGroup view = panel.buildView();
-    view.setPadding(100, 100, 0, 0);
-    return view;
-  }
+public class CustomLayout extends MBBasicViewController {
+    @Override
+    protected ViewGroup buildInitialView(LayoutInflater inflater) {
+        MBPanel panel = getPage().getFirstChildOfKindWithName(MBPanel.class, "myPanel");
+        ViewGroup view = panel.buildView();
+        view.setPadding(100, 100, 0, 0);
+        return view;
+    }
 }

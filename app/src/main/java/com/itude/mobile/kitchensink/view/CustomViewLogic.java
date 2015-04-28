@@ -25,63 +25,55 @@ import com.itude.mobile.mobbl.core.controller.util.MBBasicViewController;
 import com.itude.mobile.mobbl.core.view.MBOutcomeListenerProtocol;
 import com.itude.mobile.mobbl.core.view.MBValueChangeListenerProtocol;
 
-public class CustomViewLogic extends MBBasicViewController implements MBValueChangeListenerProtocol, MBOutcomeListenerProtocol
-{
+public class CustomViewLogic extends MBBasicViewController implements MBValueChangeListenerProtocol, MBOutcomeListenerProtocol {
 
-  private static final String GENDER_PATH   = "/Form[0]/@gender";
-  private static final String COMMENT_PATH  = "/Form[0]/@comment";
-  private static final String CHECKBOX_PATH = "/Form[0]/@checkbox";
+    private static final String GENDER_PATH = "/Form[0]/@gender";
+    private static final String COMMENT_PATH = "/Form[0]/@comment";
+    private static final String CHECKBOX_PATH = "/Form[0]/@checkbox";
 
-  @Override
-  protected ViewGroup buildInitialView(LayoutInflater inflater)
-  {
-    ViewGroup view = super.buildInitialView(inflater);
+    @Override
+    protected ViewGroup buildInitialView(LayoutInflater inflater) {
+        ViewGroup view = super.buildInitialView(inflater);
 
-    getPage().registerValueChangeListener(this, GENDER_PATH);
-    getPage().registerValueChangeListener(this, CHECKBOX_PATH);
-    registerOutcomeListener(this);
+        getPage().registerValueChangeListener(this, GENDER_PATH);
+        getPage().registerValueChangeListener(this, CHECKBOX_PATH);
+        registerOutcomeListener(this);
 
-    return view;
-  }
-
-  @Override
-  public void outcomeProduced(MBOutcome outcome)
-  {
-    Toast.makeText(MBViewManager.getInstance(), "Intercepted outcome " + outcome.toString(), Toast.LENGTH_LONG).show();
-  }
-
-  @Override
-  public boolean valueWillChange(String value, String originalValue, String path)
-  {
-    return true;
-  }
-
-  @Override
-  public void valueChanged(String value, String originalValue, String path)
-  {
-    if (path.equals(GENDER_PATH))
-    {
-      if (value.equals("male"))
-
-      getPage().getDocument().setValue("Watch My Little Pony", COMMENT_PATH);
-      else getPage().getDocument().setValue("Watch Justin Bieber", COMMENT_PATH);
+        return view;
     }
 
-    rebuildView(true);
+    @Override
+    public void outcomeProduced(MBOutcome outcome) {
+        Toast.makeText(MBViewManager.getInstance(), "Intercepted outcome " + outcome.toString(), Toast.LENGTH_LONG).show();
+    }
 
-  }
+    @Override
+    public boolean valueWillChange(String value, String originalValue, String path) {
+        return true;
+    }
 
-  @Override
-  public void afterOutcomeHandled(MBOutcome outcome)
-  {
-    Toast.makeText(MBViewManager.getInstance(), "Processed outcome " + outcome.getOutcomeName(), Toast.LENGTH_LONG).show();
+    @Override
+    public void valueChanged(String value, String originalValue, String path) {
+        if (path.equals(GENDER_PATH)) {
+            if (value.equals("male"))
 
-  }
+                getPage().getDocument().setValue("Watch My Little Pony", COMMENT_PATH);
+            else getPage().getDocument().setValue("Watch Justin Bieber", COMMENT_PATH);
+        }
 
-  @Override
-  public boolean shouldHandleOutcome(MBOutcome outcome)
-  {
-    return true;
-  }
+        rebuildView(true);
+
+    }
+
+    @Override
+    public void afterOutcomeHandled(MBOutcome outcome) {
+        Toast.makeText(MBViewManager.getInstance(), "Processed outcome " + outcome.getOutcomeName(), Toast.LENGTH_LONG).show();
+
+    }
+
+    @Override
+    public boolean shouldHandleOutcome(MBOutcome outcome) {
+        return true;
+    }
 
 }

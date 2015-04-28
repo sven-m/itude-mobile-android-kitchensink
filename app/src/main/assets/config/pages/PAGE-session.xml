@@ -1,14 +1,14 @@
 <Configuration xmlns="http://itude.com/schemas/MB/2.0">
     <View>
-       <Page name="PAGE-session-switcher" document="Session" title="Session switcheroo">
-                <Panel type="ROW">
-                    <Field type="TEXT" label="Now in session ${Type[0]/@text()}" />
-                </Panel>
-                <Panel type="ROW">
-                    <Field type="DROPDOWNLIST" path="Type[0]/@text()" />
-                    <Field type="LABEL" label="Gender" />
-                </Panel>
-            
+        <Page name="PAGE-session-switcher" document="Session" title="Session switcheroo">
+            <Panel type="ROW">
+                <Field type="TEXT" label="Now in session ${Type[0]/@text()}" />
+            </Panel>
+            <Panel type="ROW">
+                <Field type="DROPDOWNLIST" path="Type[0]/@text()" />
+                <Field type="LABEL" label="Gender" />
+            </Panel>
+
         </Page>
     </View>
 </Configuration>

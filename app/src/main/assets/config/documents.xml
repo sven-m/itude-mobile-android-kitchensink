@@ -1,38 +1,39 @@
 <Configuration xmlns="http://itude.com/schemas/MB/2.0">
-	<Model>
+    <Model>
         <Documents>
             <!--
              Generic documents 
              -->
-            <Document name="MBEmptyDoc" dataManager="MBMemoryDataHandler" autoCreate="TRUE">
-            </Document>
+            <Document name="MBEmptyDoc" dataManager="MBMemoryDataHandler"
+                autoCreate="TRUE"></Document>
             <Document name="InitialOutcomes" dataManager="MBFileDataHandler" autoCreate="TRUE">
                 <Element name="Outcome" minOccurs="1">
-                    <Attribute name="action" type="string"/>
-                    <Attribute name="dialog" type="string"/>
-				</Element>
-			</Document>	
-			
-            <Document name="MBGenericRestRequest" dataManager="MBMemoryDataHandler" autoCreate="TRUE">
+                    <Attribute name="action" type="string" />
+                    <Attribute name="dialog" type="string" />
+                </Element>
+            </Document>
+
+            <Document name="MBGenericRestRequest" dataManager="MBMemoryDataHandler"
+                autoCreate="TRUE">
                 <Element name="Operation" minOccurs="1">
                     <Attribute name="name" type="string" />
                     <Attribute name="httpMethod" type="string" />
                     <Element name="Parameter">
-                        <Attribute name="key" type="string"/>
-                        <Attribute name="value" type="string"/>
+                        <Attribute name="key" type="string" />
+                        <Attribute name="value" type="string" />
                     </Element>
                 </Element>
-            </Document>	
-            
+            </Document>
+
             <Document name="ApplicationState" dataManager="MBFileDataHandler" autoCreate="TRUE">
                 <Element name="Device" minOccurs="1">
-                    <Attribute name="deviceID" type="string" defaultValue=""/>
-                    <Attribute name="osVersion" type="string" defaultValue=""/>
-                    <Attribute name="screenType" type="string" defaultValue=""/>
+                    <Attribute name="deviceID" type="string" defaultValue="" />
+                    <Attribute name="osVersion" type="string" defaultValue="" />
+                    <Attribute name="screenType" type="string" defaultValue="" />
                     <Attribute name="deviceIsRegistered" type="string" defaultValue="false" />
                 </Element>
             </Document>
-            
+
             <!-- App specific documents -->
 
             <Document name="CATALOG" dataManager="MBFileDataHandler">
@@ -47,7 +48,7 @@
                         <Attribute name="text()" type="float" />
                     </Element>
                     <Element name="LIGHT">
-                        <Attribute name="text()" type="Plant-Light"/>
+                        <Attribute name="text()" type="Plant-Light" />
                     </Element>
                     <Element name="PRICE">
                         <Attribute name="text()" type="string" />
@@ -60,7 +61,7 @@
                     </Element>
                 </Element>
             </Document>
-            
+
             <!-- created by application when first requested -->
             <Document name="FieldTypes" dataManager="MBFileDataHandler" autoCreate="TRUE">
                 <Element name="Form" minOccurs="1">
@@ -78,22 +79,23 @@
                     <Attribute name="dateOfBirth" type="string" />
                     <Attribute name="zipcode" type="string" />
                     <Attribute name="comment" type="string" />
-                    
-                    <Attribute name="gender" type="list_gender" /> <!-- Note the domain reference: see domains.xmlx -->
+
+                    <Attribute name="gender" type="list_gender" />
+                    <!-- Note the domain reference: see domains.xmlx -->
                 </Element>
             </Document>
-            
+
             <Document name="IMAGES" dataManager="MBFileDataHandler">
                 <Element name="IMAGE">
                     <Attribute name="url" type="string" />
-                </Element>                
+                </Element>
             </Document>
-           
+
             <!-- Session management, in order to test the dialog switcheroo -->
             <Document name="Session" dataManager="MBMemoryDataHandler" autoCreate="true">
                 <Element name="Type" minOccurs="1">
-                    <Attribute name="text()" type="SessionType" defaultValue="hippie" />                    
-                </Element>                
+                    <Attribute name="text()" type="SessionType" defaultValue="hippie" />
+                </Element>
             </Document>
         </Documents>
     </Model>

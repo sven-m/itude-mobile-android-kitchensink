@@ -1,22 +1,22 @@
 <Configuration xmlns="http://itude.com/schemas/MB/2.0">
-	<Model>
+    <Model>
         <Domains>
             <Domain name="list_gender" type="string">
-                <DomainValidator title="Man" value="male"/>
-                <DomainValidator title="Vrouw" value="female"/>
+                <DomainValidator title="Man" value="male" />
+                <DomainValidator title="Vrouw" value="female" />
             </Domain>
             <Domain name="Plant-Light" type="string">
-                <DomainValidator title="Mostly shady" value="Mostly Shady"/>
-                <DomainValidator title="Mostly sunny" value="Mostly Sunny"/>
-                <DomainValidator title="Sun/Shade" value="Sun or Shade"/>
-                <DomainValidator title="Shade only" value="Shade"/>
+                <DomainValidator title="Mostly shady" value="Mostly Shady" />
+                <DomainValidator title="Mostly sunny" value="Mostly Sunny" />
+                <DomainValidator title="Sun/Shade" value="Sun or Shade" />
+                <DomainValidator title="Shade only" value="Shade" />
                 <DomainValidator title="Bring it on!" value="Sunny" />
                 <DomainValidator title="Light me up baby!" value="Sun" />
             </Domain>
-            <Domain name="SessionType" type="string">    
+            <Domain name="SessionType" type="string">
                 <DomainValidator title="Hippie" value="hippie" />
                 <DomainValidator title="Plant-hater" value="noHippie" />
             </Domain>
         </Domains>
-	</Model>
+    </Model>
 </Configuration>

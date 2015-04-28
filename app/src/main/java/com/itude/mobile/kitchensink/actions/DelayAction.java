@@ -5,21 +5,16 @@ import com.itude.mobile.mobbl.core.controller.MBAction;
 import com.itude.mobile.mobbl.core.controller.MBOutcome;
 import com.itude.mobile.mobbl.core.model.MBDocument;
 
-public class DelayAction implements MBAction
-{
+public class DelayAction implements MBAction {
 
-  @Override
-  public MBOutcome execute(MBDocument document, String path)
-  {
-    try
-    {
-      Thread.sleep(5000);
+    @Override
+    public MBOutcome execute(MBDocument document, String path) {
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            throw new MBException("Meh", e);
+        }
+        return null;
     }
-    catch (InterruptedException e)
-    {
-      throw new MBException("Meh", e);
-    }
-    return null;
-  }
 
 }

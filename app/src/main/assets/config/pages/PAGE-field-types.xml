@@ -22,19 +22,22 @@
                     <Field type="LABEL" label="Raw input" />
                 </Panel>
                 <Panel type="ROW">
-                    <Field type="INPUTFIELD" path="Form[0]/@float" dataType="float" formatMask="numberWithTwoDecimals"/>
+                    <Field type="INPUTFIELD" path="Form[0]/@float" dataType="float"
+                        formatMask="numberWithTwoDecimals" />
                     <Field type="LABEL" label="Floating point" />
                 </Panel>
                 <Panel type="ROW">
-                    <Field type="INPUTFIELD" label="bla@test.nl" path="Form[0]/@email" dataType="email" />
+                    <Field type="INPUTFIELD" label="bla@test.nl" path="Form[0]/@email"
+                        dataType="email" />
                     <Field type="LABEL" label="Email" />
                 </Panel>
                 <Panel type="ROW">
-                    <Field type="INPUTFIELD" label="1234AA" path="Form[0]/@zipcode" dataType="zipcode" alignment="RIGHT"/>
+                    <Field type="INPUTFIELD" label="1234AA" path="Form[0]/@zipcode"
+                        dataType="zipcode" alignment="RIGHT" />
                     <Field type="LABEL" label="Zipcode" />
                 </Panel>
                 <Panel type="ROW">
-                    <Field type="INPUTFIELD" path="Form[0]/@int" dataType="int"/>
+                    <Field type="INPUTFIELD" path="Form[0]/@int" dataType="int" />
                     <Field type="LABEL" label="Integer" />
                 </Panel>
                 <!-- <Panel type="ROW">
@@ -54,11 +57,13 @@
                     <Field type="LABEL" label="Checkbox" />
                 </Panel>
                 <Panel type="ROW">
-                    <Field type="DATESELECTOR" path="Form[0]/@date" dataType="dateTime" formatMask="dd-MM-yyyy"/>
+                    <Field type="DATESELECTOR" path="Form[0]/@date" dataType="dateTime"
+                        formatMask="dd-MM-yyyy" />
                     <Field type="LABEL" label="Date" />
                 </Panel>
                 <Panel type="ROW">
-                    <Field type="TIMESELECTOR" path="Form[0]/@time" dataType="dateTime" formatMask="HH:mm:ss"/>
+                    <Field type="TIMESELECTOR" path="Form[0]/@time" dataType="dateTime"
+                        formatMask="HH:mm:ss" />
                     <Field type="LABEL" label="Time" />
                 </Panel>
                 <!-- <Panel type="ROW">
@@ -68,8 +73,8 @@
                 <Panel type="ROW">
                     <Field type="BIRTHDATE" path="Form[0]/@dateOfBirth" dataType="dateTime" formatMask="dd-MM-yyyy"/>
                     <Field type="LABEL" label="Date of Birth" />
-                </Panel>-->                
+                </Panel>-->
             </Panel>
-        </Page>    
+        </Page>
     </View>
 </Configuration>

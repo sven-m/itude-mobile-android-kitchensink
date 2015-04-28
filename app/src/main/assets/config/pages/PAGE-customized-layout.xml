@@ -1,12 +1,14 @@
 <Configuration xmlns="http://itude.com/schemas/MB/2.0">
     <View>
-       <Page name="PAGE-customized-layout" document="FieldTypes" title="Custom layout">
+        <Page name="PAGE-customized-layout" document="FieldTypes" title="Custom layout">
             <Panel name="myPanel" type="LIST">
                 <Panel type="ROW">
-                    <Field type="TEXT" label="&lt;html&gt;This controller uses a named panel to retrieve the definition from the Page and automatically create a View.&lt;/html&gt;" />
+                    <Field type="TEXT"
+                        label="&lt;html&gt;This controller uses a named panel to retrieve the definition from the Page and automatically create a View.&lt;/html&gt;" />
                 </Panel>
                 <Panel type="ROW">
-                    <Field type="BUTTON" label="Do stuff!" style="NAVIGATION" outcome="OUTCOME-empty-screen"/>
+                    <Field type="BUTTON" label="Do stuff!" style="NAVIGATION"
+                        outcome="OUTCOME-empty-screen" />
                     <Field type="LABEL" label="Do stuff!" />
                 </Panel>
                 <Panel type="ROW">

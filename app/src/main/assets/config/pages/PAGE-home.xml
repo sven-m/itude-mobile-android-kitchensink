@@ -4,89 +4,93 @@
             <Panel type="LIST">
                 <Panel type="SECTION" title="Navigation examples">
                     <Panel type="ROW" outcome="OUTCOME-empty-screen">
-                        <Field type="LABEL" label="Page navigation via row."/>
+                        <Field type="LABEL" label="Page navigation via row." />
                     </Panel>
                     <Panel type="ROW" outcome="OUTCOME-empty-screen">
                         <Field type="LABEL" label="Page navigation via row" />
-                        <Field type="SUBLABEL" label="with nested button"/>
-                        <Field type="BUTTON" label="Device info" style="NETWORK" name="button" outcome="OUTCOME-retrieve-device-info"/>
+                        <Field type="SUBLABEL" label="with nested button" />
+                        <Field type="BUTTON" label="Device info" style="NETWORK" name="button"
+                            outcome="OUTCOME-retrieve-device-info" />
                     </Panel>
                     <Panel type="ROW">
-                        <Field type="LABEL" label="Page navigation via button"/>
-                        <Field type="SUBLABEL" label="button style 'NAVIGATION'"/>
+                        <Field type="LABEL" label="Page navigation via button" />
+                        <Field type="SUBLABEL" label="button style 'NAVIGATION'" />
                         <Field type="BUTTON" style="NAVIGATION" outcome="OUTCOME-empty-screen" />
                     </Panel>
-                    <Panel type="ROW" >
+                    <Panel type="ROW">
                         <Field type="LABEL" label="Page navigation via button" />
-                        <Field type="SUBLABEL" label="button style 'NETWORK'"/>
-                        <Field type="BUTTON" label="Device info" style="NETWORK" name="button" outcome="OUTCOME-retrieve-device-info"/>
+                        <Field type="SUBLABEL" label="button style 'NETWORK'" />
+                        <Field type="BUTTON" label="Device info" style="NETWORK" name="button"
+                            outcome="OUTCOME-retrieve-device-info" />
                     </Panel>
-                    <Panel type="ROW"  outcome="OUTCOME-retrieve-device-info">
+                    <Panel type="ROW" outcome="OUTCOME-retrieve-device-info">
                         <Field type="LABEL" label="Navigation via an action" />
-                        <Field type="SUBLABEL" label="Objc class name is CustomAction"/>
+                        <Field type="SUBLABEL" label="Objc class name is CustomAction" />
                     </Panel>
                     <Panel type="ROW" outcome="OUTCOME-catalog-foreground">
-                        <Field type="LABEL" label="Page transition on main thread"/>
-                        <Field type="SUBLABEL" label="No spinner or greyed out view"/>
+                        <Field type="LABEL" label="Page transition on main thread" />
+                        <Field type="SUBLABEL" label="No spinner or greyed out view" />
                     </Panel>
                 </Panel>
                 <Panel type="SECTION" title="View layer examples">
-                    <Panel type="ROW"  outcome="OUTCOME-catalog" >
-                        <Field type="LABEL" label="List and detail screen"/>
-                        <Field type="SUBLABEL" label="Newsheader to newsdetail style"/>
+                    <Panel type="ROW" outcome="OUTCOME-catalog">
+                        <Field type="LABEL" label="List and detail screen" />
+                        <Field type="SUBLABEL" label="Newsheader to newsdetail style" />
                     </Panel>
                     <Panel type="ROW" outcome="OUTCOME-field-types">
-                        <Field type="LABEL" label="Form fields"/>
+                        <Field type="LABEL" label="Form fields" />
                     </Panel>
-                    <Panel type="ROW"  outcome="OUTCOME-modal">
-                        <Field type="LABEL" label="Modal screen"/>
+                    <Panel type="ROW" outcome="OUTCOME-modal">
+                        <Field type="LABEL" label="Modal screen" />
                     </Panel>
-                    <Panel type="ROW"  outcome="OUTCOME-lists">
-                        <Field type="LABEL" label="List layout demo's"/>
+                    <Panel type="ROW" outcome="OUTCOME-lists">
+                        <Field type="LABEL" label="List layout demo's" />
                     </Panel>
-                    <Panel type="ROW"  outcome="OUTCOME-images">
-                        <Field type="LABEL" label="Image loading"/>
+                    <Panel type="ROW" outcome="OUTCOME-images">
+                        <Field type="LABEL" label="Image loading" />
                     </Panel>
                     <Panel type="ROW" outcome="OUTCOME-modern-catalog">
                         <Field type="LABEL" label="New view bindings" />
                     </Panel>
                 </Panel>
                 <Panel type="SECTION" title="Customization">
-                    <Panel type="ROW"   outcome="OUTCOME-customized-view-logic">
-                        <Field type="LABEL" label="Customized view logic"/>
-                        <Field type="SUBLABEL" label="Generated view, custom logic"/>
+                    <Panel type="ROW" outcome="OUTCOME-customized-view-logic">
+                        <Field type="LABEL" label="Customized view logic" />
+                        <Field type="SUBLABEL" label="Generated view, custom logic" />
                     </Panel>
                     <Panel type="ROW" outcome="OUTCOME-customized-layout">
-                        <Field type="LABEL" label="Manipulating the page layout"/>
-                        <Field type="SUBLABEL" label="Programmatically change the layout"/>
+                        <Field type="LABEL" label="Manipulating the page layout" />
+                        <Field type="SUBLABEL" label="Programmatically change the layout" />
                     </Panel>
-                    <Panel type="ROW"  outcome="OUTCOME-customized-components">
-                        <Field type="LABEL" label="Styling UI elements"/>
-                        <Field type="SUBLABEL" label="Stylehandlers influence view building"/>
+                    <Panel type="ROW" outcome="OUTCOME-customized-components">
+                        <Field type="LABEL" label="Styling UI elements" />
+                        <Field type="SUBLABEL" label="Stylehandlers influence view building" />
                     </Panel>
                     <Panel type="ROW" outcome="OUTCOME-manipulating-rows-in-a-list">
-                        <Field type="LABEL" label="Manipulating rows in a list"/>
-                        <Field type="SUBLABEL" label="Layout of cells is changed"/>
+                        <Field type="LABEL" label="Manipulating rows in a list" />
+                        <Field type="SUBLABEL" label="Layout of cells is changed" />
                     </Panel>
-                    <Panel type="ROW"  outcome="OUTCOME-page-with-xib">
-                        <Field type="LABEL" label="Using interface builder"/>
-                        <Field type="SUBLABEL" label="Make the layout in a NIB file and link the page definition to it"/>
+                    <Panel type="ROW" outcome="OUTCOME-page-with-xib">
+                        <Field type="LABEL" label="Using interface builder" />
+                        <Field type="SUBLABEL"
+                            label="Make the layout in a NIB file and link the page definition to it" />
                     </Panel>
                 </Panel>
-                <Panel type="SECTION" title="Alerts" >
-                    <Panel type="ROW"  outcome="OUTCOME-alert-simple-example">
-                        <Field type="LABEL" label="Simple alert example"/>
+                <Panel type="SECTION" title="Alerts">
+                    <Panel type="ROW" outcome="OUTCOME-alert-simple-example">
+                        <Field type="LABEL" label="Simple alert example" />
                     </Panel>
-                    <Panel type="ROW"  outcome="OUTCOME-alert-plant-example">
-                        <Field type="LABEL" label="Show a plant alert example"/>
+                    <Panel type="ROW" outcome="OUTCOME-alert-plant-example">
+                        <Field type="LABEL" label="Show a plant alert example" />
                     </Panel>
                 </Panel>
                 <Panel type="SECTION" title="Error handling">
                     <Panel type="ROW" outcome="OUTCOME-throw-exception">
-                        <Field type="LABEL" label="Throw Exception"/>
+                        <Field type="LABEL" label="Throw Exception" />
                     </Panel>
                     <Panel type="ROW">
-                        <Field type="TEXT" label="&lt;html&gt;Remove the line InstallUncaughtExceptionHandler(); in [CustomAppDelegate startController] to let the App crash instead of showing the error. In production App crashes will show up in iTunes connect. Customization of the error message is still a work in progress.&lt;/html&gt;"/>
+                        <Field type="TEXT"
+                            label="&lt;html&gt;Remove the line InstallUncaughtExceptionHandler(); in [CustomAppDelegate startController] to let the App crash instead of showing the error. In production App crashes will show up in iTunes connect. Customization of the error message is still a work in progress.&lt;/html&gt;" />
                     </Panel>
                 </Panel>
             </Panel>

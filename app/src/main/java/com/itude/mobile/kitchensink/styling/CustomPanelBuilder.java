@@ -30,34 +30,31 @@ import com.itude.mobile.mobbl.core.view.builders.MBPanelViewBuilder;
 import com.itude.mobile.mobbl.core.view.builders.MBPanelViewBuilder.BuildState;
 import com.itude.mobile.mobbl.core.view.builders.MBViewBuilder;
 
-public class CustomPanelBuilder extends MBViewBuilder implements MBPanelViewBuilder.Builder
-{
+public class CustomPanelBuilder extends MBViewBuilder implements MBPanelViewBuilder.Builder {
 
-  @Override
-  public ViewGroup buildPanel(MBPanel panel, BuildState buildState)
-  {
-    final Context context = MBApplicationController.getInstance().getBaseContext();
-    LinearLayout layout = new LinearLayout(context);
-    layout.setOrientation(LinearLayout.HORIZONTAL);
-    layout.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+    @Override
+    public ViewGroup buildPanel(MBPanel panel, BuildState buildState) {
+        final Context context = MBApplicationController.getInstance().getBaseContext();
+        LinearLayout layout = new LinearLayout(context);
+        layout.setOrientation(LinearLayout.HORIZONTAL);
+        layout.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 
-    String ponyName = panel.getCustom(KitchenSinkConstants.C_ATTR_PONY);
-    Drawable pinkie = MBResourceService.getInstance().getImageByID(ponyName);
+        String ponyName = panel.getCustom(KitchenSinkConstants.C_ATTR_PONY);
+        Drawable pinkie = MBResourceService.getInstance().getImageByID(ponyName);
 
-    ImageView image = new ImageView(context);
-    image.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
-    image.setImageDrawable(pinkie);
-    layout.addView(image);
-    if (panel.getOutcomeName() != null)
-    {
-      layout.setClickable(true);
-      layout.setFocusable(true);
-      layout.setOnClickListener(panel);
+        ImageView image = new ImageView(context);
+        image.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
+        image.setImageDrawable(pinkie);
+        layout.addView(image);
+        if (panel.getOutcomeName() != null) {
+            layout.setClickable(true);
+            layout.setFocusable(true);
+            layout.setOnClickListener(panel);
+        }
+
+        buildChildren(panel.getChildren(), layout);
+
+        return layout;
     }
-
-    buildChildren(panel.getChildren(), layout);
-
-    return layout;
-  }
 
 }
